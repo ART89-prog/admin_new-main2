@@ -799,6 +799,11 @@ $(() => {
 		$(".link-more").addClass("active");
 	});
 
+	$(".task-page_btn button").click(function (e) {
+		e.preventDefault();
+		$('.solutions-tasks').addClass('active');
+	});
+
 
 	$(".link-more").click(function (e) {
 		e.preventDefault();

@@ -1879,4 +1879,18 @@
         white-space: unset;
     }
 
+    .intellect .education_wrap {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .intellect .education_links {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .intellect .education_links a {
+        display: block;
+    }
+
 }
