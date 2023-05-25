@@ -2408,7 +2408,12 @@
     .division-page .favourites_items > * {
         width: calc(100%/2 - 16px);
     }
-
+    .division-page_text {
+        padding-left: 0;
+    }
+    .intellect.division-page .courses_faq input {
+        margin-left: 0px;
+    }
 
 
 
