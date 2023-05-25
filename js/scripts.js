@@ -825,6 +825,12 @@ $(() => {
 		$(".addition-base_item").removeClass("hide");
 	});
 
+	$(".log_link-more").click(function (e) {
+		e.preventDefault();
+		$(".log_item").removeClass("hide");
+		$(".log_link-more").hide();
+	});
+
 
 	$('.addition_btn').click(function (e) {
 		e.preventDefault();

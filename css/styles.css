@@ -25993,7 +25993,7 @@ form .form_btns input[type=file] + label,
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    background: #0800c7;
+    background: var(--main_color);
     opacity: 0;
 }
 .task-page_form input[type=radio]:checked + label:after {
@@ -26306,4 +26306,68 @@ form .form_btns input[type=file] + label,
     color: #FFFFFF;
     max-width: 170px;
     margin: 0 auto;
+}
+
+.log {
+    margin-top: 40px;
+}
+.log_items {
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.log_item {
+    padding: 11px 12px 9px;
+    background: #F3F3FF;
+    border-radius: 6px;     
+    margin-top: 8px;
+    display: flex;
+}
+.log_item + .log_item {
+    margin-top: 8px;
+}
+.log_item-icon {
+    margin-right: 11px;
+}
+.log_item-icon .icon {
+    width: 14px;
+    height: 14px;
+}
+.log_item-title {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;  
+    margin-bottom: 2px;
+}
+.log_item-title a {
+    color: #0F7DFF;
+    text-decoration: none;
+}
+.log_item-date {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #423E89;
+    opacity: 0.5;
+}
+.log_item.hide {
+    display: none;
+}
+.log_items .link-more {
+    margin-top: 18px;
+    display: block;
+}
+.log_link-more a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #178EFF;
+    border-bottom: 1px dashed #178EFF;
+    display: inline-block;
+    margin: 12px 0;
+    width: auto;
 }
