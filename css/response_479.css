@@ -1357,7 +1357,7 @@
         flex-direction: column;
     }
     .addition form button {
-        margin-top: 12px;
+        width: 100%;
     }
     .addition_wrap {
         flex-direction: column;
@@ -1377,6 +1377,12 @@
     }
     .education_left {
         margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .addition form .form-text.active {
+        display: flex;
+        justify-content: left;
+        width: 100%;
         margin-bottom: 12px;
     }
 
@@ -1444,7 +1450,22 @@
         width: 100%;
     }
 
-
+    .setting-notes ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .setting-notes ul li button {
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    .addition_btn {
+        width: 100%;
+        text-align: center;
+    }
+    .addition_arrow {
+        display: none !important;
+    }
 
 
 
