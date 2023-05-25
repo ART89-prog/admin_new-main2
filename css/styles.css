@@ -26132,6 +26132,32 @@ form .form_btns input[type=file] + label,
     margin-right: 8px;
     color: #000;
 }
+
+.solutions-tasks2 {
+    display: none;
+}
+.solutions-tasks2.active {
+    display: block;
+    margin-top: 0;
+}
+.solutions-tasks2 .solutions-tasks_wrap {
+    padding: 20px 18px 22px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.solutions-tasks2 .solutions-tasks_top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.solutions-tasks2 .solutions-tasks_top-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin-right: 8px;
+    color: #000;
+}
+
 .solutions-tasks_top-link {
     font-weight: 500;
     font-size: 11px;
@@ -26232,7 +26258,7 @@ form .form_btns input[type=file] + label,
     border-radius: 15px;
     max-width: 360px;
     width: 100%;
-    /* display: none; */
+    display: none;
 }
 .solutions_modal-icon {
     background: #B4DDB3;
