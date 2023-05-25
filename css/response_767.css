@@ -2439,6 +2439,14 @@
         align-items: flex-start;
     }
 
+    .additional-actions_btns {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .additional-actions_btns button + button {
+        margin-top: 10px;
+    }
+
 
 
 }

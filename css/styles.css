@@ -26371,3 +26371,105 @@ form .form_btns input[type=file] + label,
     margin: 12px 0;
     width: auto;
 }
+
+
+.setting-mode {
+    margin-top: 40px;
+    padding: 20px 18px 27px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;  
+}
+.setting-mode_head {
+    padding-bottom: 20px;
+    position: relative;
+}
+.setting-mode_head:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    bottom: 0;
+    left: -18px;
+    background: #DFDFDF;
+}
+.setting-mode_title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: -0.375px;
+    margin-bottom: 5px;
+}
+.setting-mode_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #273179;
+    opacity: 0.5; 
+}
+.setting-notes {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.setting-notes :before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    bottom: 0;
+    left: -18px;
+    background: #DFDFDF;   
+}
+.setting-notes ul {
+    list-style: none;
+}
+.setting-notes ul li {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D; 
+    margin-bottom: 17px;   
+}
+.setting-notes ul li:last-child {
+    margin-bottom: 0;
+}
+.setting-notes ul li button {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0583DF;  
+    border-bottom: 1px dashed #0583DF; 
+}
+.setting-notes_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.375px; 
+    margin-bottom: 17px;
+}
+.additional-actions {
+    margin-top: 20px;
+}
+.additional-actions_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: -0.375px; 
+    margin-bottom: 17px;
+}
+.additional-actions_btns {
+    display: flex;
+    align-items: center;
+}
+.additional-actions_btns button {
+    margin-right: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #64698F;
+    padding: 12px;  
+    background: #ECEBFF;
+    border-radius: 7px;
+}
