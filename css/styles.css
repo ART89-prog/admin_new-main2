@@ -26085,7 +26085,7 @@ form .form_btns input[type=file] + label,
     text-align: center;
     color: #FFFFFF;
     padding: 12px 20px;
-    background: #0601B7;
+    background: var(--main_color);
     border-radius: 55px;
     display: block;
     position: relative;
@@ -26294,7 +26294,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 21px; 
 }
 .solutions_modal-link {
-    background: #0601B7;
+    background: var(--main_color);
     border-radius: 55px;
     padding: 12px 20px;
     text-decoration: none;
