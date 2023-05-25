@@ -2393,9 +2393,13 @@
         font-size: 18px;
         line-height: 21px;
     }
-    .education_title {
+    .education_title,
+    .intellect .block_title {
         font-size: 18px;
-        line-height: 21px;  
+        line-height: 21px;          
+    }
+    .intellect .block_text {
+        font-size: 12px;
     }
 
     .division_items > * {
