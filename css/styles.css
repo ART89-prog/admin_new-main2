@@ -26103,12 +26103,17 @@ form .form_btns input[type=file] + label,
     top: 0;
     left: -18px;
 }
+.task-page_form {
+    margin-bottom: 40px;
+}
+
 
 .solutions-tasks {
     display: none;
 }
 .solutions-tasks.active {
     display: block;
+    margin-top: 0;
 }
 .solutions-tasks_wrap {
     padding: 20px 18px 22px;

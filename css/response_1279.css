@@ -1892,5 +1892,8 @@
     .intellect .education_links a {
         display: block;
     }
+    .division-page .favourites_items > * {
+        width: calc(100%/3 - 16px);
+    }
 
 }
