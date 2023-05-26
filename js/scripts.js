@@ -810,10 +810,16 @@ $(() => {
 			$(".solutions-tasks2 .solutions-tasks_wrap").show();
 			$('.solutions-tasks2').addClass('active');
 			$(".solutions-tasks .wrapper_head").hide();
-			$(".solutions_modal").css("display", "block");
 		}, 3000);
 	});
 
+
+	new ClipboardJS('.btn-clipboard');
+
+	$(".btn-clipboard").click(function (e) {
+		e.preventDefault();
+	});
+	
 	$(".solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
 		$(this).parent().parent().hide();
@@ -870,23 +876,6 @@ $(() => {
 	});
 
 
-	const copyButton = document.getElementById('btn-copy');
-	copyButton.addEventListener('click', (event) => {
-		event.preventDefault();
-		// получение текстового содержимого, которое мы хотим скопировать
-		const content = document.getElementById('solutions-tasks_text').textContent;
-		// загружаем содержимое в наш буфер обмена
-		navigator.clipboard.writeText(content);
-	})
-
-	$('.btn-copy').click(function (e) {
-		e.preventDefault();
-		var text = $('.solutions-tasks_text').text();
-		var input = $('<textarea>').val(text).appendTo('body').select();
-		// document.execCommand('copy');
-		input.remove();
-		alert("Текст успешно скопирован в буфер обмена!");
-	});
 
 	$(".js-next-gtp").click(function (e) {
 		e.preventDefault();

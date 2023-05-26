@@ -26590,7 +26590,7 @@ form .form_btns input[type=file] + label,
     height: 96px;
 }
 .solutions-tasks_modal-form button {
-    background: #0601B7;
+    background: var(--main_color);
     border-radius: 55px;
     padding: 12px 20px;
     font-weight: 500;
