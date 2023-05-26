@@ -26558,3 +26558,46 @@ form .form_btns input[type=file] + label,
 .history-training_box ul li + li {
     margin-top: 8px;
 }
+
+.solutions-tasks_modal-form .line {
+    margin-bottom: 17px;
+}
+.solutions-tasks_modal-form .line .field {
+    display: flex;
+    flex-direction: column;
+}
+.solutions-tasks_modal-form .line .field label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;   
+    margin-bottom: 10px;
+    width: 100%;
+}
+.solutions-tasks_modal-form .line .field textarea {
+    background: #FFFFFF;
+    border: 1px solid #7874A3;
+    border-radius: 9px;
+    resize: none;   
+    padding: 14px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #7874A3;
+    opacity: 0.6;
+    height: 96px;
+}
+.solutions-tasks_modal-form button {
+    background: #0601B7;
+    border-radius: 55px;
+    padding: 12px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+    margin-left: auto;
+}
