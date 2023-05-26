@@ -2446,6 +2446,9 @@
     .additional-actions_btns button + button {
         margin-top: 10px;
     }
+    .history-training_box-title {
+        font-size: 18px;
+    }
 
 
 

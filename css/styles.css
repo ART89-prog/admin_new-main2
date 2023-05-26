@@ -26114,6 +26114,7 @@ form .form_btns input[type=file] + label,
 .solutions-tasks.active {
     display: block;
     margin-top: 0;
+    margin-bottom: 30px;
 }
 .solutions-tasks_wrap {
     padding: 20px 18px 22px;
@@ -26317,6 +26318,7 @@ form .form_btns input[type=file] + label,
     padding: 16px;
     display: flex;
     flex-direction: column;
+    margin-top: 24px;
 }
 .log_item {
     padding: 11px 12px 9px;
@@ -26374,7 +26376,7 @@ form .form_btns input[type=file] + label,
 
 
 .setting-mode {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 20px 18px 27px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -26472,4 +26474,87 @@ form .form_btns input[type=file] + label,
     padding: 12px;  
     background: #ECEBFF;
     border-radius: 7px;
+}
+
+.history-training {
+    margin-top: 30px;
+}
+.history-training_head {
+    margin-bottom: 24px;
+}
+.history-training_title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    margin-bottom: 4px;
+}
+.history-training_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #273179;
+    opacity: 0.5; 
+}
+.history-training_box {
+    padding: 13px 16px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+}
+.history-training_box + .history-training_box {
+    margin-top: 16px;
+}
+.history-training_box-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+}
+.history-training_step {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    position: relative;
+}
+.history-training_step:before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    left: -19px;
+    top: 1px;
+    border-radius: 50%;
+    background: var(--main_color);
+}
+.history-training_success {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #38AC10;
+}
+.history-training_success.green {
+    color: #38AC10;
+}
+.history-training_success.yellow {
+    color: #E8AF19;
+}
+.history-training_success.red {
+    color: #D62222;
+}
+.history-training_box ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+.history-training_box ul li {
+    padding: 11px 12px 9px 35px;  
+    background: #F3F3FF;
+    border-radius: 6px;  
+    display: inline-block;
+}
+.history-training_box ul li + li {
+    margin-top: 8px;
 }

@@ -1466,6 +1466,9 @@
     .addition_arrow {
         display: none !important;
     }
+    .log_items {
+        margin-top: 12px;
+    }
 
 
 
