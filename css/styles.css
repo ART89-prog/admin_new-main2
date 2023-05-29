@@ -26752,7 +26752,7 @@ form .form_btns input[type=file] + label,
 .catalog_page-box-head {
     display: flex;
     align-items: center;
-    margin-bottom: 13px;    
+    margin-bottom: 18px;    
 }
 .catalog_page-box::before {
     position: absolute;
@@ -26850,3 +26850,70 @@ form .form_btns input[type=file] + label,
 }
 
 
+.equipment_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -26px;
+}
+.equipment_items > * {
+    width: calc(100%/3 - 26px);
+    margin-left: 26px;
+    display: flex;
+    align-items: center;
+}
+.equipment_item-img {
+    width: 81px;
+    height: 81px;
+    flex-shrink: 0;
+}
+.equipment_item-img img {
+    border-radius: 11px;
+    width: 100%;
+    height: 100%;
+}
+.equipment_item-info {
+    margin-left: 16px;
+}
+.equipment_item-info-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575766;
+    margin-bottom: 10px; 
+}
+.equipment_item-info-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #575766;
+}
+
+.instrument_items {
+  
+}
+.instrument_item + .instrument_item {
+    margin-top: 18px;
+} 
+.instrument_item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575766;  
+    margin-bottom: 10px;
+}
+.instrument_item-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #575766;
+}
+.instrument_item-images {
+    margin-top: 15px;
+    display: flex;
+}
+.instrument_item-images img {
+    margin-right: 12px;
+    border-radius: 11px;
+    width: 65px;
+    height: 65px;
+}
