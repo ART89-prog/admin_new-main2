@@ -813,12 +813,14 @@ $(() => {
 		}, 3000);
 	});
 
+	if($(".btn-clipboard").length)
+	{
+		new ClipboardJS('.btn-clipboard');
 
-	new ClipboardJS('.btn-clipboard');
-
-	$(".btn-clipboard").click(function (e) {
-		e.preventDefault();
-	});
+		$(".btn-clipboard").click(function (e) {
+			e.preventDefault();
+		});
+	}
 	
 	$(".solutions-tasks_top-delete").click(function (e) {
 		e.preventDefault();
