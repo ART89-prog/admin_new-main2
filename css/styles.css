@@ -26694,22 +26694,13 @@ form .form_btns input[type=file] + label,
 .catalog_page {
     background: #FFFFFF;
     border-radius: 15px;
-    padding: 22px 22px 41px;
+    padding: 22px 22px 22px;
 }
 .catalog_page-top {
     display: flex;
     align-items: center;
     position: relative;
     padding-bottom: 22px;
-}
-.catalog_page-top::before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 44px);
-    height: 1px;
-    bottom: 0;
-    left: -22px;
-    background: #DFDFDF;
 }
 .catalog_page-top-img {
     width: 134px;
@@ -26745,9 +26736,9 @@ form .form_btns input[type=file] + label,
 }
 
 .catalog_page-box {
-    margin-top: 20px;
+    padding-top: 20px;
     position: relative;
-    padding-bottom: 22px;
+    margin-bottom: 22px;
 }
 .catalog_page-box-head {
     display: flex;
@@ -26759,7 +26750,7 @@ form .form_btns input[type=file] + label,
     content: "";
     width: calc(100% + 44px);
     height: 1px;
-    bottom: 0;
+    top: 0;
     left: -22px;
     background: #DFDFDF;
 }
@@ -26888,9 +26879,7 @@ form .form_btns input[type=file] + label,
     color: #575766;
 }
 
-.instrument_items {
-  
-}
+
 .instrument_item + .instrument_item {
     margin-top: 18px;
 } 
@@ -26916,4 +26905,47 @@ form .form_btns input[type=file] + label,
     border-radius: 11px;
     width: 65px;
     height: 65px;
+}
+
+.catalog_page-block_text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575766; 
+    margin-bottom: 20px;   
+}
+.catalog_page-block_text p:last-child {
+    margin-bottom: 0;
+}
+.catalog_page-block_text p.mt20 {
+    margin-top: 20px;
+}
+.catalog_page-block_text p span.green {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #79C54B;
+    border-radius: 29px;
+    padding: 3px 10px;
+}
+.catalog_page-block_text p span.yellow {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: #FF9900;
+    border-radius: 29px;
+    padding: 3px 10px;
+}
+.catalog_page-block_text ul {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.catalog_page-block_text ul {
+    margin-left: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575766;
 }
