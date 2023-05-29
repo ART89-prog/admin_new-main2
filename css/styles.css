@@ -26627,17 +26627,16 @@ form .form_btns input[type=file] + label,
     display: flex;
     flex-wrap: wrap;
     margin-left: -21px;
+    margin-bottom: -21px;
 }
 .catalog_items > * {
     margin-left: 21px;
+    margin-bottom: 21px;
     width: calc(100%/3 - 21px);
     padding: 10px 10px 19px 10px;
     background: #FFFFFF;
     border-radius: 15px; 
     text-decoration: none;
-}
-.catalog_item + .catalog_item {
-    margin-top: 21px;
 }
 .catalog_item-top {
     display: flex;
@@ -26851,6 +26850,9 @@ form .form_btns input[type=file] + label,
     margin-left: 26px;
     display: flex;
     align-items: center;
+}
+.equipment_item + .equipment_item {
+    margin-top: 20px;
 }
 .equipment_item-img {
     width: 81px;

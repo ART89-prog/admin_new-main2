@@ -467,6 +467,14 @@
         margin-left: 40px;
     }
 
+    .equipment_items {
+        margin-left: 0;
+    }
+    .equipment_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
 
 
 

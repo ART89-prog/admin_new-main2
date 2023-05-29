@@ -1905,5 +1905,9 @@
         margin-top: 10px;
     }
 
+    .catalog_items > * {
+        width: calc(100%/2 - 21px);
+    }
+
 
 }
