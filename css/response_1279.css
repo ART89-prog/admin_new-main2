@@ -1909,5 +1909,14 @@
         width: calc(100%/2 - 21px);
     }
 
+    .auth-new .contacts {
+        width: 100%;
+    }
+    .auth-new .contacts .info {
+        width: 100%;
+    }
+
+
+
 
 }

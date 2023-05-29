@@ -26603,8 +26603,7 @@ form .form_btns input[type=file] + label,
 }
 
 
-.catalog {
-}
+
 .catalog .page_text {
     margin-top: 12px;
     font-weight: 400;
@@ -26950,4 +26949,55 @@ form .form_btns input[type=file] + label,
     font-size: 14px;
     line-height: 16px;
     color: #575766;
+}
+
+
+
+.auth_wrap {
+    display: flex;
+    position: relative;
+}
+.auth-new {
+    flex-direction: column;
+}
+.auth .data,
+.auth_img {
+    padding: 35px;
+}
+.auth_logo-desc {
+    position: absolute;
+    left: 47px;
+    top: 45px;
+}
+.auth-new .contacts {
+    width: 100%;
+    padding: 12px 35px 53px;
+    border-left: none;
+}
+.auth-new .contacts .info {
+    width: 100%;
+    display: flex;
+}
+.auth-new .auth_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.auth-new .contacts .info .item:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+.auth-new .contacts .item {
+    margin-top: 0px;
+    margin-left: 50px;
+}
+.auth-new .contacts .item:nth-child(2) {
+    text-align: end;
+}
+.auth-new .contacts .item:nth-child(3) {
+    text-align: end;
+}
+.auth-new .login .info_data {
+    margin-top: 70px;
 }

@@ -475,6 +475,14 @@
         margin-left: 0;
     }
 
+    .auth-new .contacts {
+        width: 100%;
+    }
+    .auth-new .contacts .info {
+        width: 100%;
+    }
+
+
 
 
 
