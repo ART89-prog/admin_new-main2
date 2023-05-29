@@ -2451,7 +2451,8 @@
         flex-direction: column;
     }
     .catalog_page {
-        padding: 22px 0;
+        padding: 20px 0;
+        background: none;
     }
     .catalog_page-top-info {
         margin-left: 0px;
