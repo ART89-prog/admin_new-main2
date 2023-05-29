@@ -26743,3 +26743,110 @@ form .form_btns input[type=file] + label,
     line-height: 18px;
     color: #030303;
 }
+
+.catalog_page-box {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 22px;
+}
+.catalog_page-box-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;    
+}
+.catalog_page-box::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 44px);
+    height: 1px;
+    bottom: 0;
+    left: -22px;
+    background: #DFDFDF;
+}
+.catalog_page-box-head-icon {
+    background: rgba(11, 0, 216, 0.15);
+    border-radius: 7px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.catalog_page-box-head-icon .icon {
+    width: 28px;
+    height: 28px;
+}
+.catalog_page-box-info {
+    margin-left: 12px;    
+}
+.catalog_page-box-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+.catalog_page-box-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #575766;
+}
+
+.catalog_page-box-images {
+    display: flex;
+}
+.catalog_page-box-images img {
+    border-radius: 16px;
+    width: 120px;
+    height: 120px;
+    margin-right: 24px;
+}
+.catalog_page-box-images a {
+    position: relative;
+    display: block;
+}
+.catalog_page-box-images a img {
+    width: 196px;
+    height: 120px;
+    position: relative;
+    margin-right: 0;
+    display: block;
+}
+.catalog_page-box-images a button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.catalog_page-box-images button .icon {
+    width: 44px;
+    height: 44px;
+    z-index: 2;
+}
+
+
+.catalog_page-box-gallery {
+    display: flex;
+    margin-left: -26px;
+}
+.catalog_page-box-gallery > * {
+    margin-left: 26px;
+    width: calc(100%/3 - 26px);
+}
+.catalog_page-box-gallery a {
+    text-decoration: none;
+}
+.catalog_page-box-gallery a img {
+    display: block;
+    border-radius: 11px;
+    width: 100%;
+}
+.catalog_page-box-gallery-title {
+    margin-top: 19px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+
+
