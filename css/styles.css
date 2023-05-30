@@ -27003,6 +27003,6 @@ form .form_btns input[type=file] + label,
 .auth-new .contacts .item:nth-child(3) {
     text-align: end;
 }
-.auth-new .login .info_data {
-    margin-top: 70px;
+.auth-new .login {
+    margin-top: 80px;
 }

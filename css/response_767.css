@@ -2562,8 +2562,11 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .auth-new .login .info_data {
+    /* .auth-new .login .info_data {
         margin-top: 0px;
+    } */
+    .auth-new .login {
+        margin-top: 30px;
     }
 
 
