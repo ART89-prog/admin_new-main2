@@ -2451,8 +2451,11 @@
         flex-direction: column;
     }
     .catalog_page {
-        padding: 20px 0;
-        background: none;
+        padding: 18px 13px;
+    }
+    .catalog_page-box::before {
+        width: calc(100% + 26px);
+        left: -13px;
     }
     .catalog_page-top-info {
         margin-left: 0px;
