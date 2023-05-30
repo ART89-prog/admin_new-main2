@@ -26960,9 +26960,11 @@ form .form_btns input[type=file] + label,
 .auth-new {
     flex-direction: column;
 }
-.auth .data,
-.auth_img {
+.auth .data {
     padding: 35px;
+}
+.auth_img {
+    padding: 60px 35px 35px;
 }
 .auth_logo-desc {
     position: absolute;
@@ -26977,6 +26979,9 @@ form .form_btns input[type=file] + label,
 .auth-new .contacts .info {
     width: 100%;
     display: flex;
+}
+.auth_img {
+    width: 685px;
 }
 .auth-new .auth_img img {
     width: 100%;
