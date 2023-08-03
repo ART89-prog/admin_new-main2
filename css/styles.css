@@ -27753,3 +27753,54 @@ form .form_btns input[type=file] + label,
     color: #F41F38;
     background: rgba(244, 31, 56, 0.34);
 }
+
+
+
+/* idea */
+
+.current-issues {
+    padding: 20px 18px 24px;
+    border-radius: 15px;
+    background: #FFF;
+}
+.current-issues_top {
+    padding-bottom: 20px;
+    position: relative;
+}
+.current-issues_top:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    left: -18px;
+    bottom: 0;
+    background: #DFDFDF;
+}
+.current-issues_title {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #000;
+    margin-bottom: 8px;
+}
+.current-issues_text {
+    color: #515784;
+    font-size: 14px;
+    font-weight: 400;
+}
+.current-issues_items {
+    margin-top: 8px;
+}
+.current-issues_item {
+    padding: 7px 9px;
+    background: var(--main_color);
+    border-radius: 23px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 10px;
+}
+.current-issues_item + .current-issues_item {
+    margin-top: 10px;
+}
