@@ -19605,9 +19605,9 @@ button.copy span{
         padding-bottom: 120px;
     }
 
-    .wrap{
+    /* .wrap{
         overflow: initial;
-    }
+    } */
 }
 
 
@@ -27462,6 +27462,7 @@ form .form_btns input[type=file] + label,
 .ideas-top_left {
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 .ideas-top_icon {
     margin-right: 20px;
@@ -27503,6 +27504,7 @@ form .form_btns input[type=file] + label,
     color: #FFFFFF;
     border-radius: 55px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 
@@ -27512,21 +27514,17 @@ form .form_btns input[type=file] + label,
 }
 .ideas-counter_items {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin-left: 25px;
+    flex-wrap: wrap;
+    margin-left: -25px;
 }
 .ideas-counter_items > * {
     width: calc(100%/4 - 25px);
-    margin-left: -25px;
+    margin-left: 25px;
     display: flex;
-    align-items: center;
     border-radius: 15px;
     background: #FFF;
     padding: 16px;
-}
-.ideas-counter_item + .ideas-counter_item {
-    margin-top: 25px;
 }
 .ideas-counter_item-icon {
     width: 35px;
@@ -27559,7 +27557,7 @@ form .form_btns input[type=file] + label,
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
-    line-height: 19px; 
+    line-height: 1.3; 
     letter-spacing: -0.3px;
 }
 .ideas-counter_item-text {
@@ -27576,6 +27574,9 @@ form .form_btns input[type=file] + label,
 .myideas {
     margin-top: 30px;
 }
+.myideas .block_top-info {
+    margin-right: 20px;
+}
 .myideas_top {
     display: flex;
     align-items: center;
@@ -27583,7 +27584,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 19px;
 }
 .myideas_top .block_title {
-    margin-bottom: 0;
+    margin-bottom: 6px;
     font-size: 24px;
 }
 .myideas_item + .myideas_item {
@@ -27667,6 +27668,7 @@ form .form_btns input[type=file] + label,
     font-weight: 700;
     line-height: 19px; 
     letter-spacing: -0.3px;
+    text-align: end;
 }
 .myideas_items.empt {
     margin-top: 15px;
@@ -27681,4 +27683,73 @@ form .form_btns input[type=file] + label,
 }
 .myideas_items.empt .myideas_item {
     align-items: center;
+}
+
+
+
+.ideas-catalog {
+    margin-top: 27px;
+}
+.ideas-catalog_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-bottom: -50px;
+    margin-top: 50px;
+}
+.ideas-catalog_items > * {
+    background: #FFFFFF;
+    border-radius: 0 25px 25px 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    width: calc(100%/4 - 20px);
+    margin-left: 20px;
+    margin-bottom: 50px;
+    padding: 30px 30px 30px 17px;
+}
+.ideas-catalog_item {
+    position: relative;
+}
+.ideas-catalog_item::before {
+    position: absolute;
+    content: "";
+    background: url(../images/training-course_label.png);
+    top: -27px;
+    left: 0;
+    width: 326px;
+    height: 27px;
+    z-index: -1;
+}
+.ideas-catalog_item-label {
+    margin-top: -45px;
+    margin-bottom: 23px;
+    padding: 3px 9px;
+    border-radius: 29px;
+    background: #EAE8FF;
+    color: #6B60CB;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500; 
+    display: block;
+    width: 70px;
+}
+.ideas-catalog_item-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px; 
+    letter-spacing: -0.3px;
+    margin-bottom: 5px;
+}
+.ideas-catalog_item-text {
+    color: var(--description-color, #0A00C5);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #818093;
+}
+.ideas-catalog_item-label.red {
+    color: #F41F38;
+    background: rgba(244, 31, 56, 0.34);
 }
