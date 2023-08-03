@@ -1072,6 +1072,7 @@
     {
         width: 100%;
         padding: 40px 24px;
+        margin-top: 0;
     }
 
 
@@ -1109,7 +1110,7 @@
     .mobile_logo{
         display: flex;
         justify-content: center;
-        padding: 40px 0 0;
+        padding: 40px 0 30px;
         max-width: 300px;
         margin: auto;
     }
@@ -2536,16 +2537,18 @@
         flex-direction: column;
     }
     .auth-new .contacts .item:nth-child(2),
-    .auth-new .contacts .item:nth-child(3) {
+    .auth-new .contacts .item:nth-child(3), .auth-new .contacts .item:nth-child(4), .auth-new .contacts .item:nth-child(5) {
         text-align: start;
         margin-left: 0;
     }
     .auth .data, .auth_img {
-        padding: 24px;
+        min-height: 350px;
     }
-    .auth-new .contacts .item:first-child {
-        margin-top: 0px;
+
+    .auth_img{
+        margin:24px;
     }
+
     .auth-new .mobile_logo {
         padding: 20px 0 0;
         justify-content: flex-start;
@@ -2566,10 +2569,22 @@
         margin-top: 0px;
     } */
     .auth-new .login {
-        margin-top: 30px;
+        margin-top: 0px;
     }
 
+    .auth-new .contacts .info .col_items{
+        flex-direction: column;
+    }
+    .auth_img:before{
+        background: rgba(0, 0, 0, 0.6);
+    }
 
+    .auth-new .auth_img img {
+        position: absolute;
+    }
 
+    .education_related_item{
+        width: calc(100%);
+    }
 
 }

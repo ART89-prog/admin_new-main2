@@ -301,67 +301,71 @@
 								<a href="/">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
 								</a>
-								<span>HR задачи</span>
-								<div class="division-page_text">Организации процессов найма, адаптации, развитию и управлению персоналом.</div>
+								<span>Добавление пункта</span>
+								<div class="division-page_text">Помощь в создании вакансии в новую компанию</div>
 							</section>
 
-							<form class="courses_faq">
-								<input type="text" class="js-search-courses input" placeholder="Поиск">
-								<button>Искать</button>
+							<form class="task-page_form">
+								<div class="task-page_head">
+									<div class="task-page_title">Добавление пункта в раздел “Качество шин”</div>
+									<div class="task-page_text">Заполните все поля для получения наилучшего результата</div>	
+								</div>
+								<div class="line">
+									<div class="task-page_label">Название вакансии</div>
+									<div class="field">
+										<input type="text" id="name" placeholder="Введите название">
+									</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Описание вакансии</div>
+									<div class="field">
+										<textarea id="desc" placeholder="Введите название"></textarea>
+									</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Выпадающий список</div>
+									<div class="field">
+										<select id="select">
+											<option value="punkt1">Пункт 1</option>
+											<option value="punkt2">Пункт 2</option>
+											<option value="punkt3">Пункт 3</option>
+										</select>
+									</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Выберите чекбокс</div>
+									<div class="line-box">										
+										<div class="field">
+											<input type="checkbox" id="group1_check1">
+											<label for="group1_check1">Пункт №1</label>
+										</div>	
+									</div>
+									<div class="line-box">
+										<div class="field">
+											<input type="checkbox" id="group1_check2">
+											<label for="group1_check2">Пункт №2</label>
+										</div>	
+									</div>
+								</div>
+								<div class="line">
+									<div class="task-page_label">Выберите радио-бокс</div>
+									<div class="line-box">										
+										<div class="field">										
+											<input type="radio" name="radio" id="group2_check1" checked>
+											<label for="group2_check1">Пункт №1</label>
+										</div>	
+									</div>
+									<div class="line-box">
+										<div class="field">
+											<input type="radio" name="radio" id="group2_check2">
+											<label for="group2_check2">Пункт №2</label>
+										</div>	
+									</div>
+								</div>
+								<div class="task-page_new_btn">
+									<button type="submit">Добавить</button>
+								</div>								
 							</form>
-
-							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
-
-
-							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
-
-
-							<section class="favourites">
-								<div class="wrapper_head">
-									<div class="block_title">Все задачи</div>
-								</div>
-								<div class="favourites_items">
-									<div class="favourites_item">
-										<div class="favourites_item-icon">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#favourites1"></use>
-											</svg>											
-										</div>
-										<a href="task-page.html" class="favourites_item-title">Создать новую вакансию в компанию</a>
-										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
-										<div class="favourites_item-left">
-											<div class="favourites_item-star active">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star"></use>
-												</svg>
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star2"></use>
-												</svg>			
-											</div>
-										</div>
-									</div>
-									<div class="favourites_item">
-										<div class="favourites_item-icon">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#favourites1"></use>
-											</svg>											
-										</div>
-										<a href="task-page.html" class="favourites_item-title">Создать новую вакансию в компанию</a>
-										<a href="task-page.html" class="favourites_item-text">Помощь в создании вакансии в новую компанию</a>
-										<div class="favourites_item-left">
-											<div class="favourites_item-star">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star"></use>
-												</svg>
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#star2"></use>
-												</svg>		
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
-
 							
 							<footer>
 								<div class="logo">
@@ -408,6 +412,126 @@
 			</video>
 		</section>
 
+
+		<section class="solutions-tasks_modal" id="callback_modal5">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal6">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal7">
+			<div class="solutions-tasks_modal-title">Запрос от 18 мая 2023</div>
+			<ul>
+				<li>
+					<span>Название вакансии</span>
+					Менеджер по продажам в айти компанию
+				</li>
+				<li>
+					<span>Описание</span>
+					Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.
+				</li>
+				<li>
+					<span>График</span>
+					Свободный
+				</li>
+				<li>
+					<span>Готовность к переезду</span>
+					Да
+				</li>
+			</ul>
+		</section>
+
+
+		<section class="solutions_modal" id="callback_modal8">
+			<div class="solutions_modal-icon">
+				<svg class="icon">
+					<use xlink:href="images/sprite.svg#ok2"></use>
+				</svg>
+			</div>	
+			<div class="solutions_modal-title">Задача выполнена</div>
+			<div class="solutions_modal-text">Ваша задача выполнена. Вы можете посмотреть результат</div>
+			<a href="#" class="solutions_modal-link">Смотреть решение</a>
+		</section>
+
+
+		<section class="solutions-tasks_modal" id="callback_modal9">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal10">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+		<section class="solutions-tasks_modal" id="callback_modal11">
+			<div class="solutions-tasks_modal-title">Скорректировать запрос</div>
+			<form class="solutions-tasks_modal-form">
+				<div class="line">
+					<div class="field">
+						<label for="message1">Что вы хотите изменить?</label>
+						<textarea id="message1" placeholder="Например, сократи текст до 200 символов"></textarea>
+					</div>
+				</div>
+				<button>Генерировать</button>
+			</form>
+		</section>
+
+
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
@@ -421,6 +545,7 @@
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="js/clipboard.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/search_courses.js"></script>
