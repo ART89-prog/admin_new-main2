@@ -26259,7 +26259,7 @@ form .form_btns input[type=file] + label,
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    color: #000;
+    color: #353352;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
@@ -27734,7 +27734,7 @@ form .form_btns input[type=file] + label,
     width: 70px;
 }
 .ideas-catalog_item-title {
-    color: #000;
+    color: #353352;
     font-size: 16px;
     font-weight: 700;
     line-height: 19px; 
@@ -27781,7 +27781,7 @@ form .form_btns input[type=file] + label,
     font-size: 20px;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #000;
+    color: #353352;
     margin-bottom: 8px;
 }
 .current-issues_text {
@@ -27939,16 +27939,7 @@ form .form_btns input[type=file] + label,
     display: flex;
     justify-content: space-between;
     position: relative;
-    padding-bottom: 19px;
-}
-.idea-block_item-bottom:before {
-    position: absolute;
-    content: "";
-    width: calc(100% + 40px);
-    height: 1px;
-    left: -24px;
-    bottom: 0;
-    background: #DFDFDF;
+    margin-bottom: 19px;
 }
 .idea-block_item-link {
     color: #0583DF;
@@ -27970,7 +27961,17 @@ form .form_btns input[type=file] + label,
 .idea-block_item-author {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+.idea-block_item-author:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    left: -24px;
+    top: 0;
+    background: #DFDFDF;
 }
 .idea-block_item-avatar {
     width: 40px;
@@ -27985,7 +27986,7 @@ form .form_btns input[type=file] + label,
     margin-left: 10px;
 }
 .idea-block_item-author-name {
-    color: #000;
+    color: #353352;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -27996,4 +27997,63 @@ form .form_btns input[type=file] + label,
     color: #7874A3;
     font-size: 12px;
     font-weight: 500;
+}
+.idea-block_item-status {
+    color: #7874A3;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.idea-page .idea-block_item-text {
+    display: block;
+}
+.idea-page .idea-block_item-text p + p {
+    margin-top: 15px;
+}
+.idea-block_total {
+    display: flex;
+}
+.idea-block_total .total_file {
+    margin-right: 25px;
+}
+.idea-block_total .total_file_desc .links a {
+    color: #51A6F5;
+}
+.idea-block_total-title {
+    color: #353352;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+}
+.idea-page_comment-head {
+    display: flex;
+    margin-top: 30px;
+}
+.idea-page_comment-icon {
+    width: 45px;
+    height: 45px;   
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+.idea-page_comment-icon .icon {
+    width: 31px;
+    height: 31px;
+}
+.idea-page_comment-head .block_title {
+    margin-bottom: 4px;
+}
+.idea-page .comments {
+    margin-top: 24px;
 }
