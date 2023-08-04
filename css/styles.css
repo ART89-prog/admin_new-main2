@@ -28132,6 +28132,7 @@ form .form_btns input[type=file] + label,
     border-radius: 43px;
     background: rgba(39, 172, 60, 0.20);
     padding: 3px 9px;
+    white-space: nowrap;
 }
 
 .commission-decision_items {
