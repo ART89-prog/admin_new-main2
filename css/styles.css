@@ -27913,7 +27913,7 @@ form .form_btns input[type=file] + label,
     padding: 0px 6px;
     display: inline-block;
     line-height: 28px;
-    margin-left: 15px;
+    margin-left: 9px;
 }
 .idea-block_item-label.yellow {
     background: #FFC221;
@@ -28007,6 +28007,7 @@ form .form_btns input[type=file] + label,
     margin-bottom: 3px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .idea-page .idea-block_item-text {
     display: block;
@@ -28056,4 +28057,83 @@ form .form_btns input[type=file] + label,
 }
 .idea-page .comments {
     margin-top: 24px;
+}
+
+.commission-decision {
+    border-radius: 15px;
+    background: #FFF;
+    padding: 19px;
+    margin-top: 30px;
+    display: flex;
+}
+.commission-decision_top-icon {
+    width: 65px;
+    height: 65px;
+    flex-shrink: 0;
+    margin-right: 18px;
+}
+.commission-decision_top-icon .icon {
+    width: 100%;
+    height: 100%;
+}
+.commission-decision_top-head a {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 3px 7px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.commission-decision_top-head a.green {
+    background: #36BD43;
+}
+.commission-decision_top-head a.red {
+    background: #DA3636;
+}
+.commission-decision_top-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.commission-decision_top-title {
+    color: #353352;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-right: 8px;
+}
+.green {
+}
+.red {
+}
+.commission-decision_top-date {
+    color: #7C81A1;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.commission-decision_text {
+    color: #7C81A1;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 13px;
+}
+.commission-decision_bottom {
+    color: #7C81A1;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+}
+.commission-decision_bottom span {
+    color: #27AC3C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 43px;
+    background: rgba(39, 172, 60, 0.20);
+    padding: 3px 9px;
 }

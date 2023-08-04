@@ -2641,6 +2641,30 @@
         margin-left: 0;
     }
 
+    .idea-page .idea-block_item-label {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+    .idea-block_total {
+        flex-direction: column;
+    }
+    .commission-decision_top-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .commission-decision_top-head a {
+        margin-top: 10px;
+    }
+    .idea-block_item-status {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .idea-page .idea-block_item-label {
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-right: 15px;
+    }
+
 
 
 }
