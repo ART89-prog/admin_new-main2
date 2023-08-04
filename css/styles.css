@@ -28457,3 +28457,31 @@ form .form_btns input[type=file] + label,
     height: 27px;
     margin-right: 11px;
 }
+
+.idea-block_link {
+    padding: 12px 20px;
+    border-radius: 55px;
+    background: #E8E7F1;  
+    color: #7874A3;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.idea-block_link-no {
+    padding: 12px 20px;
+    border-radius: 55px;
+    opacity: 0.4;
+    background: #E8E7F1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    display: inline-block;   
+    color: #7874A3;
+}
