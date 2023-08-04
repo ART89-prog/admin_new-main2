@@ -27804,3 +27804,35 @@ form .form_btns input[type=file] + label,
 .current-issues_item + .current-issues_item {
     margin-top: 10px;
 }
+
+
+.idea-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.idea-head_left {
+    padding: 4px;
+    border-radius: 39px;
+    background: #E8E6F4;
+}
+.idea-head_left a {
+    text-decoration: none;
+    color: #7D85C5;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 55px;
+    transition: all .4s;
+    display: inline-block;
+}
+.idea-head_left a:hover {
+    background: var(--main_color);
+    color: #fff;
+}
+.idea-head_left a.active {
+    background: var(--main_color);
+    color: #fff;
+}
+.select-right {
+}
