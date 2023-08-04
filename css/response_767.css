@@ -2665,6 +2665,24 @@
         margin-right: 15px;
     }
 
+    .idea_form .line.w50 {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .idea_form .line.w50 > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .idea_form .line .field:nth-child(2) {
+        margin-top: 15px;
+    }
+    .commission-decision_items {
+        flex-direction: column;
+    }
+    .commission-decision_item {
+        margin-bottom: 10px;
+    }
+
 
 
 }

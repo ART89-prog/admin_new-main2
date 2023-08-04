@@ -28158,7 +28158,7 @@ form .form_btns input[type=file] + label,
 
 
 .idea_form {
-    padding: 20px 18px 40px;
+    padding: 20px 18px 33px;
     border-radius: 15px;
     background: #FFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
@@ -28253,4 +28253,125 @@ form .form_btns input[type=file] + label,
     line-height: normal;
     resize: none;
 }
-
+.idea_form .idea-block_total {
+    margin-top: 22px;
+}
+.idea_form .total_file_desc .links a.red {
+    color: #D93737;
+}
+.idea_form input[type=checkbox] {
+    display: none;
+}
+.idea_form input[type=checkbox] + label {
+    color: #7874A3;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    position: relative;
+    display: flex;
+    min-height: 16px;
+    padding-left: 28px;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: middle;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.idea_form input[type=checkbox] + label:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    transition: .2s linear;
+    border: 1px solid #7874A3;
+    border-radius: 4px;
+}
+.idea_form input[type=checkbox] + label:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: '';
+    transition: opacity .2s linear;
+    opacity: 0;
+    background: url(../images/ic_check_blue.svg) 50% no-repeat;
+}
+.idea_form input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+.idea_check-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 17px;
+}
+.idea_check-bottom:before {
+    position: absolute;
+    content: "";
+    background: #DFDFDF;
+    width: calc(100% + 36px);
+    height: 1px;
+    top: 0;
+    left: -18px;
+}
+.idea_check-bottom button {
+    margin-left: 19px;
+    color: #FFF;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    padding: 0px 20px;
+    border-radius: 55px;
+    background: var(--main_color);
+}
+.idea .new_load_content {
+    background: #FFFFFF;
+    border-radius: 15px;
+    text-align: start;
+    padding: 19px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.idea .new_load_img {
+    background: #E7E6FC;
+    border-radius: 16px;
+    display: inline-block;
+    padding: 0px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 0px;
+    margin-right: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.idea .new_load_img svg {
+    width: 39px;
+    height: 39px;
+}
+.new_load-title {
+    color: #353352;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 8px;
+}
+.new_load-text {
+    color: #515784;
+    font-size: 14px;
+    font-weight: 400;
+}
