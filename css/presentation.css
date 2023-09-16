@@ -38,7 +38,7 @@
 }
 
 .presentation_text p{
-	color: #214A76;
+	color: var(--bg3);
 	font-size: 22px;
 	line-height: normal;
 }
@@ -58,7 +58,7 @@
 	height: 100%;
 	top:10%;
 	left:-10%;
-	background: #EF4D53;
+	background: var(--bg2);
 	position: absolute;
 	z-index: 0;
 }
@@ -90,7 +90,7 @@
 }
 .text_block .presentation ul li {
     padding-left: 0;
-    color: #214A76;
+    color: var(--bg3);
     font-family: "Ubuntu";
     font-size: 22px;
     font-style: normal;
@@ -130,7 +130,7 @@
     display: block;
     height: calc(100%);    
     right: 0%;
-    background: #214A76;
+    background: var(--bg3);
     position: absolute;
     z-index: 0;
     top:0;
@@ -145,7 +145,7 @@
     height: 176px;
     top: 0;
     left: 0;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: 1;
 }
 
@@ -169,7 +169,7 @@
     width: 100%;
     left: 0px;
     top: -40px;
-    background: #EF4D53;
+    background: var(--bg2);
 }
 
 
@@ -203,7 +203,7 @@
     display: block;
     height: calc(100%);    
     right: 0%;
-    background: #214A76;
+    background: var(--bg3);
     position: absolute;
     z-index: 0;
     top:0;
@@ -212,7 +212,7 @@
     position: relative;
 }
 .presentation6 .presentation_subtitle {
-    color: #214A76;
+    color: var(--bg3);
     font-family: "Ubuntu";
     font-size: 24px;
     font-style: normal;
@@ -233,7 +233,7 @@
     width: calc(100% + 1800px);
     left: -60px;
     top: -50px;
-    background: #214A76;  
+    background: var(--bg3);
     z-index: -1;
 }
 .presentation7 .presentation_title {
@@ -328,7 +328,7 @@
     height: 100%;
     left: -30px;
     top: 0;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: 2;
 }
 .presentation8 .presentation_img {
@@ -342,7 +342,7 @@
     height: 149px;   
     top: -44px;
     right: -62px;
-    background: #214A76;
+    background: var(--bg3);
     z-index: -1;
 }
 .presentation8 .presentation_img:after {
@@ -352,7 +352,7 @@
     height: 135px;  
     bottom: -44px;
     left: -62px;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: -1;
 }
 
@@ -387,7 +387,7 @@
     content: "";
     right: -163px;
     top: 0;
-    background: #214A76;
+    background: var(--bg3);
     z-index: 5;   
 }
 .presentation10 .presentation_img:last-child:before {
@@ -397,7 +397,7 @@
     content: "";
     bottom: 0;
     left: 0;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: 5;   
 }
 .presentation10 .presentation_wrap {
@@ -415,6 +415,37 @@
 .presentation11 .presentation_left {
     padding: 60px 60px 60px 0px;
 }
+.presentation11 .presentation_img {
+    position: relative;
+    z-index: 5; 
+}
+.presentation11 .presentation_right {
+    padding: 65px 56px;
+}
+.presentation11 .presentation_img:before {
+    position: absolute;
+    width: calc(100% + 112px);
+    height: calc(100%);
+    content: "";
+    top: -65px;
+    left: -65px;
+    background: var(--bg2);
+    z-index: -1; 
+}
+.presentation11 .presentation_img:after {
+    position: absolute;
+    width: calc(100% + 112px);
+    height: calc(130px);
+    content: "";
+    bottom: -65px;
+    left: -65px;
+    background: var(--bg3);
+    z-index: -1; 
+}
+
+
+
+
 
 
 .presentation12 .presentation_wrap {
@@ -423,6 +454,7 @@
 .presentation12 .presentation_img + .presentation_img {
     margin-top: 18px;
 }
+
 
 
 
@@ -449,7 +481,7 @@
     content: "";
     top: -32px;
     left: -27px;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: 5; 
 }
 .presentation14 .presentation_img:after {
@@ -459,7 +491,7 @@
     content: "";
     top: 56px;
     right: -27px;
-    background: #EF4D53;
+    background: var(--bg2);
     z-index: 5; 
 }
 .presentation14 .presentation_right {
@@ -473,7 +505,7 @@
     content: "";
     bottom: -32px;
     right: 27px;
-    background: #214A76;
+    background: var(--bg3);
     z-index: 5; 
 }
 .presentation14 .presentation_wrap {
@@ -613,6 +645,12 @@
         display: none;
     }
     .presentation14 .presentation_right:after {
+        display: none;
+    }
+    .presentation11 .presentation_img:before {
+        display: none;
+    }
+    .presentation11 .presentation_img:after {
         display: none;
     }
 
