@@ -2,6 +2,7 @@
 
 
 :root {
+	--text: black;
     --bg2: #EF4D53;
     --bg3: #214A76;
 }
@@ -9,6 +10,8 @@
 .presentation{	
 	container-type: inline-size;
     container-name: presentations;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
 }
 .presentation_wrap{
 	display: flex;
@@ -38,7 +41,7 @@
 }
 
 .presentation_text p{
-	color: var(--bg3);
+	color: var(--text);
 	font-size: 22px;
 	line-height: normal;
 }
@@ -90,7 +93,7 @@
 }
 .text_block .presentation ul li {
     padding-left: 0;
-    color: var(--bg3);
+    color: var(--text);
     font-family: "Ubuntu";
     font-size: 22px;
     font-style: normal;
@@ -102,14 +105,13 @@
 }
 .presentation2 .presentation_wrap {
     padding: 0;
-    align-items: inherit;
 }
 .presentation2 .presentation_img {
     position: relative;
     height: 100%;
+    border-right: 20px solid var(--bg2);
 }
 .presentation2 .presentation_img img {
-    height: 100%;
     width: 100%;
 }
 .presentation2 .presentation_left {
@@ -185,6 +187,17 @@
 .presentation5 .presentation_img {
     position: relative;
     z-index: 1;
+    margin-top: 30px;
+}
+.presentation5 .presentation_img:before {
+    position: absolute;
+    content: "";
+    left: -30px;
+    top: -30px;
+    border: 5px solid var(--bg2);
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    z-index: -1;
 }
 
 
@@ -212,7 +225,7 @@
     position: relative;
 }
 .presentation6 .presentation_subtitle {
-    color: var(--bg3);
+    color:  var(--text);
     font-family: "Ubuntu";
     font-size: 24px;
     font-style: normal;
@@ -250,7 +263,7 @@
 .presentation ol li { 
     list-style-type: none; 
     padding-left: 92px;
-    color: #365E8A;
+    color: var(--text);
     font-family: "Ubuntu";
     font-size: 22px;
     font-style: normal;
@@ -268,7 +281,7 @@
     counter-increment: list;
     content: "0"counter(list) ;
     width: 70px;
-    background: #BE3E42;
+    background: var(--bg2);
     height: 100%;
     display: flex;
     justify-content: center;
@@ -282,7 +295,7 @@
     line-height: normal;  
 }
 .presentation7 ol li:nth-child(2n):before {
-    background: #365E8A;
+    background: var(--bg3);
 }
 .presentation7 .presentation_right {
     z-index: 99;
@@ -300,6 +313,7 @@
     margin-bottom: 44px;
     display: block;
     position: relative;
+    min-height: 70px;
 }
 .presentation8 ol li {
     padding-left: 125px;
@@ -362,12 +376,35 @@
 
 .presentation9 .presentation_img:first-child {
     margin-right: 120px;
+    position: relative;
+    z-index: 5;
 }
 .presentation9 .presentation_img:last-child {
     margin-left: 120px;
     margin-top: 75px;
+    position: relative;
+    z-index: 5;
 }
-
+.presentation9 .presentation_img:first-child:before {
+    position: absolute;
+    content: "";
+    left: -28px;
+    top: -28px;
+    border: 5px solid var(--bg2);
+    width: calc(100% - 40px);
+    height: calc(100% - 28px);
+    z-index: -1;
+}
+.presentation9 .presentation_img:last-child:before {
+    position: absolute;
+    content: "";
+    left: -28px;
+    top: -28px;
+    border: 5px solid var(--bg3);
+    width: calc(100% - 40px);
+    height: calc(100% - 28px);
+    z-index: -1;
+}
 
 
 .presentation10 .presentation_img:first-child {
@@ -557,6 +594,10 @@
         margin-top: 45px;
     }
 
+    .presentation11 .presentation_right{
+    	padding: 0;
+    }
+
 
 
 }
@@ -616,7 +657,7 @@
         margin-bottom: 20px;
     }
     .presentation_wrap {
-        gap: 30px;
+        gap: 40px;
     }
     .presentation8 ol li:before {
         width: 50px;
@@ -741,6 +782,19 @@
     }
     .presentation3:after {
         display: none;
+    }
+    .presentation5 .presentation_img {
+        margin-top: 0;
+    }
+    .presentation5 .presentation_img:before {
+        position: absolute;
+        content: "";
+        left: -15px;
+        top: -15px;
+        border: 5px solid var(--bg2);
+        width: calc(100% - 15px);
+        height: calc(100% - 15px);
+        z-index: -1;
     }
 
 

@@ -546,7 +546,7 @@ button
 --------------*/
 .fancybox__backdrop
 {
-    background: rgba(0,0,0,.54);
+    background: rgba(0,0,0,.80);
 }
 
 
@@ -1852,7 +1852,7 @@ aside .menu .sub_menu a.active
 .text_block ul li
 {
     color: #505261;
-    font-weight: bold;
+   /* font-weight: bold;*/
     line-height: 19px;
 
     position: relative;
@@ -1909,7 +1909,7 @@ aside .menu .sub_menu a.active
 .text_block ol li
 {
     color: #505261;
-    font-weight: bold;
+    /*font-weight: bold;*/
     line-height: 19px;
 
     position: relative;
@@ -21793,6 +21793,17 @@ form .form_btns input[type=file] + label,
     border-left: 6px solid var(--main_color);
 }
 
+.data_with_sidebar .steps .step.current{
+    border-left: 6px solid color-mix(in oklab, var(--main_color), white 60%);
+    background: var(--main_color);
+    color:#fff;
+}
+
+.data_with_sidebar .step.current .step_number{
+	background: #fff;
+	color:var(--main_color);
+}
+
 .data_with_sidebar .steps .step_status{
     display: none;
 }
@@ -27533,7 +27544,7 @@ form .form_btns input[type=file] + label,
     margin-left: -25px;
 }
 .ideas-counter_items > * {
-    width: calc(100%/4 - 25px);
+    width: calc(100%/5 - 25px);
     margin-left: 25px;
     display: flex;
     border-radius: 15px;
@@ -27562,6 +27573,10 @@ form .form_btns input[type=file] + label,
 }
 .ideas-counter_item:nth-child(4) .ideas-counter_item-icon {
     background: #1AC317;
+}
+
+.ideas-counter_item:nth-child(5) .ideas-counter_item-icon{
+	background: #EA2626;
 }
 .ideas-counter_item-icon .icon {
     width: 23px;
@@ -28648,6 +28663,7 @@ form .form_btns input[type=file] + label,
     cursor: pointer;
 }
 
+
 .full_screen .icon{
     width: 25px;
     height: 25px;
@@ -28736,3 +28752,160 @@ form .form_btns input[type=file] + label,
 }
 
 
+.adding_photos{
+    margin-top: 40px;
+}
+
+.adding_gallery{
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap:16px;
+}
+
+.adding_item{
+    width: calc(100%/3 - 12px);
+    position: relative;
+    height: 100%;
+}
+
+.adding_item_img{
+    position: relative;
+}
+
+.adding_item img{
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.count_points{
+bottom: 20px;
+    position: absolute;
+    right: 20px;
+    border-radius: 9px;
+    background: #DEDCF2;
+    box-shadow: 0px 4px 23px 0px rgba(0, 0, 0, 0.25);
+    padding: 8px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.count_points svg{
+    width: 30px;
+    height: 30px;
+}
+
+.adding_item_text{
+    color: #3D3D3D;
+    font-size: 14px;
+    line-height: 15px; 
+    margin-top:15px;
+}
+
+.info_sim_modal_desc{
+    color: #fff;
+    margin-top: 20px;
+}
+
+.info_sim_modal .is-close{
+    background: var(--main_color) !important;
+    color:#fff !important;
+}
+
+.addition_print{
+	margin-top: 30px;
+}
+
+.print_btn{
+	padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+}
+
+.icon_has_img{
+	position: relative;
+	top:10px;
+}
+
+.task-block_comment .icon_drag{
+	width: 23px;
+	height: 23px;
+	cursor: all-scroll;
+}
+
+.tasks_status{
+	margin-bottom: 20px;
+}
+
+.tasks_status span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #0F7DFF;
+    padding: 3px 7px 3px 16px;
+    background: rgba(15, 125, 255, 0.2);
+    border-radius: 59px;
+    position: relative;
+}
+
+.tasks_status span:before {
+    position: absolute;
+    content: "";
+    background: #0F7DFF;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.task-block_info .projects_item-author{
+	margin-bottom: 27px;
+}
+.sub_title_button{
+	display: flex;
+	gap:15px;
+	justify-content: space-between;
+}
+.button_repeat{
+	padding: 8px 21px;
+    background: var(--main_color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border-radius: 55px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button_repeat .icon{
+	width: 19px;
+	height: 19px;
+	flex-shrink: 0;
+	margin-right: 10px;
+}
+
+.mb0{
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}
+
+.sub_title_button{
+	margin-bottom: 30px;
+}
