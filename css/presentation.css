@@ -551,6 +551,38 @@
 
 
 
+.presentation15 .presentation_wrap {
+    padding: 113px 76px 110px 222px;
+}
+.presentation15 .presentation_right {
+    position: relative;
+}
+.presentation15 .presentation_right:before {
+    position: absolute;
+    width: 421px;
+    height: 581px;
+    content: "";
+    top: -43px;
+    left: -151px;
+    background: #295A8E;
+}
+.presentation15 .presentation_right::after {
+    position: absolute;
+    width: 810px;
+    height: 810px;
+    content: "";
+    top: 139px;
+    left: -359px;
+    opacity: 0.16;
+    border-radius: 50%;
+    border: 149px solid #FFF;
+}
+.presentation15 .presentation_img {
+    z-index: 99;
+}
+
+
+
 
 
 
