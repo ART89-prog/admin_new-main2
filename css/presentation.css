@@ -986,6 +986,172 @@
 
 
 
+.presentation23 {
+    position: relative;
+    z-index: 2;
+}
+.presentation23::after {
+    position: absolute;
+    content: "";
+    width: 1408px;
+    height: 1408px;
+    border-radius: 100%;
+    border: 235px solid #000;
+    bottom: -160%;
+    left: -69%;
+    z-index: -1;
+}
+.presentation23::before {
+    position: absolute;
+    content: "";
+    width: 312px;
+    height: 100%;
+    background: #F2F3F2;
+    bottom: 0%;
+    right: 0px;
+    z-index: 1;
+}
+.presentation23 .presentation_wrap {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.presentation23 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 111px;
+    height: 111px;
+    border-radius: 50%;
+    border: 27px solid #EF4D53;
+    top: 24px;
+    right: 54px;
+    z-index: 1;  
+}
+.presentation23 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 13px solid #EF4D53;
+    top: 131px;
+    right: 151px;
+    z-index: 1;  
+}
+.presentation23 .presentation_title {
+    width: 300px;
+}
+.presentation23 .presentation_text {
+    width: 40%;
+}
+
+
+
+.presentation24 .presentation_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.circle1 span,
+.circle2 span,
+.circle3 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle1 span:nth-child(1) {
+    width: 489px;
+    height: 489px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -230px;
+    right: 50px;
+}
+.circle1 span:nth-child(2) {
+    width: 338px;
+    height: 338px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -135px;
+    right: 125px;
+}
+.circle1 span:nth-child(3) {
+    width: 188px;
+    height: 188px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -60px;
+    right: 200px;
+}
+.circle1 span:nth-child(4) {
+    width: 37px;
+    height: 37px;
+    background: var(--bg3);    
+    top: 15px;
+    right: 275px;
+}
+
+.circle2 span:nth-child(1) {
+    width: 272px;
+    height: 272px;
+    border: 1px solid var(--bg2);
+    top: 210px;
+    right: -60px;
+}
+.circle2 span:nth-child(2) {
+    width: 188px;
+    height: 188px;
+    border: 1px solid var(--bg2);
+    top: 252px;
+    right: -18px;
+}
+.circle2 span:nth-child(3) {
+    width: 104px;
+    height: 104px;
+    border: 1px solid var(--bg2);
+    top: 294px;
+    right: 24px;
+}
+.circle2 span:nth-child(4) {
+    width: 21px;
+    height: 21px;
+    background: var(--bg2);
+    border-radius: 50%;
+    top: 336px;
+    right: 66px;
+}
+
+.circle3 span:nth-child(1) {
+    width: 638px;
+    height: 638px;    
+    border: 85px solid rgba(239, 77, 83, 0.40);
+    bottom: -380px;
+    right: -380px;
+}
+.circle3 span:nth-child(2) {
+    width: 468px;
+    height: 468px;    
+    border: 85px solid rgba(239, 77, 83, 0.60);
+    bottom: -295px;
+    right: -295px;
+}
+.circle3 span:nth-child(3) {
+    width: 298px;
+    height: 298px;    
+    border: 85px solid rgba(239, 77, 83, 0.80);
+    bottom: -210px;
+    right: -210px;
+}
+
+.presentation24 .presentation_title {
+    width: 415px;
+}
+.presentation24 .presentation_text {
+    width: 82%;
+}
+
+
+
+
+
 @container presentations (max-width: 1500px) {
 
     .presentation18 .presentation_items > * {
