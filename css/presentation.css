@@ -1039,7 +1039,8 @@
     z-index: 1;  
 }
 .presentation23 .presentation_title {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
 }
 .presentation23 .presentation_text {
     width: 40%;
@@ -1140,13 +1141,102 @@
     bottom: -210px;
     right: -210px;
 }
-
 .presentation24 .presentation_title {
-    width: 415px;
+    max-width: 415px;
+    width: 100%;
 }
 .presentation24 .presentation_text {
     width: 82%;
 }
+
+
+.presentation25 .presentation_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.presentation25 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 196px;
+    height: 196px;
+    border-radius: 50%;
+    border: 55px solid var(--bg2);
+    top: 23px;
+    right: 47px;
+    z-index: 1;    
+}
+.presentation25 .presentation_title {
+    max-width: 700px;
+    width: 100%;
+}
+
+
+.presentation26 {
+    position: relative; 
+    z-index: 99;  
+}
+.presentation26 .presentation_wrap {
+    background: var(--bg3); 
+}
+.presentation26 .circle {
+    position: absolute;
+    top: -200px;
+    right: -75px;
+    transform: rotate(-148.126deg);
+    display: flex;
+    flex-wrap: wrap;
+    width: 717px;
+}
+.presentation26 .circle span {
+    display: block;
+    width: 239px;
+    height: 239px;  
+    border-radius: 50%;  
+    flex-shrink: 0;   
+    background: #fff;
+    opacity: 0.14; 
+}
+.presentation26 .presentation_title {
+    color: #fff;
+}
+.text_block .presentation26 ul li {
+    color: #fff;
+}
+.presentation26 .presentation_img {
+    position: relative;
+    z-index: 2;
+}
+.presentation26 .presentation_img::after {
+    position: absolute;
+    content: "";
+    width: 421px;
+    height: calc(100% - 92px);
+    background: var(--bg2);
+    bottom: 0;
+    right: -110px;
+    z-index: -2;
+}
+.presentation26 .presentation_img::before {
+    position: absolute;
+    content: "";
+    width: 509px;
+    height: 509px;
+    border-radius: 100%;
+    border: 134px solid #FFF;
+    opacity: 0.16;
+    bottom: -270px;
+    right: -264px;
+    z-index: -1;
+}
+.presentation26 .presentation_right {
+    margin-left: 90px;
+}
+
+
+
+
 
 
 
