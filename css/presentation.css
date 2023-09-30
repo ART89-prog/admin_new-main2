@@ -670,6 +670,120 @@
 
 
 
+
+.presentation17 .presentation_wrap {
+    background: #214A76;
+    position: relative;
+    z-index: 52;
+}
+.presentation17 .presentation_title {
+    color: #fff;
+}
+.presentation17.presentation ul li {
+    color: #fff;
+}
+.presentation17 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 808px;
+    height: 808px;
+    border-radius: 100%;
+    border: 167px solid #345983;
+    top: -61%;
+    right: -31%;
+    z-index: 0;
+}
+.presentation17 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 808px;
+    height: 808px;
+    border-radius: 100%;
+    border: 167px solid #345983;
+    bottom: -61%;
+    left: -31%;
+    z-index: -1;
+}
+
+
+
+
+.presentation18 .presentation_items {
+    display: flex;
+    margin-left: -30px;
+    flex-shrink: 0;
+}
+.presentation18 .presentation_items > * {
+    width: calc(100%/3 - 30px);
+    margin-left: 30px;    
+    border: 0.5px solid #DEDEE9;
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+}
+.presentation18 .presentation_item-img img {
+    border-top-right-radius: 33px;
+    border-top-left-radius: 33px;
+}
+.presentation18 .presentation_item-title {
+    color: #1E1B39;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px; 
+    margin-bottom: 18px;
+}
+.presentation18 .presentation_item-text {
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.presentation18 {
+    padding: 60px 70px 70px;
+    background: #214A76;
+    position: relative;
+    height: 100%;
+}
+.presentation18:before {
+    position: absolute;
+    content: "";
+    width: 808px;
+    height: 808px;
+    border-radius: 100%;
+    border: 167px solid #345983;
+    top: -61%;
+    right: -31%;
+    z-index: -1;
+}
+.presentation18:after {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 500px 0 0 1200px;
+    border-color: transparent transparent transparent #fff;
+    transform: rotate(0deg);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+.presentation18 .presentation_item-info {
+    padding: 26px 28px 54px;
+    background: #fff;
+}
+.presentation18 .presentation_title {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
 @container presentations (max-width: 900px) {
  	.presentation_title{
  		font-size: 40px;
