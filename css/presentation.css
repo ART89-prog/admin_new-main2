@@ -22,11 +22,6 @@
     overflow: hidden;
 }
 
-.presentation_left img{
-	margin-bottom: 30px;
-	width: auto;
-}
-
 .presentation .presentation_right{
     position: relative;
 }
@@ -565,7 +560,7 @@
     content: "";
     top: -43px;
     left: -151px;
-    background: #295A8E;
+    background: var(--bg3);
 }
 .presentation15 .presentation_right::after {
     position: absolute;
@@ -576,7 +571,7 @@
     left: -230px;
     opacity: 0.16;
     border-radius: 50%;
-    border: 149px solid #FFF;
+    border: 149px solid color-mix(in oklab, var(--bg3), white 14%);
 }
 .presentation15 .presentation_img {
     z-index: 99;
@@ -678,7 +673,7 @@
 
 
 .presentation17 .presentation_wrap {
-    background: #214A76;
+    background: var(--bg3);
     position: relative;
     z-index: 52;
 }
@@ -694,7 +689,7 @@
     width: 808px;
     height: 808px;
     border-radius: 100%;
-    border: 167px solid #345983;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
     top: -61%;
     right: -31%;
     z-index: 0;
@@ -705,7 +700,7 @@
     width: 808px;
     height: 808px;
     border-radius: 100%;
-    border: 167px solid #345983;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
     bottom: -61%;
     left: -31%;
     z-index: -1;
@@ -746,7 +741,7 @@
 }
 .presentation18 {
     padding: 60px 70px 70px;
-    background: #214A76;
+    background: var(--bg3);
     position: relative;
     height: 100%;
 }
@@ -787,7 +782,7 @@
 
 .presentation19 .presentation_wrap {
     padding: 60px 70px 70px;
-    background: #214A76;
+    background: var(--bg3);
     position: relative;
     height: 100%;
     z-index: 9;
@@ -798,7 +793,7 @@
     width: 808px;
     height: 808px;
     border-radius: 100%;
-    border: 167px solid #345983;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
     top: -61%;
     right: -31%;
     z-index: -1;
@@ -820,7 +815,7 @@
 .presentation19 {
     position: relative;
     z-index: 55;
-    background: #214A76;
+    background: var(--bg3);
 }
 .presentation_right {
     position: relative;
@@ -860,6 +855,9 @@
 .button-arrow {
     margin-top: 55px;
 }
+.button-arrow img {
+    width: auto;
+}
 .presentation20 .presentation_img {
     position: relative;
     z-index: 2;
@@ -880,7 +878,7 @@
     width: 994px;
     height: 994px;
     border-radius: 100%;
-    background: #214A76;
+    background: var(--bg3);
     left: -80px;
     top: 170px;
     z-index: -2;
@@ -898,7 +896,7 @@
 }
 .presentation21 .presentation_wrap {
     padding: 67px 38px 67px 57px;   
-    background: #214A76;
+    background: var(--bg3);
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -937,7 +935,7 @@
     width: 1008px;
     height: 1008px;
     border-radius: 100%;
-    border: 167px solid #fff;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
     opacity: 0.14;
     bottom: -65%;
     left: -37%;
@@ -1022,7 +1020,7 @@
     width: 111px;
     height: 111px;
     border-radius: 50%;
-    border: 27px solid #EF4D53;
+    border: 27px solid var(--bg2);
     top: 24px;
     right: 54px;
     z-index: 1;  
@@ -1033,7 +1031,7 @@
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    border: 13px solid #EF4D53;
+    border: 13px solid var(--bg2);
     top: 131px;
     right: 151px;
     z-index: 1;  
@@ -1168,8 +1166,8 @@
     z-index: 1;    
 }
 .presentation25 .presentation_title {
-    max-width: 700px;
-    width: 100%;
+    width: calc(100% - 220px);
+
 }
 
 
@@ -1195,8 +1193,7 @@
     height: 239px;  
     border-radius: 50%;  
     flex-shrink: 0;   
-    background: #fff;
-    opacity: 0.14; 
+    background: color-mix(in oklab, var(--bg3), white 14%);
 }
 .presentation26 .presentation_title {
     color: #fff;
@@ -1224,8 +1221,7 @@
     width: 509px;
     height: 509px;
     border-radius: 100%;
-    border: 134px solid #FFF;
-    opacity: 0.16;
+    border: 134px solid color-mix(in oklab, var(--bg2), white 14%);
     bottom: -270px;
     right: -264px;
     z-index: -1;
@@ -1241,29 +1237,6 @@
 
 
 
-
-@container presentations (max-width: 1500px) {
-
-    .presentation18 .presentation_items > * {
-        width: 100%;
-        margin-left: 0;
-    }
-    .presentation18 .presentation_items {
-        flex-wrap: wrap;
-        margin: 0;
-    }
-    .presentation18 .presentation_item + .presentation_item {
-        margin-top: 20px;
-    }
-    .presentation19 .presentation_wrap:before {
-        display: none;
-    }
-    .presentation19 .presentation_wrap:after {
-        width: 47%;
-    }
-
-
-}
 
 
 @container presentations (max-width: 900px) {
@@ -1309,6 +1282,18 @@
     .presentation11 .presentation_right{
     	padding: 0;
     }
+    .presentation22 .button-arrow {
+        width: 50px;
+        height: 50px;
+    }
+    .presentation22 .button-arrow img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .presentation22 .presentation_info {
+        width: 75%;
+    }
 
 
     .presentation15 .presentation_right:before {
@@ -1342,6 +1327,78 @@
         padding: 20px;
     }
 
+    .presentation20 .presentation_wrap {
+        align-items: center;
+    }
+
+    .presentation25 .presentation_wrap:before {
+        position: absolute;
+        content: "";
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        border: 25px solid var(--bg2);
+        top: 30px;
+        right: 30px;
+        z-index: 1;
+    }
+    .presentation18 .presentation_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .presentation18 .presentation_items {
+        flex-wrap: wrap;
+        margin: 0;
+    }
+    .presentation18 .presentation_item + .presentation_item {
+        margin-top: 20px;
+    }
+    .presentation19 .presentation_wrap:before {
+        display: none;
+    }
+    .presentation19 .presentation_wrap:after {
+        width: 47%;
+    }
+    .presentation22 .presentation_img {
+        width: 50%;
+    }
+    .presentation22 .presentation_info {
+        width: 50%;
+    }
+    .presentation22 .presentation_logo {
+        width: 25%;
+        height: auto;
+        top: 30px;
+        right: 30px;
+    }
+    .presentation22 .button-arrow {
+        bottom: 30px;
+        right: 30px;
+    }
+    .presentation23 .presentation_wrap {
+        flex-direction: column;
+    }
+    .presentation23 .presentation_title {
+        margin-bottom: 0;
+    }
+    .presentation23 .presentation_text {
+        width: calc(100% - 260px);
+    }
+    .presentation23::before {
+        width: 230px;
+    }
+    .presentation26 .presentation_right {
+        margin-left: 0;
+    }
+    .presentation26 .presentation_img::before {
+        display: none;
+    }
+    .presentation26 .presentation_img::after {
+        display: none;
+    }
+    .presentation18 {
+        padding: 20px;
+    }
 
 
 
@@ -1357,6 +1414,14 @@
     }
     .presentation8 .presentation_img:after {
         display: none;
+    }
+    .circle1,
+    .circle2,
+    .circle3 {
+        display: none;
+    }
+    .presentation24 .presentation_text {
+        width: 100%;
     }
 
 
@@ -1468,6 +1533,23 @@
         font-size: 18px;
     }
 
+    .presentation23 .presentation_wrap:before,
+    .presentation23 .presentation_wrap:after {
+        display: none;
+    }
+    .presentation23::before {
+        display: none;
+    }
+    .presentation23 .presentation_text {
+        width: 100%;
+    }
+    .presentation23 .presentation_title {
+        max-width: 100%;
+    }
+
+    .presentation26 .presentation_right {
+        max-width: 100%;
+    }
 
 
 
@@ -1579,6 +1661,19 @@
     }
     .presentation16 ol {
         margin-top: 20px;
+    }
+    .presentation20 .presentation_left .presentation_logo {
+        margin-bottom: 40px;
+    }
+    .presentation21 .presentation_wrap {
+        width: 95%;
+    }
+    .presentation21 .presentation_wrap {
+        padding: 25px;
+    }
+    .presentation21 .button-arrow {
+        top: 20px;
+        right: 20px;
     }
 
 
