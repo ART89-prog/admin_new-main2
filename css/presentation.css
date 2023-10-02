@@ -2437,6 +2437,70 @@
 
 
 
+.presentation51 .presentation_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    background: var(--bg3);
+    z-index: 2;
+    position: relative;
+}
+.presentation51 .presentation_title {
+    margin-bottom: 0;
+    color: #fff;
+}
+.presentation51 .presentation_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -19px;
+    margin-bottom: -22px;
+}
+.presentation51 .presentation_items > * {
+    display: flex;
+    width: calc(100%/2 - 19px);
+    margin-left: 19px;
+    margin-bottom: 22px;
+    min-height: 203px;
+    z-index: 1;
+}
+.presentation51 .presentation_item-img {
+    flex-shrink: 0;
+}
+.presentation51 .presentation_item-text {
+    padding: 24px 40px 20px 30px;
+    background: #fff;
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.presentation51 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1457px;
+    height: 427px;
+    border-radius: 100%;
+    background: var(--bg2);
+    top: -300px;
+    right: -841px;
+}
+.presentation51 .presentation_wrap::after {
+    position: absolute;
+    content: "";
+    width: 1457px;
+    height: 427px;
+    border-radius: 100%;
+    background: var(--bg2);
+    bottom: -40px;
+    left: -50%;
+    z-index: 0;
+}
+
+
+
+
+
+
 
 
 @container presentations (max-width: 1100px) {
