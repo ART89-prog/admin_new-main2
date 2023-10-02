@@ -2218,16 +2218,220 @@
 
 
 
+.presentation46 .presentation_wrap {
+    padding: 0px;
+    position: relative; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+.presentation46 .presentation_info {
+    padding: 0px 108px 108px;
+    width: 85%;
+}
+.presentation46 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 164px;
+    top: 50%;
+    right: -51px;
+    position: absolute;
+    z-index: 1;
+    background: url(../images/titik.svg);
+}
+.presentation46 .presentation_wrap::before {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 164px;
+    bottom: -37px;
+    left: -95px;
+    position: absolute;
+    z-index: 1;
+    background: url(../images/titik.svg);
+}
 
 
 
 
 
+.presentation47 .presentation_wrap {
+    padding: 73px 130px 0 78px;
+}
+.presentation47 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 935px;
+    height: 935px;
+    border-radius: 50%;
+    background: var(--bg3);
+    top: -600px;
+    left: -600px;
+}
+.presentation47 .presentation_wrap::after {
+    position: absolute;
+    content: "";
+    width: 846px;
+    height: 935px;
+    border-radius: 50%;
+    background: var(--bg2);
+    bottom: -700px;
+    right: -400px;
+}
+.presentation47 .presentation_info {
+    width: 65%;
+    margin-left: auto;
+    margin-bottom: 110px;
+}
+.presentation47 .presentation_items {
+    width: 699px;
+    display: flex;
+    margin-left: -15px;
+}
+.presentation47 .presentation_items > * {
+    width: calc(100%/2 - 15px);
+    margin-left: 15px;
+}
+
+
+
+
+.presentation48 .presentation_wrap {
+    padding: 87px 105px 105px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.presentation48 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1457px;
+    height: 427px;
+    border-radius: 100%;
+    background: var(--bg2);
+    top: -315px;
+    right: -700px;
+}
+.presentation48 .presentation_wrap::after {
+    position: absolute;
+    content: "";
+    width: 1457px;
+    height: 427px;
+    border-radius: 100%;
+    background: var(--bg2);
+    bottom: -361px;
+    left: -18%;
+}
+.presentation48 .presentation_title {
+    margin-bottom: 0;
+}
+.presentation48 .presentation_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -59px;
+}
+.presentation48 .presentation_items > * {
+    width: calc(100%/4 - 59px);
+    margin-left: 59px;
+}
+.presentation48 .presentation_item-img {
+    position: relative;
+    margin-bottom: 23px;
+}
+.presentation48 .presentation_item-img:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 25.16%, rgba(0, 0, 0, 0.79) 87.82%);
+    z-index: 2;
+}
+.presentation48 .presentation_item-name {
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.44px;  
+    padding-bottom: 13px;
+    margin-bottom: 23px;
+    border-bottom: 3px solid var(--bg2);
+    width: 85%;
+}
+.presentation48 .presentation_item-text {
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;  
+}
+
+
+
+
+.presentation49 .presentation_box {
+    padding: 113px 93px 116px;
+}
+.presentation49 .presentation_wrap {
+    padding: 79px 92px 92px;
+    background: var(--bg3);
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 1;
+}
+.presentation49 .presentation_wrap::before {
+    position: absolute;
+    content: "";
+    height: calc(100% - 110px);
+    width: calc(50% + 93px);
+    background: var(--bg2);
+    top: 55px;
+    left: -93px;
+    z-index: -1;
+}
+.presentation49 .presentation_title {
+    color: #fff;
+}
+.presentation49 .presentation_text p {
+    color: #fff;
+}
+.presentation49 .presentation_text {
+    columns: 2;
+    column-gap: 78px;
+}
 
 
 
 
 
+.presentation50 .presentation_wrap {
+    align-items: flex-start;
+    gap: 180px;
+    padding: 74px 100px 100px;
+}
+.presentation50 .presentation_right {
+    width: 33%;
+    position: relative;
+}
+.presentation50 .presentation_right:before {
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 100%;
+    background: var(--bg2);
+    top: -74px;
+    left: -80px;
+}
+.presentation50 .presentation_right:after {
+    position: absolute;
+    content: "";
+    width: 44px;
+    height: 60%;
+    background: var(--bg3);
+    top: -74px;
+    left: -109px;
+}
 
 
 
