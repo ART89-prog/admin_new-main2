@@ -1780,7 +1780,17 @@
 
 
 
-
+.presentation39 {
+    position: relative;
+}
+.presentation39 .icon {
+    position: absolute;
+    width: 94px;
+    height: 93px;
+    left: 0px;
+    bottom: 0px;
+    flex-shrink: 0;
+}
 .presentation39 .presentation_box {
     padding: 53px 116px 61px;
     background: #fff;
@@ -1795,10 +1805,114 @@
     left: 0;
     top: 0;
 }
+.presentation39 .presentation_img {
+    position: relative;
+    z-index: 2;
+}
+.presentation39 .presentation_img:before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 176px;
+    background: var(--bg2);
+    left: 0;
+    bottom: -52px;
+}
+.presentation39 .presentation_img:after {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 164px;
+    top: -16px;
+    right: -71px;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/titik.svg);
+}
+.presentation39 .presentation_wrap {
+    padding: 60px 0 0 0;
+}
 
 
 
 
+.presentation40 .presentation_box {
+    padding: 113px 93px;
+}
+.presentation40 .presentation_wrap {
+    padding: 50px;
+    background: var(--bg3);
+}
+.presentation40 .presentation_title {
+    color: #fff;
+}
+.presentation40 .presentation_text p {
+    color: #fff;
+}
+.presentation40 .presentation_img:after {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 164px;
+    top: -16px;
+    right: -71px;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/titik.svg);
+}
+.presentation40 .presentation_box {
+    position: relative;
+}
+.presentation40 .presentation_box:before {
+    width: 246px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 215px;
+    transform: translateY(-50%);
+    background: var(--bg2);
+}
+
+
+
+
+.presentation41 .presentation_wrap {
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+}
+.presentation41 .presentation_left {
+    display: flex;
+}
+.presentation41 .presentation_title {
+    margin-bottom: 0;
+    padding: 70px;
+    background: var(--bg2);
+    color: #fff;
+    width: 50%;
+}
+.presentation41 .presentation_left .presentation_text {
+    padding: 70px;
+    width: 50%;
+}
+.presentation41 .presentation_right {
+    max-width: 100%;
+    display: flex;
+}
+.presentation41 .presentation_img {
+    width: 50%;
+}
+.presentation41 .presentation_right .presentation_text {
+    padding: 70px 70px 70px 160px;
+    width: 50%;
+    background: var(--bg3);     
+}
+.presentation41 .presentation_right .presentation_text p {
+    color: #fff;
+    border-left: 13px solid #fff;
+    padding-left: 32px;
+}
 
 
 
