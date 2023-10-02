@@ -2500,6 +2500,41 @@
 
 
 
+.presentation52 .presentation_wrap {
+    padding: 128px 57px 77px 119px;
+}
+.presentation52 .presentation_title {
+    margin-bottom: 0;
+    margin-top: 66px;
+}
+.presentation52 .presentation_img {
+    position: relative;
+    z-index: 1;
+}
+.presentation52 .presentation_img::before {
+    position: absolute;
+    width: calc(100% + 114px);
+    height: 205px;
+    content: "";
+    background: var(--bg3);
+    top: -52px;
+    left: -57px;
+    z-index:  -1;
+}
+.presentation52 .presentation_img::after {
+    position: absolute;
+    width: 404px;
+    height: 176px;
+    content: "";
+    background: var(--bg2);
+    bottom: -71px;
+    right: 54px;
+    z-index:  -1;
+}
+
+
+
+
 
 
 
