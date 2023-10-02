@@ -1706,6 +1706,39 @@
 .presentation37 .presentation_list li:nth-child(2) {
     width: 60%;
 }
+.presentation37 .circle4 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+.presentation37 .circle4 span:nth-child(1) {
+    width: 638px;
+    height: 638px;    
+    border: 85px solid rgba(33, 74, 118, 0.40);
+    top: -220px;
+    right: -50px;
+}
+.presentation37 .circle4 span:nth-child(2) {
+    width: 468px;
+    height: 468px;    
+    border: 85px solid rgba(33, 74, 118, 0.60);
+    top: -135px;
+    right: 35px;
+}
+.presentation37 .circle4 span:nth-child(3) {
+    width: 298px;
+    height: 298px;    
+    border: 85px solid rgba(33, 74, 118, 0.80);
+    top: -50px;
+    right: 120px;
+}
+.presentation37 .circle4 span:nth-child(4) {
+    width: 128px;
+    height: 128px;    
+    border: 85px solid rgba(33, 74, 118, 1);
+    top: 20px;
+    right: 180px;
+}
 
 
 
