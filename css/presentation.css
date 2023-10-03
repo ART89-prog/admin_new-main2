@@ -2724,8 +2724,42 @@
     background: var(--bg2);
     top: 0;
     left: 0;
+    z-index: 55;
 }
-
+.presentation55 .presentation_box:after {
+    position: absolute;
+    content: "";
+    width: 53px;
+    height: 250px;
+    background: var(--bg3);
+    bottom: 0;
+    right: 0;
+}
+.presentation55 .presentation_wrap {
+    padding: 78px 0px 100px 85px;
+    position: relative;
+}
+.presentation55 .presentation_right .presentation_text:nth-child(1) {
+    padding: 73px 105px 73px 86px;
+    background: var(--bg2);
+    margin-bottom: 90px;
+}
+.presentation55 .presentation_right .presentation_text:nth-child(1) p {
+    color: #fff;
+}
+.presentation55 .presentation_right .presentation_text:nth-child(2) {
+    margin-left: 85px;
+    max-width: 370px;
+}
+.presentation55 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background: var(--bg3);
+}
 
 
 
