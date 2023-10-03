@@ -2554,6 +2554,51 @@
 
 
 
+.presentation53 .presentation_wrap {
+    padding: 69px 82px 160px;
+    align-items: flex-start;
+}
+.presentation53 .presentation_right {
+    position: relative;
+}
+.presentation53 .presentation_right::before {
+    position: absolute;
+    content: "";
+    background: var(--bg3);
+    top: -69px;
+    right: -82px;
+    width: calc(100% - 40px);
+    height: calc(100% + 1000px);
+}
+
+
+
+
+.presentation54 .presentation_wrap {
+    align-items: stretch;
+}
+.presentation54 .presentation_item {
+    color: #FFF;
+    text-align: center;
+    font-size: 128px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    padding: 78px 88px 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation54 .presentation_item:nth-child(1) {
+    background: var(--bg2);
+}
+.presentation54 .presentation_item:nth-child(2) {
+    background: var(--bg3);
+}
+.presentation54 .presentation_item:nth-child(3) {
+    background: #000;
+}
+
 
 
 
