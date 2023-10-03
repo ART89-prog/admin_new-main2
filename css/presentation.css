@@ -2984,7 +2984,7 @@
     right: 148px;
     top: -40px;
     position: absolute;
-    z-index: -1;
+    z-index: 3;
 }
 .presentation63 .presentation_title {
     color: #fff;
@@ -2997,6 +2997,78 @@
 .presentation63 .presentation_text {
     margin-bottom: 60px;
 }
+
+
+
+
+
+
+.presentation64 .presentation_wrap {
+    padding: 20px 0 20px 104px;
+    background: var(--bg3);
+    z-index: 56;
+}
+.presentation64 .presentation_title {
+    color: #fff;
+}
+.presentation64 .presentation_text p {
+    color: #fff;
+}
+.presentation64 .circle1 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+}
+.presentation64 .circle1 span:nth-child(1) {
+    width: 406px;
+    height: 406px;
+    border: 2px solid var(--bg2);
+    bottom: -100px;
+    right: 100px;
+}
+.presentation64 .circle1 span:nth-child(2) {
+    width: 281px;
+    height: 281px;
+    border: 2px solid var(--bg2);
+    bottom: -38px;
+    right: 162px;
+}
+.presentation64 .circle1 span:nth-child(3) {
+    width: 156px;
+    height: 156px;
+    border: 2px solid var(--bg2);
+    bottom: 24px;
+    right: 224px;
+}
+.presentation64 .circle1 span:nth-child(4) {
+    width: 31px;
+    height: 31px;
+    background: var(--bg2);
+    border-radius: 50%;
+    bottom: 86px;
+    right: 286px;
+}
+.presentation64 .presentation_item-img {
+    z-index: 55;
+    position: relative;
+}
+.presentation64 .icon {
+    width: 165px;
+    height: 165px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 0px;
+    right: 235px;
+    top: 10px;
+    position: absolute;
+    z-index: 3;
+}
+
+
+
+
+
 
 
 
