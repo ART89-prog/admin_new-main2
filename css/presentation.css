@@ -2483,6 +2483,7 @@
     background: var(--bg2);
     top: -300px;
     right: -841px;
+    z-index: -1;
 }
 .presentation51 .presentation_wrap::after {
     position: absolute;
@@ -2523,7 +2524,7 @@
 }
 .presentation52 .presentation_img::after {
     position: absolute;
-    width: 404px;
+    width: 66%;
     height: 176px;
     content: "";
     background: var(--bg2);
@@ -2586,6 +2587,34 @@
     }
     .presentation38 .presentation_text {
         width: 100%;
+    }
+    .presentation50 .presentation_wrap {
+        padding: 40px;
+        gap: 120px;
+    }
+    .presentation50 .presentation_right {
+        width: 39%;
+    }
+    .presentation51 .presentation_item-text {
+        padding: 20px;
+    }
+    .presentation51 .presentation_items > * {
+        margin-left: 0px;
+        margin-bottom: 22px;
+        width: 100%;
+    }
+    .presentation52 .presentation_wrap {
+        padding: 60px;
+    }
+    .presentation52 .presentation_img::before {
+        position: absolute;
+        width: calc(100% + 40px);
+        height: 205px;
+        content: "";
+        background: var(--bg3);
+        top: -52px;
+        left: -20px;
+        z-index: -1;
     }
 
 
@@ -3000,6 +3029,11 @@
         width: 100%;
     }
 
+    .presentation51 .presentation_item-text {
+        font-size: 18px;
+    }
+
+
 
 
 }
@@ -3168,6 +3202,33 @@
     }
     .presentation38 .presentation_title {
         margin-bottom: 0;
+    }
+    .presentation50 .presentation_right:after,
+    .presentation50 .presentation_right:before {
+        display: none;
+    }
+    .presentation50 .presentation_right {
+        width: 100%;
+        max-width: 100%;
+    }
+    .presentation50 .presentation_wrap {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .presentation51 .presentation_items > * {
+        flex-direction: column;
+    }
+    .presentation52 .presentation_left {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .presentation52 .presentation_title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .presentation52 .presentation_wrap {
+        padding: 30px;
     }
 
 
