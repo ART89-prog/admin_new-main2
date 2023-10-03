@@ -2257,6 +2257,8 @@
 
 .presentation47 .presentation_wrap {
     padding: 73px 130px 0 78px;
+    z-index: 5;
+    position: relative;
 }
 .presentation47 .presentation_wrap:before {
     position: absolute;
@@ -2267,6 +2269,7 @@
     background: var(--bg3);
     top: -600px;
     left: -600px;
+    z-index: -1;
 }
 .presentation47 .presentation_wrap::after {
     position: absolute;
@@ -2277,6 +2280,7 @@
     background: var(--bg2);
     bottom: -700px;
     right: -400px;
+    z-index: -1;
 }
 .presentation47 .presentation_info {
     width: 65%;
@@ -2617,6 +2621,38 @@
         z-index: -1;
     }
 
+    .presentation45 .presentation_wrap {
+        padding: 60px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .presentation45 .presentation_right {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+    .presentation45 .presentation_left {
+        z-index: 5;
+    }
+    .presentation46 .presentation_info {
+        padding: 0px 40px 40px;
+        width: 85%;
+    }
+    .presentation46 .presentation_wrap {
+        gap: 40px;
+    }
+    .presentation46 .presentation_wrap::before {
+        left: -135px;
+    }
+
+    .presentation47 .presentation_info {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+    .presentation47 .presentation_wrap:before {
+        left: -100%;
+    }
+
 
 
 
@@ -2794,6 +2830,18 @@
 
     .presentation38 .presentation_wrap {
         padding: 60px;
+    }
+    .presentation47 .presentation_wrap:before {
+        display: none;
+    }
+    .presentation47 .presentation_wrap {
+        padding: 60px;
+    }
+    .presentation47 .presentation_left {
+        width: 100%;
+    }
+    .presentation47 .presentation_items {
+        width: 100%;
     }
 
 
@@ -3232,6 +3280,17 @@
     }
 
 
+    .presentation45 .presentation_wrap {
+        padding: 20px;
+        gap: 20px;
+    }
+    .presentation45 .presentation_item-text {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+
+
 
 
 
@@ -3253,6 +3312,33 @@
     }
     .presentation3:before  {
         width: 15px;
+    }
+    .presentation45 .presentation_items {
+        margin-left: 0px;
+    }
+    .presentation45 .presentation_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }    
+    .presentation45 .presentation_item + .presentation_item {
+        margin-top: 15px;
+    }
+    .presentation46 .presentation_wrap:after,
+    .presentation46 .presentation_wrap::before {
+        display: none;
+    }
+    .presentation46 .presentation_info {
+        width: 100%;
+    }
+    .presentation46 .presentation_info {
+        padding: 0px 20px 20px;
+    }
+    .presentation46 .presentation_item-img {
+        height: 160px;
+    }
+    .presentation46 .presentation_item-img img {
+        height: 100%;
+        object-fit: cover;
     }
 
 }
