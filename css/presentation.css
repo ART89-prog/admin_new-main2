@@ -2304,6 +2304,8 @@
     padding: 87px 105px 105px;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 5;
+    position: relative;
 }
 .presentation48 .presentation_wrap:before {
     position: absolute;
@@ -2314,6 +2316,7 @@
     background: var(--bg2);
     top: -315px;
     right: -700px;
+    z-index: -1;
 }
 .presentation48 .presentation_wrap::after {
     position: absolute;
@@ -2324,6 +2327,7 @@
     background: var(--bg2);
     bottom: -361px;
     left: -18%;
+    z-index: -1;
 }
 .presentation48 .presentation_title {
     margin-bottom: 0;
@@ -2652,6 +2656,26 @@
     .presentation47 .presentation_wrap:before {
         left: -100%;
     }
+    .presentation48 .presentation_item-text {
+        font-size: 16px;
+    }
+    .presentation48 .presentation_item-name {
+        font-size: 18px;
+        padding-bottom: 9px;
+        margin-bottom: 17px;
+    }
+    .presentation48 .presentation_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .presentation48 .presentation_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .presentation48 .presentation_wrap {
+        padding: 60px 40px;
+    }
 
 
 
@@ -2835,7 +2859,7 @@
         display: none;
     }
     .presentation47 .presentation_wrap {
-        padding: 60px;
+        padding: 60px 60px 0 60px;
     }
     .presentation47 .presentation_left {
         width: 100%;
@@ -3288,6 +3312,16 @@
         padding: 15px;
         font-size: 15px;
     }
+    .presentation47 .presentation_wrap {
+        padding: 20px 20px 0 20px;
+    }
+    .presentation47 .presentation_wrap::after {
+        display: none;
+    }
+    .presentation48 .presentation_wrap:before,
+    .presentation48 .presentation_wrap:after {
+        display: none;
+    }
 
 
 
@@ -3339,6 +3373,18 @@
     .presentation46 .presentation_item-img img {
         height: 100%;
         object-fit: cover;
+    }
+    .presentation48 .presentation_items {
+        margin-left: 0px;
+        margin-bottom: -20px;
+    }
+    .presentation48 .presentation_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .presentation48 .presentation_wrap {
+        padding: 30px 20px;
     }
 
 }
