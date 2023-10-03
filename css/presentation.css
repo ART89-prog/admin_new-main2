@@ -2557,6 +2557,11 @@
 .presentation53 .presentation_wrap {
     padding: 69px 82px 160px;
     align-items: flex-start;
+    position: relative;
+    gap: 0;
+}
+.presentation53 .presentation_left {
+    margin-right: 50px;
 }
 .presentation53 .presentation_right {
     position: relative;
@@ -2569,6 +2574,41 @@
     right: -82px;
     width: calc(100% - 40px);
     height: calc(100% + 1000px);
+}
+.presentation53 .circle1 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 55;
+}
+.presentation53 .circle1 span:nth-child(1) {
+    width: 406px;
+    height: 406px;
+    border: 2px solid var(--bg2);
+    bottom: -100px;
+    right: -100px;
+}
+.presentation53 .circle1 span:nth-child(2) {
+    width: 281px;
+    height: 281px;
+    border: 2px solid var(--bg2);
+    bottom: -38px;
+    right: -38px;
+}
+.presentation53 .circle1 span:nth-child(3) {
+    width: 156px;
+    height: 156px;
+    border: 2px solid var(--bg2);
+    bottom: 24px;
+    right: 24px;
+}
+.presentation53 .circle1 span:nth-child(4) {
+    width: 31px;
+    height: 31px;
+    background: var(--bg2);
+    border-radius: 50%;
+    bottom: 86px;
+    right: 86px;
 }
 
 
