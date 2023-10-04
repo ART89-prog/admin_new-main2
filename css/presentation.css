@@ -67,6 +67,7 @@
 }	
 .presentation1 .presentation_left img {
     width: auto;
+    margin-bottom: 20px;
 }
 .presentation_right{
 	flex-shrink: 0;
@@ -443,6 +444,10 @@
 .presentation10 .presentation_left {
     padding: 60px 0px 60px 60px;
 }
+.presentation10 .presentation_left img {
+    width: auto;
+    margin-bottom: 20px;
+}
 
 
 
@@ -643,7 +648,7 @@
     top: -16px;
     left: -16px;
     border-radius: 38px;
-    background: #416E9E;
+    background: color-mix(in oklab, var(--bg3), white 14%);;
     z-index: -1;
 }
 .presentation16 .presentation_wrap {
@@ -744,7 +749,7 @@
     font-weight: 400;
     line-height: normal;
 }
-.presentation18 {
+.presentation_box {
     padding: 60px 70px 70px;
     background: var(--bg3);
     position: relative;
@@ -1233,6 +1238,9 @@
 }
 .presentation26 .presentation_right {
     margin-left: 90px;
+}
+.presentation26 .presentation_text p {
+    color: #fff;
 }
 
 
@@ -3655,7 +3663,7 @@
         display: none;
     }
 
-    .presentation18 {
+    .presentation_box {
         padding: 20px;
     }
 
@@ -3718,7 +3726,7 @@
     .presentation26 .presentation_img::after {
         display: none;
     }
-    .presentation18 {
+    .presentation_box {
         padding: 20px;
     }
 
