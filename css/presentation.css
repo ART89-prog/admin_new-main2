@@ -2824,6 +2824,25 @@
 
 
 
+.presentation58 .presentation_wrap {
+    background: url(../images/slide63-bg.png), var(--bg2);
+    padding: 70px;
+    position: relative;
+}
+.presentation58 .icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 23px;
+}
+.presentation58 .presentation_title {
+    color: #fff;
+}
+.text_block .presentation58 ul li {
+    color: #fff;
+}
+
+
+
 
 
 .presentation59 .presentation_wrap {
@@ -2923,7 +2942,43 @@
 
 
 
-
+.presentation61 .presentation_wrap {
+    padding: 50px 60px 60px 60px;
+    z-index: 2;
+    position: relative;
+}
+.presentation61 ol { 
+    counter-reset: list; 
+}
+.presentation61 ol li span {
+    padding: 18px 0;
+    display: block;
+}
+.presentation61 ol li:before {
+    counter-increment: list;
+    content: "0"counter(list) ;
+    width: 70px;
+    background: var(--bg2);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: "Ubuntu";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;  
+}
+.presentation61 ol li:nth-child(2n):before {
+    background: var(--bg3);
+}
+.presentation61 .presentation_right {
+    z-index: 99;
+    position: relative;
+    margin-top: -140px;
+}
 
 
 
@@ -3374,6 +3429,12 @@
     }
     .presentation60 .presentation_wrap {
         padding: 30px;
+    }
+    .presentation58 .presentation_wrap {
+        padding: 30px;
+    }
+    .presentation58 .presentation_right {
+        max-width: 40%;
     }
 
 
@@ -4200,7 +4261,9 @@
     .presentation57 .presentation_item {
         font-size: 40px;
     }
-
+    .presentation58 .presentation_right {
+        max-width: 100%;
+    }
 
 
 
