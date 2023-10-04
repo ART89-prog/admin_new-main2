@@ -938,6 +938,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
+    z-index: 5;
 }
 .presentation22 .presentation_wrap:before {
     position: absolute;
@@ -946,10 +947,9 @@
     height: 1008px;
     border-radius: 100%;
     border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
-    opacity: 0.14;
     bottom: -65%;
     left: -37%;
-    z-index: 1;
+    z-index: -1;
 }
 .presentation22 .presentation_info {
     width: 70%;
@@ -982,6 +982,7 @@
     bottom: 101px;
     right: 81px;
     margin-top: 0;
+    z-index: 5;
 }
 .presentation22 .presentation_logo {
     width: 321px;
@@ -989,6 +990,7 @@
     position: absolute;
     top: 69px;
     right: 91px;
+    z-index: 33;
 }
 
 
@@ -1242,6 +1244,12 @@
 .presentation26 .presentation_text p {
     color: #fff;
 }
+.presentation26 .presentation_left {
+    z-index: 5;
+}
+
+
+
 
 
 
@@ -1530,7 +1538,7 @@
 .presentation34 .presentation_wrap:before {
     position: absolute;
     content: "";
-    width: 40%;
+    width: 33%;
     height: 100%;
     background: var(--bg3);
     top: 0;
@@ -2400,23 +2408,27 @@
 
 .presentation49 .presentation_box {
     padding: 113px 93px 116px;
+    background: #fff;
+    position: relative;
 }
 .presentation49 .presentation_wrap {
     padding: 79px 92px 92px;
     background: var(--bg3);
     flex-direction: column;
     align-items: flex-start;
-    z-index: 1;
+    z-index: 5;
+    position: relative;
+    overflow: visible;
 }
-.presentation49 .presentation_wrap::before {
+.presentation49 .presentation_box::before {
     position: absolute;
     content: "";
-    height: calc(100% - 110px);
+    height: calc(100% + 1110px);
     width: calc(50% + 93px);
     background: var(--bg2);
-    top: 55px;
+    top: -155px;
     left: -93px;
-    z-index: -1;
+    z-index: 1;
 }
 .presentation49 .presentation_title {
     color: #fff;
@@ -3569,8 +3581,12 @@
     .presentation56 .presentation_center .presentation_text {
         padding: 20px;
     }
-
-
+    .presentation22 .presentation_info {
+        width: 80%;
+    }
+    .presentation52 .presentation_wrap {
+        padding: 30px;
+    }
 
 
 }
@@ -4111,7 +4127,17 @@
     .presentation60 .presentation_items > * {
         width: 100%;        
     }
+    .presentation25 .presentation_wrap {
+        gap: 30px;
+    }
+    .presentation25 .presentation_wrap:before {
+        display: none;
+    }
+    .presentation25 .presentation_title {
+        width: 100%;
+    }
 
+    
 
 
 
@@ -4121,10 +4147,21 @@
 	.presentation_wrap {
 		flex-direction: column;
 	}
-
+    .presentation32 .presentation_box {
+        padding: 20px;
+    }
+    .presentation40 .presentation_box {
+        padding: 0;
+    }
+    .presentation27 .presentation_wrap {
+        gap: 30px;
+    }
 	.presentation1 .presentation_img:before{
 		display: none;
 	}
+    .presentation44 .presentation_wrap {
+        padding: 20px 20px 310px;
+    }
     .presentation3 .presentation_img:before {
         width: 100%;
         height: calc(100% + 40px);
@@ -4419,7 +4456,34 @@
     .presentation58 .presentation_right {
         max-width: 100%;
     }
-
+    .presentation22 .presentation_info {
+        width: 83%;
+    }
+    .presentation52 .presentation_left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .presentation53 .presentation_wrap {
+        padding: 20px 20px 80px;
+    }
+    .presentation62 .presentation_wrap {
+        padding: 20px;
+    }
+    .presentation63 .presentation_box {
+        padding: 50px 15px 30px;
+    }
+    .presentation63 .presentation_wrap {
+        padding: 20px;
+    }
+    .presentation64 .presentation_wrap {
+        padding: 20px;
+    }
+    .presentation59 .presentation_wrap {
+        padding: 20px;
+    }
+    .presentation_title br {
+        display: none;
+    }
 
 
 
