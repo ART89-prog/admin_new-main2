@@ -2715,6 +2715,7 @@
 
 .presentation55 .presentation_box {
     position: relative;
+    background: #fff;
 }
 .presentation55 .presentation_box:before {
     position: absolute;
@@ -3294,9 +3295,86 @@
         position: relative;
     }
 
+    .presentation53 .presentation_wrap {
+        padding: 60px 60px 90px;
+    }
+    .presentation54 .presentation_item {
+        padding: 30px;
+    }
+    .presentation54 .presentation_wrap {
+        padding-left: 0px;
+        padding-right: 30px;
+        gap: 40px;
+    }
 
+    .presentation55 .presentation_right .presentation_text:nth-child(2) {
+        margin-left: 0;
+        padding-right: 20px;
+        max-width: 100%;
+    }
+    .presentation55 .presentation_right .presentation_text:nth-child(1) {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .presentation55 .presentation_wrap {
+        flex-direction: column;
+    }
+    .presentation55 .presentation_wrap:before {
+        display: none;
+    }
+    .presentation55 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation55 .presentation_box:after {
+        width: 15px;
+    }
+    .presentation55 .presentation_box:before {
+        width: 15px;
+    }
+    .presentation55 .presentation_box {
+        padding: 0;
+    }
+    .presentation55 .presentation_wrap {
+        padding: 40px;
+    }
 
-
+    .presentation57 .presentation_wrap {
+        padding: 30px;
+        gap: 30px;
+    }
+    .presentation57 .presentation_item {
+        font-size: 90px;
+    }
+    .presentation57 .presentation_item:nth-child(1) {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation57 .presentation_item:nth-child(2) {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation57 .presentation_item:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        margin-top: -42px;
+    }
+    .presentation57 .presentation_items {
+        width: 355px;
+        height: 330px;
+    }
+    .presentation60 .presentation_items {
+        flex-wrap: wrap;
+    }
+    .presentation60 .presentation_items > * {
+        width: calc(100%/2 - 16px);
+        padding: 20px;
+    }
+    .presentation60 .presentation_item-title {
+        margin-bottom: 20px;
+    }
+    .presentation60 .presentation_wrap {
+        padding: 30px;
+    }
 
 
 
@@ -3494,8 +3572,10 @@
     .presentation49 .presentation_title {
         margin-bottom: 0;
     }
-
-
+    .presentation59 .presentation_wrap {
+        padding: 40px 50px 50px;
+    }
+  
 
 }
 
@@ -3580,6 +3660,19 @@
     .presentation42 .presentation_right:before {
         display: none;
     }
+    .presentation53 .presentation_wrap {
+        padding: 30px 30px 80px;
+    }
+    .presentation59 .presentation_wrap:before,
+    .presentation59 .presentation_wrap:after {
+        display: none;
+    }
+    .presentation59 .presentation_item-text {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+
 
 
 
@@ -3770,6 +3863,37 @@
     }
     .presentation44 .presentation_wrap {
         padding: 40px 30px 310px;
+    }
+    .presentation54 .presentation_wrap {
+        padding-right: 0;
+    }
+    .presentation54 .presentation_info {
+        padding: 0px 20px 30px;
+    }
+    .presentation54 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation54 .presentation_item {
+        font-size: 55px;
+        min-height: 130px;
+    }
+    .presentation59 .presentation_wrap {
+        padding: 30px;
+    }
+    .presentation59 .presentation_items {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .presentation59 .presentation_items > * {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .presentation59 .presentation_item + .presentation_item {
+        margin-top: 20px;
+    }
+    .presentation60 .presentation_items > * {
+        width: 100%;        
     }
 
 
@@ -4043,6 +4167,45 @@
     .presentation64 .presentation_wrap {
         padding: 25px;
     }
+    .presentation53 .presentation_right::before {
+        display: none;
+    }
+    .presentation53 .presentation_wrap {
+        gap: 30px;
+    }
+    .presentation53 .presentation_img {
+        margin: 0 auto;
+    }
+
+    .presentation57 .presentation_item:nth-child(1) {
+        width: 140px;
+        height: 140px;
+    }
+    .presentation57 .presentation_item:nth-child(2) {
+        width: 140px;
+        height: 140px;
+    }
+    .presentation57 .presentation_item:nth-child(3) {
+        width: 140px;
+        height: 140px;
+        margin-top: -42px;
+    }
+    .presentation57 .presentation_items {
+        width: 265px;
+        height: 260px;
+    }
+    .presentation57 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation57 .presentation_item {
+        font-size: 40px;
+    }
+
+
+
+
+
+
 
 
 }
