@@ -220,22 +220,22 @@
 	z-index: -1;
 }
 
-.slick-slide:nth-child(2n) .presentation_wrap {
+.landing .presentation:nth-child(2n) .presentation_wrap {
 	background: var(--bg3);
 }
-.slick-slide:nth-child(2n) .presentation1 .presentation_left .presentation_img:before {
+.landing .presentation:nth-child(2n) .presentation_left .presentation_img:before {
     background: var(--bg2);
 }
-.slick-slide:nth-child(2n) .presentation1 .presentation_left .presentation_img::after {
+.landing .presentation:nth-child(2n) .presentation_left .presentation_img::after {
     border: 109px solid	color-mix(in oklab, var(--bg2), white 14%);
 }
-.slick-slide:nth-child(2n) .presentation_logo .icon2 {
+.landing .presentation:nth-child(2n) .presentation_logo .icon2 {
 	fill: #fff;
 }
-.slick-slide:nth-child(2n) .presentation_title {
+.landing .presentation:nth-child(2n) .presentation_title {
 	color: #fff;
 }
-.slick-slide:nth-child(2n) .presentation_text p {
+.landing .presentation:nth-child(2n) .presentation_text p {
 	color: #fff;
 }
 
@@ -290,19 +290,53 @@
 .text_block .presentation ul li + li {
     margin-top: 27px;
 }
-.text_block .slick-slide:nth-child(2n) .presentation ul li {
+.landing .presentation:nth-child(2n) ul li {
 	color: #fff;
 }
-.slick-slide:nth-child(2n) .presentation2 .presentation_left {
+.landing .presentation:nth-child(2n) .presentation_left {
 	z-index: 3;
 	position: relative;
 }
-.slick-slide:nth-child(2n) .presentation2 .presentation_wrap:before {
+.landing .presentation:nth-child(2n) .presentation_wrap:before {
     opacity: 1;
 	z-index: 0;
 }
 
 
+.presentation3 .presentation_wrap {
+	flex-direction: column;
+	gap: 10px;
+}
+.presentation3 ul .icon {
+    width: 83px;
+    height: 83px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.presentation_info-title {
+	color: #292929;
+	font-family: "SF Pro Display";
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 142.857%;	
+	margin-bottom: 10px;
+}
+.presentation_info-text {
+	color:  #173A60;
+	font-family: "SF Pro Display";
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+.landing .presentation:nth-child(2n) .presentation_info-title {
+	color: #fff;
+}
+.landing .presentation:nth-child(2n) .presentation_info-text {
+	color: #fff;
+}
 
 
 
