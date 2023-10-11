@@ -5,7 +5,6 @@ $(() => {
 
 
 
-	
 
 	
 	$(".idea_check-bottom button").click(function (e) {
