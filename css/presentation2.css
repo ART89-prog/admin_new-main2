@@ -340,6 +340,78 @@
 
 
 
+.presentation_img {
+	position: relative;
+	z-index: 2;
+}
+.presentation4 .presentation_box {
+	padding: 70px;
+	background: var(--bg3);
+}
+.presentation4 .presentation_wrap {
+	padding: 50px;
+	align-items: flex-start;
+}
+.presentation4 .presentation_right {
+	padding-right: 50px;
+}
+.presentation4 .presentation_right:before {
+    width: 246px;
+    height: calc(100% + 800px);
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background: var(--bg2);
+}
+.presentation4 .presentation_img:after {
+    position: absolute;
+    content: "";
+    width: 165px;
+    height: 164px;
+    top: -46px;
+    right: -71px;
+    position: absolute;
+    z-index: -1;
+    background: url(../images/titik.svg);
+}
+
+.landing .presentation:nth-child(2n) .presentation_box {
+	background: #fff;
+}
+.landing .presentation:nth-child(2n) .presentation_wrap {
+	background: var(--bg3);
+}
+
+
+
+.presentation5 .presentation_wrap {
+	flex-direction: column;
+	gap: 0px;
+}
+.presentation5 .presentation_text {
+	text-align: center;
+}
+.presentation5 .presentation_img {
+	width: 100%;
+}
+
+.landing .presentation:nth-child(2n).presentation5 .presentation_wrap  {
+	background: var(--bg3);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @container presentations (max-width: 1100px) {
 
