@@ -1,5 +1,114 @@
 /*презентация в слайдер*/
 
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.eot');
+    src: local('SF Pro Display Medium'), local('SFProDisplay-Medium'),
+        url('../fonts/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Heavy.eot');
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+        url('../fonts/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Heavy.woff') format('woff'),
+        url('../fonts/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Thin.eot');
+    src: local('SF Pro Display Thin'), local('SFProDisplay-Thin'),
+        url('../fonts/SFProDisplay-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Thin.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Thin.woff') format('woff'),
+        url('../fonts/SFProDisplay-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Light.eot');
+    src: local('SF Pro Display Light'), local('SFProDisplay-Light'),
+        url('../fonts/SFProDisplay-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Light.woff') format('woff'),
+        url('../fonts/SFProDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.eot');
+    src: local('SF Pro Display Bold'), local('SFProDisplay-Bold'),
+        url('../fonts/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Bold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Black.eot');
+    src: local('SF Pro Display Black'), local('SFProDisplay-Black'),
+        url('../fonts/SFProDisplay-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Black.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Black.woff') format('woff'),
+        url('../fonts/SFProDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Ultralight.eot');
+    src: local('SF Pro Display Ultralight'), local('SFProDisplay-Ultralight'),
+        url('../fonts/SFProDisplay-Ultralight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Ultralight.woff') format('woff'),
+        url('../fonts/SFProDisplay-Ultralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Semibold.eot');
+    src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+        url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.eot');
+    src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+        url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 :root {
 	--text: black;
@@ -15,7 +124,7 @@
 }
 .presentation_wrap{
 	display: flex;
-	padding: 60px;
+	padding: 70px;
 	gap:65px;
 	background: #fff;
 	align-items: center;
@@ -27,18 +136,25 @@
 }
 
 .presentation_title{
-	color: #353535;
+	font-family: "SF Pro Display";
 	font-size: 46px;
-	font-weight: 700;
-	line-height: 48px; 
-	letter-spacing: -3px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: 40px;
+	letter-spacing: -1px;
+	color: #292929;
 	margin-bottom: 40px;
 }
-
+.presentation_text {
+	margin-bottom: 44px;
+}
 .presentation_text p{
-	color: var(--text);
+	font-family: "SF Pro Display";
 	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
 	line-height: normal;
+	color: #173A60;
 }
 
 .presentation_text * + * {
@@ -49,65 +165,142 @@
 	position: relative;
 }
 
-.presentation1 .presentation_img:before{
-	content:"";
-	width: 100%;
-	display: block;
-	height: 100%;
-	top:10%;
-	left:-10%;
-	background: var(--bg2);
-	position: absolute;
-	z-index: 0;
-}
-
-.presentation1 .presentation_img img{
-	z-index:1;
-	position: relative;
-}	
-.presentation1 .presentation_left img {
-    width: auto;
-    margin-bottom: 20px;
-}
 .presentation_right{
 	flex-shrink: 0;
 	max-width: 50%;
 }
+.presentation_logo {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 41px;
+}
+.presentation_logo .icon2 {
+	fill: var(--bg3);
+	display: block;
+	width: 214px;
+	height: 47px;
+}
+.presentation_logo .icon1 {
+	fill: #000;
+	display: block;
+	width: 56px;
+	height: 56px;
+}
+.button-arrow img {
+	width: 82px;
+	height: 82px;
+}
+.presentation1 .presentation_left {
+	overflow: hidden;
+	padding: 40px 0 40px 40px;
+}
+.presentation1 .presentation_left .presentation_img {
+	position: relative;
+	z-index: 1;
+}
+.presentation1 .presentation_left .presentation_img:before {
+    position: absolute;
+    width: calc(100% + 40px);
+    height: calc(100% + 80px);
+    content: "";
+    top: -40px;
+    left: -40px;
+    background: var(--bg3);
+	z-index: -1;	
+}
+.presentation1 .presentation_left .presentation_img::after {
+    position: absolute;
+    width: 607px;
+    height: 607px;
+    content: "";
+    top: -85px;
+    left: -62px;
+    border-radius: 50%;
+    border: 109px solid	color-mix(in oklab, var(--bg3), white 14%);
+	z-index: -1;
+}
+
+.slick-slide:nth-child(2n) .presentation_wrap {
+	background: var(--bg3);
+}
+.slick-slide:nth-child(2n) .presentation1 .presentation_left .presentation_img:before {
+    background: var(--bg2);
+}
+.slick-slide:nth-child(2n) .presentation1 .presentation_left .presentation_img::after {
+    border: 109px solid	color-mix(in oklab, var(--bg2), white 14%);
+}
+.slick-slide:nth-child(2n) .presentation_logo .icon2 {
+	fill: #fff;
+}
+.slick-slide:nth-child(2n) .presentation_title {
+	color: #fff;
+}
+.slick-slide:nth-child(2n) .presentation_text p {
+	color: #fff;
+}
+
+
+
+.presentation2 .presentation_right .presentation_img img {
+	border-radius: 50%;
+}
+.presentation2 .presentation_wrap {
+	position: relative;
+}
+.presentation2 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 808px;
+    height: 808px;
+    border-radius: 100%;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
+	opacity: .1;
+    top: -61%;
+    right: -31%;
+    z-index: 0;
+}
 .presentation ul {
     list-style: none;
+}
+.text_block .presentation ul li {
+    padding-left: 0;
+    color: #173A60;
+    font-family: "SF Pro Display";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.presentation_list li .icon {
+    fill: var(--bg2);
+}
+.text_block .presentation ul li:before {
+	display: none;
+}
+.presentation ul .icon {
+    width: 27px;
+    height: 27px;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 15px;
 }
 .presentation ul li {
     display: flex;
 }
-.presentation ul li img {
-    display: block;
-    width: 27px;
-    height: 27px;
-    margin-right: 15px;
-    margin-bottom: 0;
-}
-.text_block .presentation ul li:before {
-    display: none;
-}
-.text_block .presentation ul li {
-    padding-left: 0;
-    color: var(--text);
-    font-family: "Ubuntu";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 .text_block .presentation ul li + li {
-    margin-top: 34px;
+    margin-top: 27px;
 }
-
-
-
-
-
-
-
+.text_block .slick-slide:nth-child(2n) .presentation ul li {
+	color: #fff;
+}
+.slick-slide:nth-child(2n) .presentation2 .presentation_left {
+	z-index: 3;
+	position: relative;
+}
+.slick-slide:nth-child(2n) .presentation2 .presentation_wrap:before {
+    opacity: 1;
+	z-index: 0;
+}
 
 
 
