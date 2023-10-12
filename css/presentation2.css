@@ -111,7 +111,7 @@
 
 
 :root {
-	--text: black;
+	--text: #173A60;
     --bg2: #EF4D53;
     --bg3: #214A76;
 }
@@ -219,6 +219,25 @@
     border: 109px solid	color-mix(in oklab, var(--bg3), white 14%);
 	z-index: -1;
 }
+.button-arrow {
+    width: 83px;
+    height: 83px;
+    display: block;
+    border-radius: 50%;
+    background: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+.button-arrow img {
+    width: 27px;
+    height: 27px;
+    display: block;
+    z-index: 2;
+    flex-shrink: 0;
+}
 
 .slick-slide:nth-child(2n) .presentation_wrap {
 	background: var(--bg3);
@@ -238,8 +257,14 @@
 .slick-slide:nth-child(2n) .presentation_text p {
 	color: #fff;
 }
+.slick-slide:nth-child(2n) .presentation_item-name {
+    color: #fff;
+}
 
 
+.landing .presentation:nth-child(2n) {
+    background: var(--bg3);
+}
 .landing .presentation:nth-child(2n) .presentation_wrap {
 	background: var(--bg3);
 }
@@ -258,6 +283,9 @@
 .landing .presentation:nth-child(2n) .presentation_text p {
 	color: #fff;
 }
+.landing .presentation:nth-child(2n) .presentation_item-name {
+    color: #fff;
+}
 
 
 
@@ -274,9 +302,19 @@
     height: 808px;
     border-radius: 100%;
     border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
-	opacity: .1;
     top: -61%;
     right: -31%;
+    z-index: 0;
+}
+.presentation2 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 808px;
+    height: 808px;
+    border-radius: 100%;
+    border: 167px solid color-mix(in oklab, var(--bg3), white 14%);
+    bottom: -61%;
+    left: -31%;
     z-index: 0;
 }
 .presentation ul {
@@ -317,10 +355,7 @@
 	z-index: 3;
 	position: relative;
 }
-.landing .presentation:nth-child(2n) .presentation_wrap:before {
-    opacity: 1;
-	z-index: 0;
-}
+
 
 .slick-slide:nth-child(2n) ul li {
 	color: #fff;
@@ -389,7 +424,6 @@
 }
 .presentation4 .presentation_wrap {
 	padding: 50px;
-	align-items: flex-start;
 }
 .presentation4 .presentation_right {
 	padding-right: 50px;
@@ -426,9 +460,7 @@
 .landing .presentation:nth-child(2n) .presentation_box {
 	background: #fff;
 }
-.landing .presentation:nth-child(2n) .presentation_wrap {
-	background: var(--bg3);
-}
+
 
 
 
@@ -454,7 +486,9 @@
 
 .presentation6 .presentation_box {
 	padding: 120px;
-	background: var(--bg3);
+	background: var(--bg3);    
+    position: relative;
+    z-index: 2;
 }
 .presentation6 .presentation_wrap {
 	padding: 50px;
@@ -463,20 +497,20 @@
 	position: relative;
 	overflow: visible;
 }
-.presentation6 .presentation_wrap:before {
+.presentation6 .presentation_box:before {
     position: absolute;
-    width: calc(50% + 50px);
-    height: calc(100% + 100px);
+    width: calc(50% - 50px);
+    height: calc(100% - 100px);
     content: "";
-    top: -50px;
-    left: -50px;
+    top: 50px;
+    left: 50px;
     background: var(--bg2);
 	z-index: -1;		
 }
-.presentation_info {
-	z-index: 9999;
-	position: relative;
+.presentation6 .presentation_title {
+    width: 45%;
 }
+
 
 
 .presentation7 .presentation_wrap {
@@ -543,7 +577,7 @@
 }
 .presentation8 .presentation_left .presentation_img:nth-child(3) {
 	grid-column: 2;
-    grid-row: 1/2;
+    grid-row: 1/3;
 	width: 100%;
     height: 100%;
     object-fit: cover;
@@ -552,80 +586,66 @@
 	grid-column: 1;
     grid-row: 2;
 }
+.text_block .presentation8 img {
+    object-fit: cover;
+    height: 100%;
+}
+.presentation8 .presentation_wrap {
+    align-items: inherit;
+    gap: 25px;
+}
 
 
-.presentation9 .presentation_img {
-    position: relative;
-}
-.presentation9 .presentation_img:before {
-    position: absolute;
-    width: 138px;
-    height: 138px;
-    content: "";
-    top: -32px;
-    left: -27px;
-    background: var(--bg2);
-    z-index: 5; 
-}
-.presentation9 .presentation_img:after {
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    content: "";
-    top: 56px;
-    right: -27px;
-    background: var(--bg2);
-    z-index: 5; 
-}
-.presentation9 .presentation_right {
-    position: relative;
-    display: block;
-}
-.presentation9 .presentation_right:after {
-    position: absolute;
-    width: 68px;
-    height: 68px;
-    content: "";
-    bottom: -32px;
-    right: 27px;
-    background: var(--bg3);
-    z-index: 5; 
-}
+
 .presentation9 .presentation_wrap {
     flex-direction: column;
-    z-index: 5;
+    align-items: flex-start;
     position: relative;
+    z-index: 1;
 }
 .presentation9 .presentation_wrap:before {
     position: absolute;
+    content: "";
     width: 100%;
     height: 50%;
-    content: "";
-    bottom: 0px;
-    right: 0px;
     background: var(--bg2);
-    z-index: -5; 
-}
-.presentation_item .icon {
-    fill: var(--bg2);
-	width: 27px;
-	height: 27px;
-	margin-right: 15px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
 .presentation9 .presentation_items {
+    width: 100%;
     display: flex;
-    margin-left: -17px;
-    margin-bottom: -17px;
+    flex-wrap: wrap;
+    margin-left: -20px;
 }
 .presentation9 .presentation_items > * {
-    width: calc(100%/3 - 17px);
-    margin-left: 17px;
-    margin-bottom: 17px;
+    padding: 46px 36px 53px;
     border: 1px solid var(--bg3);
-    padding: 46px 34px;
-    z-index: 2;
+    background: #fff;
+    width: calc(100%/3 - 20px);
+    margin-left: 20px;
 }
-
+.presentation9 .presentation_item-title {
+    margin-top: 29px;
+    color:  #1E1B39;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.18px; 
+}
+.presentation9 .presentation_item-text {
+    margin-top: 15px;
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.presentation9 .presentation_item .icon {
+    width: 45px;
+    height: 45px;
+    fill: var(--bg2);
+}
 
 
 
@@ -670,7 +690,7 @@
 .presentation ol li + li {
     margin-top: 40px;
 }
-.presentation .presentation_wrap:before {
+.presentation10 .presentation_wrap:before {
     position: absolute;
     content: "";
     width: 808px;
@@ -766,6 +786,28 @@
 
 
 
+
+.presentation15 .presentation_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+.presentation15 .presentation_items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -17px;
+    margin-bottom: -17px;
+}
+.presentation15 .presentation_items > * {
+    width: calc(100%/2 - 17px);
+    margin-left: 17px;
+    margin-bottom: 17px;
+}
+
+
+
+
+
 .presentation16 .presentation_wrap {
     flex-direction: column;
     align-items: flex-start;
@@ -781,6 +823,59 @@
     width: calc(100%/2 - 17px);
     margin-left: 17px;
     margin-bottom: 17px;
+}
+
+
+
+
+.presentation17 .presentation_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    position: relative;
+    gap: 20px;
+}
+.presentation17 .presentation_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap:19px;
+
+}
+.presentation17 .presentation_items > * {
+    display: flex;
+    width: calc(100%/2 - 19px);  
+    min-height: 203px;
+    z-index: 1;
+}
+.presentation17 .presentation_item-img {
+    flex-shrink: 0;
+    width: 282px;
+
+}
+.presentation17 .presentation_item-img img{
+    height: 100%;
+    object-fit: cover;
+}
+.presentation17 .presentation_item-text {
+    padding: 20px 30px 20px 30px;
+    background: #fff;
+    color: #173A60;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: "SF Pro Display";
+}
+.presentation17 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1457px;
+    height: 427px;
+    border-radius: 100%;
+    background: var(--bg2);
+    top: -300px;
+    right: -841px;
+    z-index: -1;
 }
 
 
@@ -907,6 +1002,9 @@
     .presentation_info-text {
         font-size: 20px;
     }
+    .presentation4 .presentation_box {
+        padding: 30px;
+    }
 
 
 
@@ -917,6 +1015,16 @@
 
 @container presentations (max-width: 900px) {
 
+    .presentation4 .presentation_right:before {
+        display: none;
+    }
+    .presentation4 .presentation_wrap {
+        padding: 30px;
+    }
+
+
+
+
 } 
 
 
@@ -925,7 +1033,7 @@
 @container presentations (max-width: 700px) {
 
     .presentation_wrap {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
     .presentation_right {
@@ -958,6 +1066,9 @@
     }
     .presentation_info-text {
         font-size: 18px;
+    }
+    .presentation ul li {
+        flex-direction: column;
     }
 
 
