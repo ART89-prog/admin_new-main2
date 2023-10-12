@@ -562,7 +562,10 @@
 	font-weight: 500;
 	line-height: normal;	
 }
-
+.slick-slide:nth-child(2n) .presentation ol li, 
+.slick-slide:nth-child(2n) .presentation ul li {
+    color: #fff;
+}
 
 
 .presentation8 .presentation_box {
@@ -573,7 +576,7 @@
     padding: 70px;
     background: var(--bg3);    
 }
-.slick-slide:nth-child(2n).presentation8 .presentation_box {
+.slick-slide:nth-child(2n) .presentation8 .presentation_box {
     padding: 70px;
     background: var(--bg3);    
 }
@@ -1290,6 +1293,9 @@
     .landing .presentation:nth-child(2n).presentation8 .presentation_box {
         padding: 30px;
     }
+    .slick-slide:nth-child(2n) .presentation8 .presentation_box {
+        padding: 30px;
+    }
     .presentation17 .presentation_items > * {
         flex-direction: column;
     }
@@ -1397,6 +1403,9 @@
         width: 100%;
         margin-left: 0px;
         margin-bottom: 0px;
+    }
+    .presentation10 .presentation_wrap:before {
+        display: none;
     }
 
 
