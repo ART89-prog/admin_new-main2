@@ -593,6 +593,18 @@
 }
 .presentation9 .presentation_wrap {
     flex-direction: column;
+    z-index: 5;
+    position: relative;
+}
+.presentation9 .presentation_wrap:before {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    content: "";
+    bottom: 0px;
+    right: 0px;
+    background: var(--bg2);
+    z-index: -5; 
 }
 .presentation_item .icon {
     fill: var(--bg2);
@@ -600,7 +612,19 @@
 	height: 27px;
 	margin-right: 15px;
 }
-
+.presentation9 .presentation_items {
+    display: flex;
+    margin-left: -17px;
+    margin-bottom: -17px;
+}
+.presentation9 .presentation_items > * {
+    width: calc(100%/3 - 17px);
+    margin-left: 17px;
+    margin-bottom: 17px;
+    border: 1px solid var(--bg3);
+    padding: 46px 34px;
+    z-index: ;
+}
 
 
 
