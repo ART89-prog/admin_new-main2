@@ -1285,12 +1285,259 @@
 
 
 
+.presentation22 .presentation_wrap {
+	position: relative;
+}
+.presentation22 .presentation_img {
+    position: relative;
+}
+.presentation22 .presentation_img:before {
+    position: absolute;
+    content: "";
+    width: calc(50% + 50px);
+    height: calc(100% + 100px);
+    right: -50px;
+    top: -50px;
+    background: var(--bg2);
+    z-index: -1;
+}
+.presentation22 .circle1 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+.presentation22 .circle1 span:nth-child(1) {
+    width: 272px;
+    height: 272px;
+    border: 1px solid var(--bg2);
+    bottom: -50px;
+    left: -60px;
+}
+.presentation22 .circle1 span:nth-child(2) {
+    width: 188px;
+    height: 188px;
+    border: 1px solid var(--bg2);
+    bottom: -8px;
+    left: -18px;
+}
+.presentation22 .circle1 span:nth-child(3) {
+    width: 104px;
+    height: 104px;
+    border: 1px solid var(--bg2);
+    bottom: 34px;
+    left: 24px;
+}
+.presentation22 .circle1 span:nth-child(4) {
+    width: 21px;
+    height: 21px;
+    background: var(--bg2);
+    border-radius: 50%;
+    bottom: 76px;
+    left: 66px;
+}
 
-.presentation42 .presentation_box {
+
+
+
+.presentation23 .presentation_wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    z-index: 55;
+    position: relative;
+}
+.presentation23 .circle1 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.presentation23 .circle1 span:nth-child(1) {
+    width: 638px;
+    height: 638px;    
+    border: 85px solid color-mix(in oklab, var(--bg3), white 40%);
+    top: -380px;
+    right: -380px;
+}
+.presentation23 .circle1 span:nth-child(2) {
+    width: 468px;
+    height: 468px;    
+    border: 85px solid color-mix(in oklab, var(--bg3), white 60%);
+    top: -295px;
+    right: -295px;
+}
+.presentation23 .circle1 span:nth-child(3) {
+    width: 298px;
+    height: 298px;    
+    border: 85px solid color-mix(in oklab, var(--bg3), white 80%);
+    top: -210px;
+    right: -210px;
+}
+.presentation23 ul .icon {
+    display: block;
+    fill: var(--bg2);
+    width: 27px;
+    height: 27px;
+}
+
+
+
+
+.presentation24 .presentation_wrap {
+    padding: 0;
+    margin-top: 60px;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    overflow: visible;
+}
+.presentation24 .presentation_box {
+    padding: 70px;
+    background: #fff;
+}
+.presentation24 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 1005px;
+    height: 1005px;
+    border-radius: 100%;
+    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: 38%;
+    top: -127px;
+    opacity: 0.1;
+    z-index: -1;
+}
+.presentation24 .presentation_title {
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+.landing .presentation:nth-child(2n).presentation24 .presentation_box {
+    background: var(--bg3);
+}
+.slick-slide:nth-child(2n) .presentation24 .presentation_box {
+    background: var(--bg3);
+}
+.presentation24 .presentation_text {
+    margin-bottom: 0px;
+}
+.presentation_bottom-img {
+    z-index: 99;
+    position: relative;
+}
+
+
+
+
+.presentation25 .presentation_wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.presentation25 .circle1 span,
+.presentation25 .circle2 span,
+.presentation25 .circle3 span {
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+}
+.presentation25 .circle1 span:nth-child(1) {
+    width: 489px;
+    height: 489px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -230px;
+    right: 50px;
+}
+.presentation24 .circle1 span:nth-child(2) {
+    width: 338px;
+    height: 338px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -135px;
+    right: 125px;
+}
+.presentation25 .circle1 span:nth-child(3) {
+    width: 188px;
+    height: 188px;
+    border: 1px solid rgba(33, 74, 118, 0.20);
+    top: -60px;
+    right: 200px;
+}
+.presentation25 .circle1 span:nth-child(4) {
+    width: 37px;
+    height: 37px;
+    background: var(--bg3);    
+    top: 15px;
+    right: 275px;
+}
+.presentation25 .circle2 span:nth-child(1) {
+    width: 272px;
+    height: 272px;
+    border: 1px solid var(--bg2);
+    top: 210px;
+    right: -60px;
+}
+.presentation25 .circle2 span:nth-child(2) {
+    width: 188px;
+    height: 188px;
+    border: 1px solid var(--bg2);
+    top: 252px;
+    right: -18px;
+}
+.presentation25 .circle2 span:nth-child(3) {
+    width: 104px;
+    height: 104px;
+    border: 1px solid var(--bg2);
+    top: 294px;
+    right: 24px;
+}
+.presentation25 .circle2 span:nth-child(4) {
+    width: 21px;
+    height: 21px;
+    background: var(--bg2);
+    border-radius: 50%;
+    top: 336px;
+    right: 66px;
+}
+.presentation25 .circle3 span:nth-child(1) {
+    width: 638px;
+    height: 638px;    
+    border: 85px solid color-mix(in oklab, var(--bg2), white 40%);
+    bottom: -380px;
+    right: -380px;
+}
+.presentation25 .circle3 span:nth-child(2) {
+    width: 468px;
+    height: 468px;    
+    border: 85px solid color-mix(in oklab, var(--bg2), white 60%);
+    bottom: -295px;
+    right: -295px;
+}
+.presentation25 .circle3 span:nth-child(3) {
+    width: 298px;
+    height: 298px;    
+    border: 85px solid color-mix(in oklab, var(--bg2), white 80%);
+    bottom: -210px;
+    right: -210px;
+}
+.presentation25 .presentation_title {
+    max-width: 415px;
+    width: 100%;
+}
+.presentation25 .presentation_text {
+    width: 82%;
+}
+
+
+
+
+
+
+
+.presentation27 .presentation_box {
     position: relative;
     background: #fff;
 }
-.presentation42 .presentation_box::before {
+.presentation27 .presentation_box::before {
     width: 100%;
     height: 104px;
     content: "";
@@ -1300,7 +1547,7 @@
     background: var(--bg3);
     z-index: 1;
 }
-.presentation42 .presentation_box::after {
+.presentation27 .presentation_box::after {
     width: 100%;
     height: 104px;
     content: "";
@@ -1310,12 +1557,12 @@
     background: var(--bg2);
     z-index: 1;
 }
-.presentation42 .presentation_wrap {
+.presentation27 .presentation_wrap {
     position: relative;
     padding-top: 191px;
     padding-bottom: 164px;
 }
-.presentation42 .presentation_wrap::before {
+.presentation27 .presentation_wrap::before {
     width: 119px;
     height: 119px;
     content: "";
@@ -1326,7 +1573,7 @@
     background: var(--bg2);     
     z-index: 2;
 }
-.presentation42 .presentation_wrap::after {
+.presentation27 .presentation_wrap::after {
     width: 119px;
     height: 152px;
     content: "";
@@ -1336,35 +1583,35 @@
     background: var(--bg3);     
     z-index: 0;
 }
-.presentation42 .presentation_right {
+.presentation27 .presentation_right {
     display: flex;
     flex-wrap: wrap;
     margin-left: -17px;
     margin-bottom: -17px;
     position: relative;
 }
-.presentation42 .presentation_right > * {
+.presentation27 .presentation_right > * {
     width: calc(100%/2 - 17px);
     margin-left: 17px;
     margin-bottom: 17px;
 }
-.presentation42 .presentation_right:before {
-    width: 78px;
-    height: 78px;
-    content: "";
-    position: absolute;
-    top: 49%;
-    left: 52%;
-    transform: translate(-52%, -49%);
-    background: url(../images/star.svg);    
-}
-.presentation42 .presentation_left {
+.presentation27 .presentation_left {
     width: 50%;
 }
-
-.presentation42 .presentation_img img{
+.presentation27 .presentation_img img{
     border-radius: 50%;
 }
+.presentation27 ul .icon {
+    display: block;
+    fill: var(--bg2);
+    width: 27px;
+    height: 27px;
+}
+
+
+
+
+
 
 
 
