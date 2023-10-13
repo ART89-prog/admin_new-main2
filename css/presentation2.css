@@ -1525,7 +1525,12 @@
 }
 .presentation25 .presentation_text {
     width: 82%;
+    z-index: 3;
 }
+.presentation25 .circle3 {
+    z-index: 0;
+}
+
 
 
 
@@ -1566,7 +1571,7 @@
 .slick-slide:nth-child(2n) .presentation26 .presentation_right::after {
     background: #fff;
 }
-.presentation_right .icon {
+.presentation26 .presentation_right .icon {
     position: absolute;
     left: -36px;
     bottom: -36px;
@@ -1595,9 +1600,6 @@
     width: calc(100%/2 - 17px);
     margin-left: 17px;
     margin-bottom: 17px;
-}
-.presentation27 .presentation_left {
-    width: 50%;
 }
 .presentation27 .presentation_img img{
     border-radius: 50%;
@@ -1760,7 +1762,26 @@
         display: flex;
         flex-direction: column-reverse;
     }
-
+    .landing .presentation:nth-child(2n).presentation26 .presentation_right::after {
+        display: none;
+    }
+    .presentation26 .presentation_right::before {
+        display: none;
+    }
+    .presentation27 .presentation_wrap {
+        flex-direction: column;
+    }
+    .presentation28 .presentation_wrap {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .presentation28 .presentation_right {
+        max-width: 100%;        
+    }
+    .presentation22 .presentation_wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
 
 
@@ -1839,7 +1860,30 @@
     .presentation10 .presentation_wrap:before {
         display: none;
     }
-
+    .presentation21 .presentation_wrap,
+    .presentation22 .presentation_wrap,
+    .presentation24 .presentation_wrap,
+    .presentation25 .presentation_wrap {
+        gap: 20px;
+    }
+    .presentation27 .presentation_right {
+        max-width: 100%;
+    }
+    .presentation_info-title {
+        font-size: 20px;
+    }
+    .presentation_info-text {
+        font-size: 18px;
+    }
+    .presentation22 .presentation_img:before {
+        width: calc(50% + 50px);
+        height: calc(100% + 20px);
+        right: -10px;
+        top: -10px;
+    }
+    .presentation25 .circle1 {
+        display: none;
+    }
 
 
 
@@ -1909,7 +1953,15 @@
     .presentation_title br {
         display: none;
     }
-
+    .presentation_info-title {
+        margin-bottom: 5px;
+    }
+    .presentation26 .presentation_right .icon {
+        display: none;
+    }
+    .presentation25 .circle2 {
+        display: none;
+    }
 
 } 
 
