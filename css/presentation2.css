@@ -1556,8 +1556,20 @@
     content: "";
     position: absolute;
     bottom: 0px;
-    left: 148px;
+    left: 148px;    
     background: var(--bg3);
+    z-index: 0;
+}
+.landing .presentation:nth-child(2n).presentation26 .presentation_right::after {
+    background: #fff;
+}
+.slick-slide:nth-child(2n) .presentation26 .presentation_right::after {
+    background: #fff;
+}
+.presentation_right .icon {
+    position: absolute;
+    left: -36px;
+    bottom: -36px;
     z-index: 0;
 }
 
