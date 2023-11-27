@@ -29327,3 +29327,25 @@ bottom: 20px;
 .ideas-module_bottom-text span {
     color: var(--main_color);
 }
+
+
+
+.vacancy .page_title a {
+    color: #fff;
+}
+.vacancy .page_title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.vacancy thead tr {
+    background: var(--main_color);
+}
+.vacancy thead tr th {
+    padding: 17px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+}
