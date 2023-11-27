@@ -63,17 +63,17 @@
     font-weight: normal;
     font-style: normal;
 }
-/* :root {
+:root {
 	--text: #173A60;
     --bg2: #EF4D53;
     --bg3: #214A76;
-} */
+}
 
-:root {
+/* :root {
     --text: #173A60;
     --bg2: blue;
     --bg3: red;
-}
+} */
 .presentation {
     container-type: inline-size;
     container-name: presentations;
@@ -1662,6 +1662,7 @@
     z-index: 1;
     position: relative;
     overflow: visible;
+    z-index: 5;
 }
 .presentation29 .presentation_wrap:before {
     position: absolute;
@@ -1669,11 +1670,35 @@
     width: 1164px;
     height: 1164px;
     border-radius: 100%;
-    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+    border: 159px solid color-mix(in oklab, var(--bg3), white 10%);
     left: 8%;
-    top: -127px;
-    opacity: 0.1;
+    top: -127px;    
     z-index: 2;
+}
+.presentation-new:nth-child(2n + 1) .presentation_wrap:before {
+    opacity: 0.1;
+}
+
+
+
+
+.presentation30 .presentation_img:before {
+    position: absolute;
+    content: "";
+    width: calc(50% + 50px);
+    height: calc(100% + 100px);
+    left: -50px;
+    top: -50px;
+    background: var(--bg2);
+    z-index: -1;
+}
+.presentation30 .presentation_img img {
+    aspect-ratio: 393/465;
+    object-fit: cover;
+    height: 100%;
+}
+.presentation30 .presentation_img {
+    margin-left: 50px;
 }
 
 
