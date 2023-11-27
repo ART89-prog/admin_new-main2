@@ -27515,7 +27515,6 @@ form .form_btns input[type=file] + label,
     height: 47px;
 }
 .ideas-top_title {
-    color: var(--main_color);
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -28740,15 +28739,21 @@ form .form_btns input[type=file] + label,
     color: #3D3D3D;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .warning_training_list ul li button {
-    margin-left: 10px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    color: #0583DF;
-    border-bottom: 1px dashed #0583DF;
+    border-radius: 48px;
+    border: 1px solid #CFCDEE;
+    background: #F6F5FF;
+    color: #64698F;
+    font-family: "Ubuntu";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px 12px;
+    margin-left: 8px;
 }
 
 .warning_training_list ul li + li{
@@ -28769,7 +28774,18 @@ form .form_btns input[type=file] + label,
 .warning_training_list .handle{
     cursor: grab;
 }
-
+.handle_box {
+    display: flex;
+    width: 100%;
+    margin-bottom: 8px;
+}
+.handle_box span.disabled {
+    opacity: 0.3;
+}
+.warning_training_list ul li button:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
 
 .adding_photos{
     margin-top: 40px;
@@ -29281,4 +29297,13 @@ bottom: 20px;
 .speed_controller button.active{
     background: var(--main_color);
     color:#fff;
+}
+
+
+
+.ideas-module {
+    padding: 17px 18px;
+    border-radius: 15px;
+    background: #FFF;    
+    margin-top: 30px;
 }
