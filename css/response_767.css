@@ -2711,6 +2711,20 @@
     }
 
 
+    .application .table-wrap {
+        overflow-y: scroll;
+    }
+    .application table {
+        width: 800px;
+    }
+    .application .table-wrap::-webkit-scrollbar {
+        height: 14px;        
+    }
+    .application .table-wrap::-webkit-scrollbar-thumb { 
+        border-radius: 31px !important;
+    }
+
+
 
 
 

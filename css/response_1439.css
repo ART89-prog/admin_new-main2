@@ -956,7 +956,7 @@
     .vacancy .table-wrap::-webkit-scrollbar {
         height: 14px;        
     }
-    .vacancy .table-wraps::-webkit-scrollbar-thumb { 
+    .vacancy .table-wrap::-webkit-scrollbar-thumb { 
         border-radius: 31px !important;
     }
     .vacancy_links-wrap {

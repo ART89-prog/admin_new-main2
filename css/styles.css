@@ -29370,12 +29370,6 @@ bottom: 20px;
     font-weight: 500;
     line-height: normal;
 }
-.table tr td:first-child {
-	border-left: none;
-}
-.table tr td:last-child {
-	border-right: none;
-}
 .vacancy table tbody tr:nth-child(odd){
 	background: #fff;
 }
@@ -29585,11 +29579,12 @@ bottom: 20px;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    padding: 10px 23px;
+    line-height: 36px;
+    padding: 0px 23px;
     border-radius: 75px;
     background: #1CA553;
     text-decoration: none;
+    height: 36px;
 }
 .application .idea_form .nice-select .current {
     color: #7874A3;
@@ -29700,4 +29695,156 @@ bottom: 20px;
     height: 1px;
     left: -18px;
     bottom: 0;   
+}
+
+.application_table {
+    position: relative;    
+    margin-top: 32px;
+	padding-bottom: 37px;
+}
+.application table {
+	table-layout: fixed;
+	width: 100%;
+    border-collapse: collapse; 
+    border-bottom: 1px solid #C8D2DA;    
+}
+.application_table:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    background: #D0D0D0;
+    height: 1px;
+    left: -18px;
+    bottom: 0;   
+}
+.application thead tr {
+    background: var(--main_color);
+}
+.application thead tr th {
+    padding: 14px 17px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; 
+    text-align: left;
+}
+.application table td {
+	padding: 14px 17px;
+	text-align: left;
+    border-left: 1px solid #C8D2DA;
+	border-right: 1px solid #C8D2DA;
+    color: #514F96;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.application table td span {
+    display: block;
+    font-style: italic;
+    margin-bottom: 2px;
+}
+.application table td b {
+    font-weight: 700;
+    color: var(--main_color);
+}
+.application table tbody tr:nth-child(odd){
+	background: #fff;
+}
+.application table tbody tr:nth-child(even){
+	background: #F1F0FB;
+}
+.application thead tr th:nth-child(1) {
+    width: 29%;
+    border-top-left-radius: 8px;
+}
+.application thead tr th:nth-child(2) {
+    width: 55%;
+}
+.application thead tr th:nth-child(3) {
+    width: 16%;
+    border-top-right-radius: 8px;
+}
+
+.application tbody tr td:nth-child(1) {
+    width: 29%;
+}
+.application tbody tr td:nth-child(2) {
+    width: 55%;
+}
+.application tbody tr td:nth-child(3) {
+    width: 16%;
+}
+
+
+.application_table2 thead tr th:nth-child(1) {
+    width: 40%;
+    border-top-left-radius: 8px;
+}
+.application_table2 thead tr th:nth-child(2) {
+    width: 44%;
+}
+.application_table2 thead tr th:nth-child(3) {
+    width: 16%;
+    border-top-right-radius: 8px;
+}
+
+.application_table2 tbody tr td:nth-child(1) {
+    width: 40%;
+}
+.application_table2 tbody tr td:nth-child(2) {
+    width: 44%;
+}
+.application_table2 tbody tr td:nth-child(3) {
+    width: 16%;
+}
+
+.application_table-title {
+    margin-bottom: 25px;
+    color: #020027;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.375px; 
+}
+
+.walkthroughs {
+    margin-top: 20px;
+}
+.walkthroughs_title {
+    margin-bottom: 25px;
+    color: #020027;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.375px; 
+}
+.walkthroughs_item + .walkthroughs_item {
+    margin-top: 17px;
+}
+.walkthroughs_item-question {
+    color: #7874A3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    width: 100%;
+}
+.walkthroughs_item-date {
+    color: #7874A3;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.walkthroughs_item-answer {
+    color: #020027;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
