@@ -29492,3 +29492,48 @@ bottom: 20px;
     line-height: 42px;
     margin-left: 20px;
 }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.pagination a {
+    display: flex;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    flex-shrink: 0;
+    border-radius: 8.5px;
+    border: 1px solid #F1F1F1;
+    background: #FFF;
+    color: #525093;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    transition: all .4s;
+}
+.pagination a .icon {
+    width: 18px;
+    height: 18px;
+    display: block;    
+}
+.pagination a .icon {
+    width: 18px;
+    height: 18px;
+    display: block;    
+}
+.pagination a.active {
+    background: var(--main_color);
+    color: #fff;
+}
+.pagination a:hover {
+    background: var(--main_color);
+    color: #fff;    
+}
