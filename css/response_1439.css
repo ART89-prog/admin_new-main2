@@ -954,8 +954,19 @@
         width: 1200px;
     }
     .vacancy .table-wrap::-webkit-scrollbar {
+        height: 14px;        
+    }
+    .vacancy .table-wraps::-webkit-scrollbar-thumb { 
+        border-radius: 31px !important;
+    }
+    .vacancy_links-wrap {
+        overflow-y: scroll;
+    }
+    .vacancy_links {
+        width: 1200px;
+    }
+    .vacancy_links-wrap::-webkit-scrollbar {
         display: none;
     }
-
 
 }

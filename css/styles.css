@@ -29332,6 +29332,8 @@ bottom: 20px;
 
 .vacancy .page_title a {
     color: #fff;
+    display: block;
+    margin-left: 20px;
 }
 .vacancy .page_title {
     display: flex;
@@ -29481,15 +29483,13 @@ bottom: 20px;
     margin-top: 0 !important;
 }
 .vacancy_links button {
-    width: 109px;
-    height: 42px;
+    padding: 9px 22px;
     border-radius: 55px;
     background: #E72929;
     color: #FFF;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    line-height: 42px;
     margin-left: 20px;
 }
 
@@ -29527,7 +29527,9 @@ bottom: 20px;
 .pagination a .icon {
     width: 18px;
     height: 18px;
-    display: block;    
+    display: block;   
+    fill: #0000; 
+    z-index: 999;
 }
 .pagination a.active {
     background: var(--main_color);
@@ -29536,4 +29538,7 @@ bottom: 20px;
 .pagination a:hover {
     background: var(--main_color);
     color: #fff;    
+}
+.vacancy .title_faq_result {
+    margin-top: 0;
 }
