@@ -1645,4 +1645,8 @@
         padding: 4px 23px;
     }
 
+    .pagination {
+        gap: 4px;
+    }
+
 }
