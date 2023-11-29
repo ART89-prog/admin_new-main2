@@ -27,6 +27,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -297,7 +298,7 @@
 						<section class="content vacancy">
 							<h1 class="page_title">
 								<span>Вакансии / CRM</span> 
-								<a href="#" class="button_repeat">Добавить заявку</a>						
+								<a href="#" class="button_repeat modal_btn" data-content="#vacancy_modal">Добавить заявку</a>						
 							</h1>						
 
 							<form class="search_faq faq">
@@ -496,12 +497,47 @@
 		</section>
 
 
-		<section class="modal" id="video_modal">
-			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
-			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
-			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
-			</video>
+		<section class="vacancy_modal idea_form" id="vacancy_modal">			
+			<div class="vacancy_modal-title">Добавление</div>											
+			<form>	
+				<div class="line">										
+					<div class="field">
+						<label class="task-page_label">Имя</label>
+						<input type="text" id="name" placeholder="Введите имя">
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label class="task-page_label">Статус</label>									
+						<select id="select">
+							<option value="punkt1">Павлов Александр Иванович / Freedom</option>
+							<option value="punkt2">Павлов Александр Иванович / Freedom</option>
+							<option value="punkt3">Павлов Александр Иванович / Freedom</option>
+						</select>
+					</div>
+				</div>
+				<div class="line w50">
+					<div class="field">
+						<label class="task-page_label">Статус</label>									
+						<select id="select">
+							<option value="punkt1">Новый</option>
+							<option value="punkt2">Старый</option>
+							<option value="punkt3">Очень старый</option>
+						</select>
+					</div>
+						<div class="field">
+						<label class="task-page_label">Еще поле</label>									
+						<input type="text" placeholder="Значение">
+					</div>
+				</div>
+				<div class="line">
+					<div class="field">
+						<label class="task-page_label">Текст</label>									
+						<textarea placeholder="Введите текст"></textarea>
+					</div>
+				</div>
+				<button>Добавить</button>
+			</form>
 		</section>
 
 

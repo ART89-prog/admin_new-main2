@@ -435,27 +435,50 @@
 											</div>
 											<span>153</span>
 										</div>
-										<div class="application_bottom-right">
-											<div class="application_bottom-text">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#check-green2"></use>
-												</svg>	
-												<span>Изменения успешно сохранены</span>
-											</div>
-											<div class="application_bottom-text error">
-												<svg class="icon">
-													<use xlink:href="images/sprite.svg#check-red2"></use>
-												</svg>	
-												<span>Ошибка сохранения. Проверьте поля</span>
-											</div>
-											<button type="submit">Сохранить</button>
+										<div class="application_bottom-text">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#check-green2"></use>
+											</svg>	
+											<span>Изменения успешно сохранены</span>
 										</div>
+										<div class="application_bottom-text error">
+											<svg class="icon">
+												<use xlink:href="images/sprite.svg#check-red2"></use>
+											</svg>	
+											<span>Ошибка сохранения. Проверьте поля</span>
+										</div>
+										<button type="submit">Сохранить</button>										
 									</div>	
 								</form>
 
 								<div class="application_image">
 									<img src="images/application_image.jpg" alt="">
 								</div>	
+
+								<div class="application_comment">
+									<div class="application_comment-title">Комментарии</div>
+									<form>
+										<div class="line">										
+											<div class="field">
+												<label class="task-page_label">Введите комментарий</label>
+												<textarea name="" id="" placeholder="Не дозвонился"></textarea>
+											</div>
+											<div class="field">
+												<label class="task-page_label">Результат</label>									
+												<select id="select">
+													<option value="punkt1">Дозвон</option>
+													<option value="punkt2">Недозвон</option>
+												</select>
+											</div>
+											<button type="submit">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#button-arrow2"></use>
+												</svg>
+											</button>
+										</div>
+									</form>
+								</div>
+
 
 								<section class="application_table"> 								
 									<div class="table-wrap">
