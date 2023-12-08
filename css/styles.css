@@ -23579,6 +23579,8 @@ form .form_btns input[type=file] + label,
     -webkit-box-orient: vertical;  
     overflow: hidden; */
     margin-bottom: 27px;
+    display: block;
+    text-decoration: none;
 }
 .task-block_comment-box {
     display: flex;
@@ -23805,7 +23807,7 @@ form .form_btns input[type=file] + label,
 .participants_item .icon {
     width: 25px;
     height: 25px;
-    margin-left: 7px;
+    margin-left: 0px;
 }
 .participants_items {
     margin-bottom: 16px;
@@ -29381,28 +29383,8 @@ bottom: 20px;
     width: 4.8%;
     border-top-left-radius: 8px;
 }
-.vacancy thead tr th:nth-child(2) {
-    width: 10%;
-}
-.vacancy thead tr th:nth-child(3) {
-    width: 7.3%;
-}
-.vacancy thead tr th:nth-child(4) {
-    width: 13%;
-}
-.vacancy thead tr th:nth-child(5) {
-    width: 18.1%;
-}
-.vacancy thead tr th:nth-child(6) {
-    width: 12.2%;
-}
-.vacancy thead tr th:nth-child(7) {
-    width: 10.8%;
-}
-.vacancy thead tr th:nth-child(8) {
-    width: 10.4%;
-}
-.vacancy thead tr th:nth-child(9) {
+
+.vacancy thead tr th:last-child {
     width: 13.4%;
     border-top-right-radius: 8px;
 }
@@ -29411,30 +29393,11 @@ bottom: 20px;
     width: 4.8%;
     text-align: center;
 }
-.vacancy tbody tr td:nth-child(2) {
-    width: 10%;
-}
-.vacancy tbody tr td:nth-child(3) {
-    width: 7.3%;
-}
-.vacancy tbody tr td:nth-child(4) {
-    width: 13%;
-}
-.vacancy tbody tr td:nth-child(5) {
-    width: 18.1%;
-}
-.vacancy tbody tr td:nth-child(6) {
-    width: 12.2%;
-}
-.vacancy tbody tr td:nth-child(7) {
-    width: 10.8%;
-}
-.vacancy tbody tr td:nth-child(8) {
-    width: 10.4%;
+
+.vacancy tbody tr td:nth-child(8) { 
     text-align: center;
 }
-.vacancy tbody tr td:nth-child(9) {
-    width: 13.4%;
+.vacancy tbody tr td:last-child { 
     text-align: center;
 }
 
@@ -29487,7 +29450,33 @@ bottom: 20px;
     font-weight: 500;
     margin-left: 20px;
 }
+.vacancy_information .status{
+	padding: 3px 10px;
+	align-items: flex-start;
+	border-radius: 29px;
+	background: #33BCDA;
+	color:#fff;
+	text-align: center;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	    min-width: 90px;
+}
 
+.vacancy_information .status.archive{
+	background: #E03A44;
+}
+.vacancy_information .status.work{
+	background: #67B934;
+}
+.vacancy_information .status.sobes{	
+	background: #FFA800;
+}
+
+.vacancy_information .status.archive span{
+	font-size: 10px;
+	font-weight: 400;
+}
 .pagination {
     display: flex;
     align-items: center;
@@ -30049,4 +30038,35 @@ bottom: 20px;
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
     background-color: #4E4B8E;
     color: white;
+}
+
+.load_anal{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.load_anal svg{
+    width: 40px;
+    height: 40px;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.5, 0.33, 0.04, 1.02);
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: new_load;
+}
+.load_anal .text_load{
+    font-size: 14px;
+    letter-spacing: -0.3px;
+}
+
+.load_anal .text_load b{
+    font-size: 16px;    
 }
