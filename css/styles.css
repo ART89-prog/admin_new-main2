@@ -30070,3 +30070,60 @@ bottom: 20px;
 .load_anal .text_load b{
     font-size: 16px;    
 }
+
+
+
+
+.tasks .step_stage {
+    border-radius: 0px;
+    background: none;
+    padding: 0px;
+    align-items: flex-start;
+}
+.tasks .steps_stage {
+    margin-top: 17px;
+    position: relative;
+    padding-bottom: 19px;    
+}
+.tasks .steps_stage:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    left: -20px;
+    bottom: 0;
+    background: #DFDFDF;
+}
+.tasks .step_stage .icon,
+.tasks .steps_stage_title .icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 9px;
+    flex-shrink: 0;
+}
+.tasks .steps_stage_title {
+    color: #637190;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21px; 
+}
+.tasks .step_stage_body {
+    color: #2F3749;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: -0.5px;
+}
+.tasks .step_stage_time {
+    color: #8683C0;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.22px;
+}
+.tasks .step_stage_time span {
+    color: var(--main_color);
+}

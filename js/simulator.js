@@ -25,6 +25,31 @@ $(document).ready(function() {
     });
 
 
+    $('body').on('click', '.tasks .steps_stage .step_stage:not(.active)', function (e) {
+        var target =  $(e.target);
+        if(target.closest(".tasks .step_stage_img").length !== 0 || target.closest(".tasks .step_stage_video").length !== 0)
+        {
+            return;
+        }
+        var date = new Date();
+        $(this).addClass("active").find(".icon_change use").attr("xlink:href","/images/sprite.svg#training_ok2");
+        let min = date.getMinutes();
+        if(min<10)
+        {
+            min = "0"+min;
+        }
+        $(this).find(".tasks .step_stage_time").text("Выполнено в " +  date.getHours() + ":"+  min);
+
+        if($(".tasks .steps_stage .step_stage:not(.active)").length==0)
+        {
+            let id = $(this).closest(".tasks .steps_data_js").data("id");
+            $(".tasks .inner_steps .step[data-id='"+id+"']").removeClass("error").addClass("complete").find("use").attr("xlink:href","/images/sprite.svg#step_complete");
+
+        }
+    });
+
+
+
 
 
     $(".inner_steps .step").click(function (e) {
