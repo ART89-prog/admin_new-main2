@@ -27219,6 +27219,15 @@ form .form_btns input[type=file] + label,
 }
 
 
+.steps_stage .pie {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+}
+.steps_stage .pie:after {
+    display: none;
+}
+
 .course_info .progress{
     background: #FFFFFF;
     border: 1px solid #E6E6E6;
@@ -30137,7 +30146,6 @@ bottom: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin-bottom: 13px;
 }
 .task-block_subtask .icon {
     width: 16px;
@@ -30153,7 +30161,6 @@ bottom: 20px;
 }
 .task-block_items.classic .task-block_subtask {
     margin-top: 13px;
-    margin-bottom: 13px;
 }
 
 .projects-top_items {
@@ -30196,8 +30203,10 @@ bottom: 20px;
     line-height: 19px; 
     letter-spacing: -0.3px;
     padding-bottom: 20px;
+    margin-bottom: 14px;
     position: relative;
     text-decoration: none;
+    flex-grow: 1;
 }
 .projects-top_item-title::before {
     position: absolute;
@@ -30210,7 +30219,7 @@ bottom: 20px;
 }
 .projects-top_item-labels {
     display: flex;
-    margin-top: 14px;
+    margin-top: auto;
 }
 .projects-top_item-label {
     padding: 3px 10px;
@@ -30229,4 +30238,7 @@ bottom: 20px;
 }
 .projects-top_item-label + .projects-top_item-label {
     margin-left: 10px;
+}
+.task-block_item .projects_item-author {
+    margin-top: 13px;
 }
