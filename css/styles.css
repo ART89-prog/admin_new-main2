@@ -27165,7 +27165,7 @@ form .form_btns input[type=file] + label,
 }
 
 .pie {
-    --p: 20;
+    --p: 30;
     --b: 5px;
     --c: var(--main_color);
     --w: 42px;
