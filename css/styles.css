@@ -27227,6 +27227,12 @@ form .form_btns input[type=file] + label,
 .steps_stage .pie:after {
     display: none;
 }
+.steps_stage .pie:before {
+    inset: 0;
+    background: radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p)*1%),#D0D0D0 0);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    mask: radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+}
 
 .course_info .progress{
     background: #FFFFFF;
@@ -30241,4 +30247,9 @@ bottom: 20px;
 }
 .task-block_item .projects_item-author {
     margin-top: 13px;
+}
+
+.project.task-block_items.classic {
+    margin-right: 0;
+    margin-left: 0;
 }
