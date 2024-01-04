@@ -1649,4 +1649,19 @@
         gap: 4px;
     }
 
+    .solutions-tasks3 .solutions-tasks_top-title {
+        margin-bottom: 0px;
+    }
+    .solutions-tasks3 .solutions-tasks_top-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .solutions-tasks3 .solutions-tasks_btns {
+        margin-top: 10px;
+    }
+    .solutions-tasks_btns .modal_content, 
+    .solutions-tasks_top-copy {
+        margin-left: 0;
+    }
+
 }

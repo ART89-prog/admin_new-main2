@@ -892,6 +892,11 @@ $(() => {
 		$(this).parent().parent().hide();
 	});
 
+	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
+		e.preventDefault();
+		$(this).parent().parent().parent().hide();
+	});
+
 
 	$(".link-more").click(function (e) {
 		e.preventDefault();
