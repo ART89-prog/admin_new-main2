@@ -1019,6 +1019,8 @@ $(() => {
 	}
 
 
+	$('.js-example-basic-single').select2();
+
 
 	var locationHash = window.location.hash
 

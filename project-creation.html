@@ -32,7 +32,6 @@
 	<link rel="stylesheet" href="css/nice-select.css">
 	<link rel="stylesheet" href="css/fancybox.css" async>
 	<link rel="stylesheet" href="css/select2.min.css">
-	<!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/> -->
 	<link rel="stylesheet" href="css/styles.css" async>
 	
 	<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
@@ -380,13 +379,14 @@
 								</div>
 								<div class="line">
 									<div class="field">
-										<label for="description">Название проекта</label>
+										<label for="description">Описание</label>
 										<textarea class="project-textarea" id="description" placeholder="Введите описание"></textarea>
 									</div>
 								</div>
 								<div class="line">
 									<div class="field">
-										<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+										<label for="description">Участники (несколько человек)*</label>
+										<select class="js-example-basic-multiple" multiple="multiple">
 											<option value="AL">Василий Иванов</option>
 											<option value="WY">Василий Иванов</option>
 										</select>										
@@ -394,15 +394,23 @@
 								</div>								
 								<div class="line">
 									<div class="field">
-										<select class="js-example-basic-multiple" name="states[]" multiple="multiple">
+										<label for="description">Ответственный (максимум 1)*</label>
+										<select class="js-example-basic-single">
 											<option value="AL">Василий Иванов</option>
-											<option value="WY">Василий Иванов</option>
+											<option value="WY">Петр Петров</option>
 										</select>										
 									</div>
-								</div>		
-								<button type="submit">
-									<span>Создать проект</span>
-								</button>
+								</div>	
+								<div class="project-creation_description">Если вы хотите добавить нового пользователя, то сперва его нужно добавить участником в проект</div>
+								<div class="project-creation_btns">
+									<button type="submit">
+										<span>Отмена</span>
+									</button>
+									<button type="submit">
+										<span>Создать проект</span>
+									</button>	
+								</div>	
+								
 							</form>
 						</section>
 

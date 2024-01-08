@@ -23971,9 +23971,10 @@ form .form_btns input[type=file] + label,
     top: 50%;
     transform: translateY(-50%);
 }
-.uploading-files .block_title {
+.uploading-files .block_title,
+.audio-notes .block_title {
     margin-bottom: 6px;
-}
+} 
 
 .uploaded-files_items {
     display: flex;
@@ -23988,6 +23989,9 @@ form .form_btns input[type=file] + label,
     padding: 12px;
     background: #FFFFFF;
     border-radius: 9px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .uploaded-files_item-top {
     display: flex;
@@ -24004,6 +24008,51 @@ form .form_btns input[type=file] + label,
     letter-spacing: -0.3px;
     color: #1D1D1D;  
     margin-bottom: 2px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    width: 85%;
+    position: relative;
+}
+/* .uploaded-files_item-name[title]:hover::after {
+    content: attr(title);
+    background-color: #00FF00;
+    color: #111;
+    font-size: 150%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+} */
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #00FF00;
+    color: #111;
+    font-size: 150%;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    top: -30px;
+    left: 0%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #222222;
+    opacity: 0;
+    border: 1px solid #111111;
+    z-index: 99999;
+    visibility: hidden;
+}
+[data-title] {
+    position: relative;
 }
 .uploaded-files_item-text {
     font-weight: 400;
@@ -24015,11 +24064,13 @@ form .form_btns input[type=file] + label,
 .uploaded-files_item-top .icon {
     width: 34px;
     height: 34px;
+    flex-shrink: 0;
 }
 .uploaded-files_item-bottom {
     padding-top: 9px;
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .uploaded-files_item-bottom::before {
@@ -24036,6 +24087,7 @@ form .form_btns input[type=file] + label,
     font-size: 12px;
     line-height: 14px;
     margin-right: 11px;
+    margin-bottom: 8px;
 }
 .uploaded-files_item-bottom button.blau {
     color: #0085FF; 
@@ -24141,7 +24193,7 @@ form .form_btns input[type=file] + label,
     background: #E7E5FE;
     border-radius: 6px;
     border: none;
-    padding: 3px 7px 3px 24px;
+    padding: 3px 24px 3px 7px;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
@@ -24158,8 +24210,8 @@ form .form_btns input[type=file] + label,
     font-weight: bold;
     padding: 0;
     position: absolute;
-    left: 7px;
-    top: -23px;
+    left: calc(100% - 20px);
+    top: -1px;
     width: auto;
 }
 .select2-dropdown {
@@ -30111,15 +30163,57 @@ bottom: 20px;
     display: block;
 }
 
-.select2.select2-container:last-child {
+/* .select2.select2-container:last-child {
     display: none;
+} */
+.project-creation_description {
+    color: #7874A3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.714%;
+    letter-spacing: -0.3px;   
 }
+.project-creation_btns {
+    display: flex;    
+    align-items: center;
+    justify-content: flex-end;
+}
+.form-project button{
+    margin-left: 0;
+    margin-top: 0;
+}
+.form-project button:nth-child(1) {
+    color: #646093;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 55px;
+    background: #CECBF0;
+    margin-right: 12px;
+}
+
+.project-creation_btns button
 .select2-container {
     color: #7874A3;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;    
     height: 45px;    
+}
+.select2-dropdown {
+    border: none;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+    border: 1px solid #7874A3;
+}
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single, .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple{
+    border-radius: 9px;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single, .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple {
+    border-radius: 9px;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
     height: 100%;
