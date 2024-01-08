@@ -2783,6 +2783,11 @@
     }
 
 
+    .projects-top_items > * {
+        margin-bottom: 0;
+    }
+
+
 
 
 }
