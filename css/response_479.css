@@ -1688,5 +1688,14 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    .task-editing_btns {
+        margin-left: 0;
+    }
+    .task-editing_btns button {
+        padding: 5px 8px;
+    }
+    .task-page_form-btns {
+        justify-content: flex-start;
+    }
 
 }
