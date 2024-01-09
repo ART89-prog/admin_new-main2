@@ -860,6 +860,12 @@ $(() => {
 		$(".link-more").addClass("active");
 	});
 
+	$('.audio-notes_description-decoding').click(function(){
+        $('.hidden').slideDown();
+        $('.audio-notes_description-decoding').text('Скрыть расшифровку');
+      });
+	  
+
 
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();

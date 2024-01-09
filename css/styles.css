@@ -30584,3 +30584,64 @@ bottom: 20px;
     line-height: normal;
     letter-spacing: 0.7px;
 }
+
+
+.audio-notes_btn {
+    padding: 12px 20px;
+    background: var(--main_color);
+    border-radius: 40px;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.audio-notes_description {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+.audio-notes_description-text {
+    display: block;
+    margin-right: 13px;
+    color: #534F77;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.3px;
+}
+.audio-notes_description-btns {
+    display: flex;
+    align-items: center;
+}
+.audio-notes_description-decoding {
+    color: #FFA800;
+    border-bottom: 1px dashed #FFA800;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 7px;
+}
+.audio-notes_description-delete {
+    color: #D93737;
+    border-bottom: 1px dashed #D93737;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.audio-notes_info {
+    padding: 12px 15px 18px;
+    border-radius: 9px;
+    background: #FFF;
+}
+.audio-notes_info + .audio-notes_info {
+    margin-top: 19px;
+}
+.hidden {
+    display: none;
+}
