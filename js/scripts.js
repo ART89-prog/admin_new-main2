@@ -860,11 +860,27 @@ $(() => {
 		$(".link-more").addClass("active");
 	});
 
+
 	$('.audio-notes_description-decoding').click(function(){
-        $('.hidden').slideDown();
-        $('.audio-notes_description-decoding').text('Скрыть расшифровку');
-      });
-	  
+		$('.audio-notes_description-box').slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$('.audio-notes_description-decoding').html('Расшифровка');
+			} else {
+				$('.audio-notes_description-decoding').html('Скрыть расшифровку');
+			}							
+		});
+	});  
+
+
+	$('.audio-notes_btn').click(function(){
+		$('.add_audio audio-record').slideToggle(300, function(){
+			// if ($(this).is(':hidden')) {
+			// 	$('.audio-notes_btn').html('Записать заметку');
+			// } else {
+			// 	$('.audio-notes_btn').html('Отменить запись');
+			// }							
+		});
+	}); 
 
 
 	$(".task-page_btn button").click(function (e) {

@@ -30642,6 +30642,81 @@ bottom: 20px;
 .audio-notes_info + .audio-notes_info {
     margin-top: 19px;
 }
-.hidden {
+.audio-notes_description-box {
+    color: #505261;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.714%;
+    margin-top: 12px;
+}
+
+.audio-notes .add_audio {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px 50px;
+    align-items: center;
+}
+.audio-notes .add_audio input {
     display: none;
+}
+.audio-notes .add_audio .start_btn {
+    color: #d11a1a;
+    position: relative;    
+    z-index: 3;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: color .2s linear;
+    text-decoration: none;
+    border-radius: 50%;
+    background: #e9eaf8;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.audio-notes .add_audio .start_btn:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    content: '';
+    transition: .2s linear;
+    opacity: 0;
+    border-radius: inherit;
+    background: #d11a1a;
+}
+.audio-notes .add_audio .start_btn .icon {
+    display: block;
+    width: 24px;
+    height: 36px;
+}
+.audio-notes .add_audio input:checked ~ .start_btn {
+    color: #fff;
+}
+.audio-notes .add_audio input:checked ~ .start_btn:before {
+    width: 44px;
+    height: 44px;
+    animation: shadow-expansion .9s ease-in-out infinite alternate;
+    opacity: 1;
+}
+@keyframes shadow-expansion
+{
+    from
+    {
+        box-shadow: 0 0 0 5px #d11a1a;
+    }
+    to
+    {
+        box-shadow: 0 0 0 0 #d11a1a;
+    }
 }
