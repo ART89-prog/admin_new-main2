@@ -29,6 +29,7 @@
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/select2.min.css">
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
@@ -301,192 +302,77 @@
 								<a href="/">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
 								</a>
-								<span>Создать новую вакансию в компанию</span>
-								<div class="division-page_text">Помощь в создании вакансии в новую компанию</div>
+								<span>Создание задачи</span>
 							</section>
 
 							<form class="task-page_form">
-								<div class="task-page_head">
-									<div class="task-page_title">Бриф на задачу</div>
-									<div class="task-page_text">Заполните все поля для получения наилучшего результата</div>	
-								</div>
 								<div class="line">
-									<div class="task-page_label">Название вакансии</div>
+									<div class="task-page_label">Название задачи</div>
 									<div class="field">
 										<input type="text" id="name" placeholder="Введите название">
 									</div>
 								</div>
 								<div class="line">
-									<div class="task-page_label">Описание вакансии</div>
+									<div class="task-page_label">Описание</div>
 									<div class="field">
-										<textarea id="desc" placeholder="Введите название"></textarea>
+										<textarea id="desc" class="task-page_textarea" placeholder="Введите название"></textarea>
 									</div>
 								</div>
 								<div class="line">
-									<div class="task-page_label">Выпадающий список</div>
+									<div class="task-page_label">Ответственный <span>(Начните вводить имя)</span></div>
+									<div class="field">										
+										<select class="js-example-basic-multiple" multiple="multiple">
+											<option value="AL">Василий Иванов</option>
+											<option value="WY">Василий Иванов</option>
+										</select>										
+									</div>
+								</div>		
+								<div class="line">
+									<div class="task-page_subtitle">Подзадачи</div>
+									<div class="task-page_label">Список подзадач (каждая подзадача с новой строки)</div>
 									<div class="field">
-										<select id="select">
-											<option value="punkt1">Пункт 1</option>
-											<option value="punkt2">Пункт 2</option>
-											<option value="punkt3">Пункт 3</option>
-										</select>
+										<textarea id="desc" class="task-page_textarea h172" placeholder="Введите подзадачи"></textarea>
 									</div>
+								</div>
+								<div class="line">										
+									<div class="field">
+										<input type="checkbox" id="group1_check1">
+										<label for="group1_check1">Расширенные статусы у подзадач (с кнопками и комментариями)</label>
+									</div>	
 								</div>
 								<div class="line">
-									<div class="task-page_label">График</div>
-									<div class="line-box">										
-										<div class="field">
-											<input type="checkbox" id="group1_check1" checked>
-											<label for="group1_check1">Свободный</label>
-										</div>	
-									</div>
-									<div class="line-box">
-										<div class="field">
-											<input type="checkbox" id="group1_check2">
-											<label for="group1_check2">Понедельник-Пятница с 09:00 до 18:00</label>
-										</div>	
-									</div>
+									<div class="task-page_subtitle">Дополнительные настройки</div>														
+									<div class="field">
+										<input type="checkbox" id="group2_check1" checked>
+										<label for="group2_check1">Активировать комментарии</label>
+									</div>	
+									<div class="field">
+										<input type="checkbox" id="group2_check2" checked>
+										<label for="group2_check2">Принимать аудио сообщения</label>
+									</div>	
+									<div class="field">
+										<input type="checkbox" id="group2_check3" checked>
+										<label for="group2_check3">Разрешить загрузку файлов</label>
+									</div>	
 								</div>
 								<div class="line">
-									<div class="task-page_label">Готовность к переезду</div>
-									<div class="line-box">										
-										<div class="field">										
-											<input type="radio" name="radio" id="group2_check1" checked>
-											<label for="group2_check1">Да</label>
-										</div>	
+									<div class="task-page_label">Дедлайн</div>
+									<div class="field">										
+										<div class="task-page_date">01.01.2024</div>										
 									</div>
-									<div class="line-box">
-										<div class="field">
-											<input type="radio" name="radio" id="group2_check2">
-											<label for="group2_check2">Нет</label>
-										</div>	
-									</div>
-								</div>
-								<div class="task-page_btn">
-									<button type="submit">Генерировать</button>
-								</div>								
+								</div>	
+
+								<div class="task-page_form-btns">
+									<button type="submit">
+										<span>Отмена</span>
+									</button>
+									<button type="submit">
+										<span>Создать задачу</span>
+									</button>	
+								</div>							
 							</form>
 
-
-
-							<section class="solutions-tasks">
-								<div class="wrapper_head">
-									<div class="block_title">Решение задач</div>
-								</div>
-								<div class="solutions-tasks_wrap">
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-title">Решение от 18 мая 2023</div>
-										<a href="#" class="solutions-tasks_top-link">Посмотреть запрос</a>
-									</div>
-									<div class="education_text-loaded">
-										<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-										<span>Идет обработка данных. Пожалуйста, дождитесь результата. Это может занять до 2-х минут.</span>
-									</div>
-								</div>								
-							</section>
-
-							<section class="solutions-tasks2">
-								<div class="wrapper_head">
-									<div class="block_title">Решения задачи</div>
-								</div>
-								<div class="solutions-tasks_wrap">
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-title">Решение от 18 мая 2023
-											<a href="#" class="btn-clipboard" data-clipboard-target="#example1">Скопировать в буфер обмена</a>
-											<a href="#" class="modal_content" data-content="#callback_modal5">Посмотреть запрос</a>
-											<a href="#" class="modal_content" data-content="#callback_modal11">Скорректировать</a>
-										</div>
-										<a href="#" class="solutions-tasks_top-delete">Удалить</a>
-									</div>
-									<div class="solutions-tasks_text" id="example1">
-										<p>Вакансия: Менеджер по продажам в айти компанию</p>
-										<p>Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.</p>
-									</div>
-								</div>
-								<div class="solutions-tasks_wrap">
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-title">Решение от 18 мая 2023
-											<a href="#" class="btn-clipboard" data-clipboard-target="#example2">Скопировать в буфер обмена</a>
-											<a href="#" class="modal_content" data-content="#callback_modal6">Посмотреть запрос</a>
-											<a href="#" class="modal_content" data-content="#callback_modal9">Скорректировать</a>
-										</div>
-										<a href="#" class="solutions-tasks_top-delete">Удалить</a>
-									</div>
-									<div class="solutions-tasks_text" id="example2">
-										<p>Вакансия: Менеджер по продажам в айти компанию</p>
-										<p>Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.</p>
-									</div>
-								</div>
-								<div class="solutions-tasks_wrap">
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-title">Решение от 18 мая 2023
-											<a href="#" class="btn-clipboard" data-clipboard-target="#example3">Скопировать в буфер обмена</a>
-											<a href="#" class="modal_content" data-content="#callback_modal7">Посмотреть запрос</a>
-											<a href="#" class="modal_content" data-content="#callback_modal10">Скорректировать</a>
-										</div>
-										<a href="#" class="solutions-tasks_top-delete">Удалить</a>
-									</div>
-									<div class="solutions-tasks_text" id="example3">
-										<p>Вакансия: Менеджер по продажам в айти компанию</p>
-										<p>Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.</p>
-									</div>
-								</div>								
-							</section>
-
-
-
-							<section class="solutions-tasks3">
-								<div class="wrapper_head">
-									<div class="block_title">Решения задачи</div>
-								</div>
-								<div class="solutions-tasks_wrap">
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-head">
-											<div class="solutions-tasks_top-head-info">
-												<div class="photo">
-													<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-												</div>	
-												<div class="solutions-tasks_top-head-desc">
-													<div class="solutions-tasks_top-title">Ваш запрос</div>
-													<div class="solutions-tasks_top-date">4 января в 17:50</div>
-												</div>
-											</div>
-											<div class="solutions-tasks_btns">
-												<a href="#" class="modal_content" data-content="#callback_modal11">Скорректировать</a>
-												<a href="#" class="solutions-tasks_top-delete">Удалить</a>	
-											</div>
-										</div>
-										<div class="solutions-tasks_text" id="example2">
-											<p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</p>
-										</div>
-									</div>
-									
-									<div class="solutions-tasks_top">
-										<div class="solutions-tasks_top-head">
-											<div class="solutions-tasks_top-head-info">
-												<div class="photo">
-													<img data-src="images/gtp_icon.svg" alt="" class="lozad">
-												</div>	
-												<div class="solutions-tasks_top-head-desc">
-													<div class="solutions-tasks_top-title">Решение от ИИ</div>
-													<div class="solutions-tasks_top-date">4 января в 17:50</div>
-												</div>
-											</div>
-											<div class="solutions-tasks_btns">
-												<a href="#" class="btn-clipboard solutions-tasks_top-copy" data-clipboard-target="#example2">Скопировать в буфер обмена</a>
-											</div>
-										</div>
-										<div class="solutions-tasks_text" id="example2">
-											<p>Вакансия: Менеджер по продажам в айти компанию</p>
-											<p>Мы ищем энергичного и амбициозного Менеджера по продажам для нашей успешной айти компании. В эту должность требуется человек, который готов работать в команде, обладает опытом продаж в B2B, имеет опыт общения с клиентами и поставщиками, и готов стать частью нашей дружной команды.</p>
-										</div>
-									</div>
-								</div>
-							
-							</section>
-
-
-							
+													
 							<footer>
 								<div class="logo">
 									<img src="images/logo.svg" alt="">
@@ -662,9 +548,9 @@
 		<script src="js/lozad.min.js"></script>
 		<script src="js/media-player.js"></script>
 		<script src="js/html5sortable.min.js"></script>
+		<script src="js/select2.full.min.js"></script>
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
-		<script src="js/nice-select.js"></script>
 		<script src="js/clipboard.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
