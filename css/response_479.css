@@ -1663,5 +1663,12 @@
     .solutions-tasks_top-copy {
         margin-left: 0;
     }
+    .project-creation_btns {
+        flex-direction: column;
+    }
+    .form-project button:nth-child(1) {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
 
 }
