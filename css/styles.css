@@ -23495,7 +23495,6 @@ form .form_btns input[type=file] + label,
     background: #F3F2FF;
     border: 1px solid #D8D7F5;
     border-radius: 9px;
-    width: 168px;
     height: 41px;
     display: flex;
     align-items: center;
