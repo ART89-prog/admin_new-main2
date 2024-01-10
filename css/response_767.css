@@ -2786,6 +2786,20 @@
         margin-bottom: 0;
     }
 
+    .tasks-block_info-statut {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tasks-block_info-stat {
+        margin-top: 10px;
+    }
+    .tasks-block_info-left {
+        flex-wrap: wrap;
+    }
+    .tasks-block_info-name {
+        width: calc(100% - 90px);
+    }
+
 
 
 

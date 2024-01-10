@@ -31041,7 +31041,7 @@ bottom: 20px;
     display: none;
 }
 
-.tasks-block_info-stat {
+.tasks-block_info-statut {
     display: flex;
     align-items: center;
 }
@@ -31053,6 +31053,8 @@ bottom: 20px;
     font-weight: 700;
     line-height: 150%;
     margin-right: 16px;
+    display: flex;
+    align-items: center;
 }
 .tasks-block_info-stat span {
     display: block;
@@ -31128,6 +31130,7 @@ bottom: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-right: 8px;
 }
 .task2_item-top-label.green {
     background: rgba(28, 189, 44, 0.20);
@@ -31140,6 +31143,11 @@ bottom: 20px;
 .task2_item-top-label.red {
     background: rgba(223, 46, 46, 0.20);
     color: #DF2E2E;
+}
+.task2_item-top-label.purple {
+    background: #CECBF0;
+    color: #646093;
+    padding: 3px 8px;
 }
 .task2_item-top-label:before {
     position: absolute;
@@ -31194,4 +31202,12 @@ bottom: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
+}
+
+.task2_labels {
+    display: flex;
+}
+.tasks-block_info-left {
+    display: flex;
+    align-items: center;
 }

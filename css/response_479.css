@@ -1697,5 +1697,14 @@
     .task-page_form-btns {
         justify-content: flex-start;
     }
+    .tasks-block_info-name {
+        width: 100%;
+    }
+    .tasks-block_info-name {
+        padding-left: 0;
+    }
+
+
+
 
 }
