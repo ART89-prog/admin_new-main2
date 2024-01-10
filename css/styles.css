@@ -30955,10 +30955,10 @@ bottom: 20px;
     width: 6px;
     height: 6px;
 }
-.tasks-block_info .nice-select .selected.focus {
+.tasks-block_info .nice-select .selected {
     position: relative;
 }
-.tasks-block_info .nice-select .selected.focus:before {
+.tasks-block_info .nice-select .selected:before {
     position: absolute;
     content: "";
     width: 6px;
@@ -31006,9 +31006,10 @@ bottom: 20px;
 }
 .tasks-block_info .nice-select.open .list {
     min-width: 150px;
-    padding: 10px 0;
+    padding: 4px 0;
     border-radius: 9px;
-    border: 1px solid #F4F3F9;
+    border: 1px solid #BAB8CA;
+    margin-top: 5px;
 }
 .tasks-block_info .nice-select .list_item.option:hover {
     background: none;
@@ -31038,4 +31039,59 @@ bottom: 20px;
 }
 .tasks-block_info .nice-select .list_item:last-child:after {
     display: none;
+}
+
+.tasks-block_info-stat {
+    display: flex;
+    align-items: center;
+}
+.tasks-block_info-stat {
+    color: #637190;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-right: 16px;
+}
+.tasks-block_info-stat span {
+    display: block;
+    margin-left: 10px;
+    position: relative;    
+    padding: 9px 10px 9px 14px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 59px;    
+}
+.tasks-block_info-stat span.yellow {
+    background: rgba(255, 157, 43, 0.20);
+    color: #FF9D2B;
+}
+.tasks-block_info-stat span.azure {
+    background: rgba(19, 184, 194, 0.20);
+    color: #13B8C2;
+}
+.tasks-block_info-stat span.green {
+    background: rgba(28, 189, 44, 0.20);
+    color: #1CBD2C;
+}
+.tasks-block_info-stat span:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 7px;
+    top: calc(50% - 3px);
+}
+.tasks-block_info-stat span.yellow:before {
+    background: #FF9D2B;
+}
+.tasks-block_info-stat span.azure:before {
+    background: #13B8C2;
+}
+.tasks-block_info-stat span.green:before {
+    background: #1CBD2C;
 }
