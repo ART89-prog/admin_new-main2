@@ -860,9 +860,16 @@ $(() => {
 		$(".link-more").addClass("active");
 	});
 
+	// $(".audio-note .form-project").hide();
+	$(".audio-notes_description-redactor").click(function (e) {
+		e.preventDefault();
+		$(".audio-note .form-project").css("display", "block");
+		$(".audio-notes_description-redactor").addClass("active");
+	});
+
 
 	$('.audio-notes_description-decoding').click(function(){
-		$(this).parent().parent().next().slideToggle(200);
+		$(this).parent().parent().next().slideToggle(300);
 	});  
 
 

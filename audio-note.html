@@ -368,8 +368,13 @@
 										<div class="block_text">Аудио заметки к задаче</div>
 									</div>
 									<button class="audio-notes_btn">
-										Записать заметку
+										Отменить запись
 									</button>
+								</div>
+
+								<div class="audio-note_wrapper block2">
+									<div class="audio-note_wrapper-title">Пока здесь ничего нет</div>
+									<div class="audio-note_wrapper-text">Пока нет ни одной аудио-заметки. Запишите первую</div>
 								</div>
 
 								<div class="audio-note_list block2">
@@ -414,7 +419,7 @@
 											</button>
 										</div>										
 									</div>
-									<div class="audio-notes_description-box" style="display: none;">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+									<div class="audio-notes_description-box" style="display: none;"> <span><p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для</p>  <a href="#" class="link-more">Показать все</a> <p class="hide-content">всех, кто относится к тексту, как к количеству знаков</p></span></div>
 								</div>
 
 								<div class="audio-notes_info">
@@ -436,21 +441,45 @@
 											</button>
 											<button class="red audio-notes_description-delete">
 												<span>Удалить</span>
-											</button>
-										</div>										
+											</button>	
+											<div class="audio-notes_description-btns-ok">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#ok999"></use>
+												</svg>
+												<span>Проверено 01 января 2024 в 18:03</span>
+											</div>											
+										</div>	
+										<button class="yellow audio-notes_description-redactor">
+											<span>Редактировать расшифровку</span>
+										</button>									
 									</div>
-									<div class="audio-notes_description-box" style="display: none;">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков</div>
+									<div class="audio-notes_description-box" style="display: none;"> 
+										<span><p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для</p>  <a href="#" class="link-more">Показать все</a> <p class="hide-content">всех, кто относится к тексту, как к количеству знаков</p></span>
+										<button class="yellow audio-notes_description-redactor">
+											<span>Редактировать расшифровку</span>
+										</button>
+									</div>	
+									<form class="form-project" style="display: none;">
+										<div class="line">
+											<div class="field">
+												<textarea placeholder="Служба Яндекс.Рефераты предназначена для студентов и школьников,"></textarea>
+											</div>
+										</div>
+										<div class="task-page_form-btns">
+											<button type="submit">
+												<span>Отмена</span>
+											</button>
+											<button type="submit">
+												<span>Сохранить</span>
+											</button>	
+										</div>
+									</form>							
 								</div>
 
 							</div>
 
 
 						</section>
-
-
-						
-
-
 
 
 						<div class="player_fixed">

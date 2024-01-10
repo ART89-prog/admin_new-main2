@@ -30681,7 +30681,18 @@ bottom: 20px;
     line-height: 135.714%;
     margin-top: 12px;
 }
-
+.audio-notes_description-box span p {
+    margin-right: 6px;
+    display: block;
+}
+.audio-notes_description-box span .link-more {
+    margin-right: 6px;
+    color: #0085FF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
 .audio-notes .add_audio {
     display: flex;
     flex-direction: column;
@@ -31276,4 +31287,95 @@ bottom: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; 
+}
+
+.audio-notes_description-redactor {
+    margin-left: auto;
+    display: block;
+    color: #FFA800;
+    border-bottom: 1px dashed #FFA800;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;    
+}
+.audio-notes_description-box .audio-notes_description-redactor {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 6px;
+}
+.audio-note .task-page_form-btns:before {
+    display: none;
+}
+.audio-note .form-project textarea {
+    border-radius: 9px;
+    border: 1px solid #7874A3;
+    background: #FFF;  
+    color: #505261;
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.714%;
+    height: 95px;
+    resize: none;
+    padding: 14px;
+    opacity: 0.5;
+
+}
+.audio-note .form-project {
+    padding-top: 20px;
+    margin-top: 27px;
+    position: relative;
+}
+.audio-note .form-project:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    left: -18px;
+    top: 0;
+    background: #DFDFDF;
+}
+.audio-notes_description-redactor.active {
+    display: none;
+}
+
+.audio-note_wrapper {
+    padding: 29px 18px 28px;
+    border-radius: 9px;
+    background: #FFF; 
+}
+.audio-note_wrapper-title {
+    color: #121213;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+}
+.audio-note_wrapper-text {
+    color: #3F4572;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.audio-notes_description-btns-ok {
+    display: flex;
+    align-items: center;
+    color: #1CBD2C;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 11px;
+}
+.audio-notes_description-btns-ok .icon {
+    width: 23px;
+    height: 23px;
+    margin-right: 3px;
+    display: block;
 }

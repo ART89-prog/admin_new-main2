@@ -1999,6 +1999,15 @@
     }
 
 
+    .audio-notes_description {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .audio-notes_description-btns {
+        margin-top: 7px;
+    }
+
+
 
 }
 

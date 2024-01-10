@@ -1717,6 +1717,19 @@
         margin-top: 7px;
     }
 
+    .audio-notes_description-btns-ok {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 7px;
+    }
+    .audio-notes_description-btns {
+        flex-wrap: wrap;        
+    }
+    .audio-notes_description-redactor {
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
 
 
 
