@@ -30936,3 +30936,106 @@ bottom: 20px;
     display: flex;
     align-items: center;
 }
+
+.tasks-block_info .nice-select {
+    width: auto;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 29px 0 20px;
+    border-radius: 59px;
+    background: rgba(15, 125, 255, 0.20);
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 10px;
+    color: #0F7DFF;
+}
+.tasks-block_info .nice-select:after {
+    border-bottom: 2px solid #0F7DFF;
+    border-right: 2px solid #0F7DFF;
+    width: 6px;
+    height: 6px;
+}
+.tasks-block_info .nice-select .selected.focus {
+    position: relative;
+}
+.tasks-block_info .nice-select .selected.focus:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0F7DFF;
+    left: -10px;
+    top: calc(50% - 3px);
+}
+.tasks-block_info .nice-select .list_item:nth-child(1) {
+    color: #0F7DFF;
+}
+.tasks-block_info .nice-select .list_item:nth-child(2) {
+    color: #FF9D2B;
+}
+.tasks-block_info .nice-select .list_item:nth-child(3) {
+    color: #13B8C2;
+}
+.tasks-block_info .nice-select .list_item:nth-child(4) {
+    color: #1CBD2C;
+}
+.tasks-block_info .nice-select .list_item {
+    position: relative;
+}
+.tasks-block_info .nice-select .list_item:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 8px;
+    top: calc(50% - 3px);
+}
+.tasks-block_info .nice-select .list_item:nth-child(1):before {
+    background: #0F7DFF;
+}
+.tasks-block_info .nice-select .list_item:nth-child(2):before {
+    background: #FF9D2B;
+}
+.tasks-block_info .nice-select .list_item:nth-child(3):before {
+    background: #13B8C2;
+}
+.tasks-block_info .nice-select .list_item:nth-child(4):before {
+    background: #1CBD2C;
+}
+.tasks-block_info .nice-select.open .list {
+    min-width: 150px;
+    padding: 10px 0;
+    border-radius: 9px;
+    border: 1px solid #F4F3F9;
+}
+.tasks-block_info .nice-select .list_item.option:hover {
+    background: none;
+}
+.tasks-block_info .nice-select .option {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 32px;
+    list-style: none;
+    min-height: 32px;
+    outline: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.tasks-block_info .nice-select .list_item:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 40px);
+    height: 1px;
+    left: -20px;
+    bottom: 0;
+    background: #CECCDC;
+}
+.tasks-block_info .nice-select .list_item:last-child:after {
+    display: none;
+}
