@@ -31095,3 +31095,103 @@ bottom: 20px;
 .tasks-block_info-stat span.green:before {
     background: #1CBD2C;
 }
+
+.tasks.tasks2 .steps_stage:before {
+    display: none;
+}
+.tasks.tasks2 .steps_stage {
+    padding-bottom: 0;
+}
+.task2_item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CDCDCD;
+    margin-bottom: 15px;
+}
+.task2_item-top {
+    display: flex;
+    align-items: center;
+}
+.task2_item-top-text {
+    color: #2F3749;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 157.143%;
+    letter-spacing: -0.5px;
+    margin-right: 7px;
+}
+.task2_item-top-label {
+    position: relative;
+    padding: 3px 8px 3px 18px;
+    border-radius: 59px;    
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.task2_item-top-label.green {
+    background: rgba(28, 189, 44, 0.20);
+    color: #1CBD2C;
+}
+.task2_item-top-label.yellow {
+    background: rgba(255, 157, 43, 0.20);
+    color: #FF9D2B;
+}
+.task2_item-top-label.red {
+    background: rgba(223, 46, 46, 0.20);
+    color: #DF2E2E;
+}
+.task2_item-top-label:before {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 7px;
+    top: calc(50% - 3px);
+}
+.task2_item-top-label.green:before {
+    background: #1CBD2C;
+}
+.task2_item-top-label.yellow:before {
+    background: #FF9D2B;
+}
+.task2_item-top-label.red:before {
+    background: #DF2E2E;
+}
+.task2_item-bottom {
+    display: flex;
+    align-items: center;
+}
+.task2_item-bottom-name {
+    color: #0B00D8;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.22px;
+    margin-right: 4px;
+}
+.task2_item-bottom-date {
+    color: #8683C0;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.22px;
+}
+.task2_item-comment {
+    color: #605D97;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 158.333%;
+    margin-bottom: 5px;
+}
+.task2_item-comment span {
+    color: #505050;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
