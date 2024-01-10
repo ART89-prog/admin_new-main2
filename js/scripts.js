@@ -862,25 +862,26 @@ $(() => {
 
 
 	$('.audio-notes_description-decoding').click(function(){
-		$('.audio-notes_description-box').slideToggle(300, function(){
-			if ($(this).is(':hidden')) {
-				$('.audio-notes_description-decoding').html('Расшифровка');
-			} else {
-				$('.audio-notes_description-decoding').html('Скрыть расшифровку');
-			}							
-		});
+		$(this).parent().parent().next().slideToggle(200);
 	});  
 
 
-	$('.audio-notes_btn').click(function(){
-		$('.add_audio audio-record').slideToggle(300, function(){
-			// if ($(this).is(':hidden')) {
-			// 	$('.audio-notes_btn').html('Записать заметку');
-			// } else {
-			// 	$('.audio-notes_btn').html('Отменить запись');
-			// }							
-		});
-	}); 
+	$('.audio-notes_description-decoding').click(function() { 
+		if ($(this).text() == "Скрыть расшифровку") { 
+			$(this).text("Расшифровка"); 
+		} else { 
+			$(this).text("Скрыть расшифровку"); 
+		}; 
+	});
+
+
+	// $(".audio-notes_description-box").hide();
+	// $(".audio-notes_description-decoding").click(function (e) {
+	// 	e.preventDefault();
+	// 	$(this).parent().parent().show();
+	// 	$(".audio-notes_description-decoding").addClass("active");
+	// });
+
 
 
 	$(".task-page_btn button").click(function (e) {

@@ -335,44 +335,46 @@
 										<input type="checkbox" id="group1_check1" checked>
 										<label for="group1_check1">Расширенные статусы у подзадач (с кнопками и комментариями)</label>
 									</div>	
-									<div class="field">
-										<div class="task-editing_text">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#icon99"></use>
-											</svg>
-											<span>Проверить огнетушители в цеху №1</span>	
+									<div class="task-page_wrap">
+										<div class="field">
+											<div class="task-editing_text">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №1</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button>Переименовать</button>
+												<button>Архивировать</button>
+												<button>Удалить</button>
+											</div>
 										</div>
-										<div class="task-editing_btns">
-											<button>Переименовать</button>
-											<button>Архивировать</button>
-											<button>Удалить</button>
+										<div class="field">
+											<div class="task-editing_text">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №2. Выполнение происходит быстро по причине автоматизации накрутки. Если живые пользователи заходят на биржу, вручную подписываются, то у ботов все подписки выполняются машинально</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button>Переименовать</button>
+												<button>Архивировать</button>
+												<button>Удалить</button>
+											</div>
 										</div>
-									</div>
-									<div class="field">
-										<div class="task-editing_text">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#icon99"></use>
-											</svg>
-											<span>Проверить огнетушители в цеху №2. Выполнение происходит быстро по причине автоматизации накрутки. Если живые пользователи заходят на биржу, вручную подписываются, то у ботов все подписки выполняются машинально</span>	
-										</div>
-										<div class="task-editing_btns">
-											<button>Переименовать</button>
-											<button>Архивировать</button>
-											<button>Удалить</button>
-										</div>
-									</div>
-									<div class="field">
-										<div class="task-editing_text disabled">
-											<svg class="icon">
-												<use xlink:href="images/sprite.svg#icon99"></use>
-											</svg>
-											<span>Проверить огнетушители в цеху №3</span>	
-										</div>
-										<div class="task-editing_btns">
-											<button class="disabled">Переименовать</button>
-											<button>Архивировать</button>
-										</div>
-									</div>
+										<div class="field">
+											<div class="task-editing_text disabled">
+												<svg class="icon">
+													<use xlink:href="images/sprite.svg#icon99"></use>
+												</svg>
+												<span>Проверить огнетушители в цеху №3</span>	
+											</div>
+											<div class="task-editing_btns">
+												<button class="disabled">Переименовать</button>
+												<button>Архивировать</button>
+											</div>
+										</div>	
+									</div>									
 								</div>
 								<div class="line">
 									<div class="task-page_subtitle">Дополнительные настройки</div>														
@@ -589,5 +591,16 @@
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 		<script src="js/search_courses.js"></script>
+
+		<script src="https://unpkg.com/sortablejs-make/Sortable.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery-sortablejs@latest/jquery-sortable.js"></script>
+	
+		<script type="text/javascript">
+			$('.task-page_wrap').sortable({
+				animation: 150
+			});
+	
+		</script>
+
 	</body>
 </html>

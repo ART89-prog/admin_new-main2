@@ -22969,11 +22969,6 @@ form .form_btns input[type=file] + label,
 .projects_item-wraper {
     margin-top: auto;
 }
-.projects_item-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 .projects_item-top {
     display: flex;
     align-items: center;
@@ -22989,6 +22984,7 @@ form .form_btns input[type=file] + label,
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 .projects_item-label:before {
     position: absolute;
@@ -26228,7 +26224,7 @@ form .form_btns input[type=file] + label,
     flex-wrap: wrap;
 }
 .task-page_form .field + .field {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .task-page_date {
     padding: 15px 42px 15px 15px;
@@ -31131,6 +31127,7 @@ bottom: 20px;
     font-weight: 500;
     line-height: normal;
     margin-right: 8px;
+    white-space: nowrap;
 }
 .task2_item-top-label.green {
     background: rgba(28, 189, 44, 0.20);
@@ -31172,7 +31169,7 @@ bottom: 20px;
     align-items: center;
 }
 .task2_item-bottom-name {
-    color: #0B00D8;
+    color: var(--main_color);
     font-size: 11px;
     font-style: normal;
     font-weight: 700;
@@ -31206,8 +31203,35 @@ bottom: 20px;
 
 .task2_labels {
     display: flex;
+    flex-wrap: wrap;
 }
 .tasks-block_info-left {
     display: flex;
     align-items: center;
+}
+
+.form-project .error {
+    color: #FF1515;
+    border: 1px solid #FF1515;
+}
+.form-project .error ~ label {
+    color: #FF1515;
+}
+.project-creation_error-text {
+    display: none;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    color: #FF1515;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.714%;
+    letter-spacing: -0.3px;  
+}
+.form-project .error ~ .project-creation_error-text {
+    display: block;
+}
+
+.task-page_wrap {
+    margin-top: 25px;
 }

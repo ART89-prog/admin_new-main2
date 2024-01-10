@@ -431,8 +431,10 @@
 									<div class="task2_item">
 										<div class="task2_item-top">
 											<div class="task2_item-top-text">Проверить огнетушители в третьем цеху</div>
-											<div class="task2_item-top-label red">Не выполнено</div>
-											<div class="task2_item-top-label purple">Отменить действие</div>
+											<div class="task2_labels">
+												<div class="task2_item-top-label red">Не выполнено</div>
+												<div class="task2_item-top-label purple modal_content" data-content="#callback_modal111">Отменить действие</div>	
+											</div>											
 										</div>
 										<div class="task2_item-comment">Комментарий: <span>Не нашел огнетушители в цеху</span></div>
 										<div class="task2_item-bottom">
@@ -454,9 +456,9 @@
 								</div>
 								<div class="task2_item-top-text">Проверить огнетушители в четвертом цеху</div>
 								<div class="task2_labels">
-									<div class="task2_item-top-label purple">Выполнил</div>
-									<div class="task2_item-top-label purple">Выполнил, но с проблемой</div>
-									<div class="task2_item-top-label purple">Не выполнил</div>
+									<div class="task2_item-top-label purple mt7">Выполнил</div>
+									<div class="task2_item-top-label purple mt7">Выполнил, но с проблемой</div>
+									<div class="task2_item-top-label purple mt7">Не выполнил</div>
 								</div>
 
 							</section>
@@ -1266,6 +1268,20 @@
 		<button type="submit" class="projects-modal_btn">
 			<span>Понял</span>
 		</button>			
+	</section>
+
+
+	<section class="solutions-tasks_modal" id="callback_modal111">
+		<div class="solutions-tasks_modal-title">Оставить комментарий</div>
+		<form class="solutions-tasks_modal-form">
+			<div class="line">
+				<div class="field">
+					<label for="message1">Что случилось?</label>
+					<textarea id="message1" placeholder="Описание"></textarea>
+				</div>
+			</div>
+			<button>Отправить</button>
+		</form>
 	</section>
 
 

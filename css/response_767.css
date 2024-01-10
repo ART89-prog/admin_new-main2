@@ -2800,6 +2800,15 @@
         width: calc(100% - 90px);
     }
 
+    .task2_item-top {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .task2_item-top-text {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+
 
 
 
