@@ -31235,3 +31235,45 @@ bottom: 20px;
 .task-page_wrap {
     margin-top: 25px;
 }
+
+.audio-note_list {
+    border-radius: 9px;
+    background: #FFF;
+    padding: 17px;
+}
+.audio-note_list-title {
+    color: #121213;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;  
+    margin-bottom: 10px;
+}
+.audio-note_list ol {
+    padding-left: 15px;
+}
+.audio-note_list ol li {
+    color: #3F4572;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+.audio-note_list ol li + li {
+    margin-top: 17px;
+}
+.audio-note .add_audio {
+    border-radius: 9px;
+    background: #FFF;
+    padding: 35px 50px 32px;
+}
+.audio-note .add_audio .exp {
+    margin-top: 10px;
+    color: #818093;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; 
+}

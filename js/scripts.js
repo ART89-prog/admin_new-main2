@@ -875,15 +875,6 @@ $(() => {
 	});
 
 
-	// $(".audio-notes_description-box").hide();
-	// $(".audio-notes_description-decoding").click(function (e) {
-	// 	e.preventDefault();
-	// 	$(this).parent().parent().show();
-	// 	$(".audio-notes_description-decoding").addClass("active");
-	// });
-
-
-
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();
 		$('.solutions-tasks').addClass('active');
