@@ -1730,6 +1730,10 @@
         margin-top: 8px;
     }
 
+    .audio-note .form-project button:nth-child(1) {
+        margin-right: 7px;
+        margin-bottom: 0px;
+    }
 
 
 
