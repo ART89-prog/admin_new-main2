@@ -23008,8 +23008,8 @@ form .form_btns input[type=file] + label,
 }
 
 .projects_item-btn .icon {
-    width: 23px;
-    height: 23px;
+    width: 28px;
+    height: 28px;
 }
 .projects_item-title {
     font-weight: 700;
@@ -23688,7 +23688,7 @@ form .form_btns input[type=file] + label,
     background: #D8D5F3;
     border-radius: 9px; 
     width: 100%;
-    height: 38px;
+    min-height: 38px;
     font-weight: 700;
     font-size: 14px;
     line-height: 38px;
