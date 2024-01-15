@@ -31542,7 +31542,7 @@ bottom: 20px;
     margin-top: 20px;
 }
 .projects-top_item-text {
-    padding: 3px 10px;
+    padding: 3px 9px;
     border-radius: 26px;
     border: 1px solid #ABAAE2;
     background: #F2F0FF;
@@ -31553,7 +31553,8 @@ bottom: 20px;
     line-height: normal;
     margin-top: -36px;
     display: inline-block;
-    width: 55%;
+    width: 153px;
+    margin-bottom: 28px;
 }
 .faq .projects-top_item::before {
     position: absolute;
@@ -31561,8 +31562,8 @@ bottom: 20px;
     background: url(../images/training-course_label2.png);
     top: -29px;
     left: -4px;
-    width: 334px;
-    height: 41px;
+    width: 223px;
+    height: 40px;
     z-index: -1;
     background-size: cover;
 }

@@ -2007,6 +2007,16 @@
         margin-top: 7px;
     }
 
+    .projects-top_items {
+        margin-left: -20px;
+        margin-bottom: 34px;
+    }
+    .projects-top_items > * {
+        margin-left: 20px;
+        margin-bottom: 34px;
+        width: calc(100%/3 - 20px);
+    }
+
 
 
 }
