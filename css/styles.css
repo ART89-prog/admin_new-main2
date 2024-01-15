@@ -24027,10 +24027,6 @@ form .form_btns input[type=file] + label,
     letter-spacing: -0.3px;
     color: #1D1D1D;  
     margin-bottom: 2px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis;
-    width: 85%;
     position: relative;
 }
 /* .uploaded-files_item-name[title]:hover::after {
