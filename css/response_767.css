@@ -2809,6 +2809,17 @@
         margin-top: 5px;
     }
 
+    .tasks-block_info-label {
+        margin-top: 8px;
+    }
+    .tasks .block_top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tasks-block_btn {
+        margin-top: 10px;
+    }
+
 
 
 

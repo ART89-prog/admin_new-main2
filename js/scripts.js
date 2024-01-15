@@ -19,6 +19,7 @@ $(() => {
         setTimeout(() => {
         	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
 		}, 0);
+
               
     });
 
