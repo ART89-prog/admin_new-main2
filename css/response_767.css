@@ -2820,6 +2820,17 @@
         margin-top: 10px;
     }
 
+    .audio-notes_btn {
+        margin-top: 10px;
+    }
+    .replay {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .replay_items {
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
 
 
 
