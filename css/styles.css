@@ -31285,6 +31285,7 @@ bottom: 20px;
     border-radius: 9px;
     background: #FFF;
     padding: 35px 50px 32px;
+    margin-bottom: 19px;
 }
 .audio-note .add_audio .exp {
     margin-top: 10px;
@@ -31489,4 +31490,11 @@ bottom: 20px;
     line-height: 27px; 
     margin-right: 4px;
     margin-left: 4px;
+}
+
+.audio_wrapper.active {
+    display: block;
+}
+.audio_wrapper {
+    display: none;
 }

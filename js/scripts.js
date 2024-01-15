@@ -883,6 +883,18 @@ $(() => {
 	});
 
 
+	$('.audio-notes_btn').click(function(e) { 
+		e.preventDefault();
+		if ($(this).text() == "Отменить заметку") { 
+			$(this).text("Записать заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		} else { 
+			$(this).text("Отменить заметку"); 
+			$(".audio_wrapper").slideToggle(300);
+		}; 
+	});
+
+
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();
 		$('.solutions-tasks').addClass('active');

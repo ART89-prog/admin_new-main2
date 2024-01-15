@@ -359,7 +359,7 @@
 
 
 					<section class="content">
-						<section class="tasks">	
+						<section class="tasks audio-note">	
 							<section class="page_title">
 								<a href="/" class="big">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_arrow_left"></use></svg>
@@ -502,17 +502,30 @@
 										<div class="block_title">Аудио-заметки</div>
 										<div class="block_text">Аудио заметки к задаче</div>
 									</div>
-									<a href="audio-note.html" class="audio-notes_btn">
+									<a href="#" class="audio-notes_btn">
 										Записать заметку
 									</a>
-									<div class="add_audio audio-record" style="display: none;">
+								</div>	
+								<div class="audio_wrapper" style="display: none;">
+									<div class="audio-note_list block2">
+										<div class="audio-note_list-title">Несколько советов</div>
+										<ol>
+											<li>Запишите на бумаге несколько заметок, о чем будете рассказывать, чтобы ничего не забыть</li>
+											<li>Говорите ближе к микрофону без посторонних шумов</li>
+											<li>В начале записи кратко скажите о чем будет ваше сообщение</li>
+											<li>А через пару минут посмотрите как система перевела речь в текст и отредактируйте текст, если нужно</li>
+											<li>Перед отправкой вы можете послушать результат и перезаписать его при необходимост</li>
+										</ol>
+									</div>
+									<div class="add_audio audio-record">
 										<input type="checkbox" id="audio_record-icon" name="">
 										<label for="audio_record-icon" class="start_btn">
 											<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
 										</label>
 										<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
-									</div>	
+									</div>										
 								</div>
+															
 								
 								<div class="audio-notes_info">
 									<div class="audio_message">
