@@ -31541,4 +31541,30 @@ bottom: 20px;
 #correction_modal55 .correction_modal-text p + p {
     margin-top: 20px;
 }
+.projects-top_item-text {
+    padding: 3px 10px;
+    border-radius: 26px;
+    border: 1px solid #ABAAE2;
+    background: #F2F0FF;
+    color: #68619E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: -36px;
+    display: inline-block;
+    width: 55%;
+}
+.faq .projects-top_item::before {
+    position: absolute;
+    content: "";
+    background: url(../images/training-course_label2.png);
+    top: -29px;
+    left: -4px;
+    width: 334px;
+    height: 41px;
+    z-index: -1;
+    background-size: cover;
+}
+
 
