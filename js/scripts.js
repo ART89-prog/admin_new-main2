@@ -1063,6 +1063,9 @@ $(() => {
 		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
 	}
 
+	$('.calend_item').on('click', function(event){
+		$(this).toggleClass('active');
+	});
 
 	// Табы
 	var locationHash = window.location.hash
