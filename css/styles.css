@@ -31592,7 +31592,6 @@ bottom: 20px;
     font-weight: 500;
     line-height: 36px; 
     cursor: pointer;
-    width: calc(100%/7);
     flex-shrink: 0;
 }
 .calend_item.active {
@@ -31605,8 +31604,8 @@ bottom: 20px;
     content: "";
     width: 13px;
     height: 13px;
-    top: 2px;
-    right: 2px;
+    top: -4px;
+    right: 0px;
     background: url(../images/close100.svg);
     z-index: 2;
 }
@@ -31615,14 +31614,15 @@ bottom: 20px;
     content: "";
     width: 13px;
     height: 13px;
-    top: 2px;
-    right: 2px;
+    top: -4px;
+    right: 0px;
     background: #fff;
     border-radius: 50%;
     z-index: 1;
 }
 .calend_item + .calend_item {
-    margin-left: 9px;
+    margin-left: 4px;
+    margin-right: 4px;
 }
 .task-page_form .tabs_container button {
     display: flex;
