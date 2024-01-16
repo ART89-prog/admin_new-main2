@@ -31593,38 +31593,91 @@ bottom: 20px;
     line-height: 36px; 
     cursor: pointer;
     width: calc(100%/7);
-    gap: 9px;
     flex-shrink: 0;
 }
 .calend_item.active {
     background: var(--main_color);
-    color: #fff;
-}
-.calend_item + .calend_item {
-    /* margin-left: 9px; */
-}
-.tabs_container button {
-    display: flex;
-    align-items: center;
-}
-.tabs_container button span {
-    width: 19px;
-    height: 19px;
-    border: 1px solid #C8C6DD;
-    border-radius: 50%;
-    display: block;
-    margin-right: 9px;
+    color: #fff; 
     position: relative;
 }
-.tabs_container button.active span:before {
+.calend_item.active:before {
     position: absolute;
     content: "";
     width: 13px;
     height: 13px;
-    top: 4px;
-    left: 4px;
+    top: 2px;
+    right: 2px;
+    background: url(../images/close100.svg);
+    z-index: 2;
+}
+.calend_item.active:after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    right: 2px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+.calend_item + .calend_item {
+    margin-left: 9px;
+}
+.task-page_form .tabs_container button {
+    display: flex;
+    align-items: center;
+    color: #7874A3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px; 
+    letter-spacing: -0.3px;
+    background: none;
+    padding: 0;
+    margin-left: 0;
+    opacity: 1;
+}
+.task-page_form .tabs_container button span {
+    display: block;
+    margin-right: 9px;
+    position: relative;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #C8C6DD;
+    border-radius: 50%;
+}
+.task-page_form .tabs_container button span:after {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+.task-page_form .tabs_container button.active span:before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    left: 2px;
     background: var(--main_color);
     border-radius: 50%;
+}
+.task-page_form .tabs_container .tabs {
+    display: flex;
+    align-items: center;
+}
+.calend_text {
+    margin-bottom: 11px;
+    color: #7874A3;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135.714%;
+    letter-spacing: -0.3px;
 }
 
 
