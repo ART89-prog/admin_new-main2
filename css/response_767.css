@@ -2862,4 +2862,8 @@
         align-items: center;
     }
 
+    .simulators-new .simulator_item-right {
+        width: 100%;
+    }
+
 }

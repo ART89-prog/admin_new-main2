@@ -17290,7 +17290,6 @@ background: #64C841;
 .simulators-new .simulator_items {
     display: flex;
     margin-left: -33px;
-    margin-bottom: -30px;
     flex-wrap: wrap;
 }
 .simulators-new .simulator_items > * {
@@ -32221,5 +32220,92 @@ bottom: 20px;
 .learning-paths_top-text {
     color: #636363;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 20px ;
+}
+
+.simulator_item-title {
+    position: relative;
+}
+.simulator_item-title .icon {
+    width: 21px;
+    height: 21px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.simulator_item-title span {
+    width: calc(100% - 30px);
+    display: block;
+}
+
+.training-course2 .training-course_item-image img {
+    border: none;
+}
+.training-course2 .training-course_item-image {
+    width: 38px;
+    height: 38px;
+}
+.training-course2 .training-course_item-images {
+    margin-bottom: 12px;
+}
+.training-course2 .training-course_item-label {
+    width: 105px;
+    white-space: nowrap;
+    margin: -41px 20px 15px 0px;
+    background: var(--main_color);
+}
+.training-course2 .training-course_item-images::before {
+    display: none;
+}
+
+
+.training-course_item-lows {
+    border-top: 1px solid #DFDFDF;
+    padding-top: 15px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding-right: 20px;
+    padding-left: 20px;  
+    display: flex; 
+    flex-wrap: wrap;
+    margin-bottom: -10px;
+}
+.training-course_item-lows > * {
+    margin-bottom: 10px;
+}
+.training-course_item-low:nth-child(1) .icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(2) .icon {
+    width: 11px;
+    height: 6px;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(3) .icon {
+    width: 9px;
+    height: 8px;
+    margin-right: 6px;
+}
+.training-course_item-low {
+    color: #fff;
+    padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 29px;
+    font-size: 12px;
+    font-weight: 500;
+}
+.training-course_item-low:nth-child(1) {
+    background: #0774F4;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(2) {
+    background: #D8005B;
+    margin-right: 6px;
+}
+.training-course_item-low:nth-child(3) {
+    background: #2BC19D;
 }
