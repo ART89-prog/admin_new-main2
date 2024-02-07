@@ -563,43 +563,38 @@
 		$(this).toggleClass('active')
 	})
 
+
+	// $(".audio-note .form-project").hide();
+	$(".audio-notes_description-redactor").click(function (e) {
+		e.preventDefault();
+		$(".audio-note .form-project").css("display", "block");
+		$(".audio-notes_description-redactor").addClass("active");
+	});
+
+
 	$('.audio-notes_description-decoding').click(function(){
 		$(this).parent().parent().next().slideToggle(300);
+	});  
+
+
+	$('.audio-notes_description-decoding').click(function() { 
+		if ($(this).text() == "Скрыть расшифровку") { 
+			$(this).text("Расшифровка"); 
+		} else { 
+			$(this).text("Скрыть расшифровку"); 
+		}; 
 	});
 
 
-	$('.audio-notes_description-decoding').click(function() {
-		if ($(this).text() == "Скрыть расшифровку") {
-			$(this).text("Расшифровка");
-		} else {
-			$(this).text("Скрыть расшифровку");
-		};
-	});
-
-
-	$('.audio-notes_btn').click(function(e) {
+	$('.audio-notes_btn').click(function(e) { 
 		e.preventDefault();
-		if ($(this).text() == "Отменить заметку") {
-			$(this).text("Записать заметку");
+		if ($(this).text() == "Отменить заметку") { 
+			$(this).text("Записать заметку"); 
 			$(".audio_wrapper").slideToggle(300);
-		} else {
-			$(this).text("Отменить заметку");
+		} else { 
+			$(this).text("Отменить заметку"); 
 			$(".audio_wrapper").slideToggle(300);
-		};
-	});
-
-	$(".task-page_btn button").click(function (e) {
-		e.preventDefault();
-		$('.solutions-tasks').addClass('active');
-		$(".solutions-tasks .solutions-tasks_wrap").show();
-		$(".solutions-tasks2 .solutions-tasks_wrap").hide();
-		setTimeout(() => {
-			$('.solutions-tasks').removeClass('active');
-			$(".solutions-tasks .solutions-tasks_wrap").hide();
-			$(".solutions-tasks2 .solutions-tasks_wrap").show();
-			$('.solutions-tasks2').addClass('active');
-			$(".solutions-tasks .wrapper_head").hide();
-		}, 3000);
+		}; 
 	});
 
 	$(".solutions-tasks3 .solutions-tasks_top-delete").click(function (e) {
@@ -617,20 +612,44 @@
 	if ($(".js-example-basic-single2").length > 0) {
 		$('.js-example-basic-single2').select2({minimumResultsForSearch: Infinity});
 	}
-
-	$(".solutions-tasks_text_togger").click(function (e) {
-		$(this).hide().next().show();
-	});
-
-	$(".audio-notes_description-redactor").click(function (e) {
-		$(this).parent().next().show();
-	});
 	
-
 
 	$('.calend_item').on('click', function(event){
 		$(this).toggleClass('active');
 	});
+
+	$('body').on('click', '.tasks .steps_stage .step_stage', function (e) { 
+       	if(!$(this).hasClass("active"))
+       	{
+       		$(this).addClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_ok2");    
+
+	        var date = new Date();
+	        let day = date.getDate();
+	        let month = date.getMonth();
+	        let year = date.getFullYear();      
+	        $(this).find(".step_stage_time").html("Выполнил <span>Алексей Дмитриенко</span> "+day+"."+month+"."+year);
+
+	        let count = $(".step_stage").length;
+	        let count_active = $(".step_stage.active").length;
+	        $(".js_complete").text(count_active).prev().removeClass("animate2");
+	        setTimeout(() => {
+	        	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
+			}, 0);
+       	}
+       	else
+       	{
+       		$(this).removeClass("active").find(".icon_change use").attr("xlink:href","images/sprite.svg#training_not2");    
+	      
+	        $(this).find(".step_stage_time").html("");
+
+	        let count = $(".step_stage").length;
+	        let count_active = $(".step_stage.active").length;
+	        $(".js_complete").text(count_active).prev().removeClass("animate2");
+	        setTimeout(() => {
+	        	$(".pie").addClass("animate2").prop("style", "--start:"+Math.ceil(((count_active-1)/count)*100)+"; --p: "+Math.ceil((count_active/count)*100));			
+			}, 0);
+       	}                 
+    });
 
     // Табы
 	var locationHash = window.location.hash

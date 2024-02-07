@@ -20,12 +20,7 @@ $(() => {
 
 
 	// Кастомный select
-	if ($.fn.niceSelect)
-	{
-	   $('select').niceSelect()
-	}
-		
-	
+	$('select').niceSelect()
 
 
 	// Fancybox
@@ -41,7 +36,7 @@ $(() => {
 	}
 
 	Fancybox.defaults.template = {
-		closeButton: '<svg><use xlink:href="/images/sprite.svg#ic_close"></use></svg>',
+		closeButton: '<svg><use xlink:href="images/sprite.svg#ic_close"></use></svg>',
 	}
 
 	// Всплывающие окна
@@ -54,37 +49,56 @@ $(() => {
 			src: $(this).data('content'),
 			type: 'inline'
 		}],
-		{
-	    on: {
-		    closing: (fancybox, slide) => {
-                let videos = $('video');
-                $.each(videos, function(key, video) {
-                    video.pause();
-                    video.currentTime = 0;
-                });
-		      	if(fancybox.items[0].src=="#video_modal")
-		      	{
-		      		video = document.querySelector(".video_new");
-					video.pause();
-					video.currentTime = 0;
-		      	}
-		    },
-	    },
-	  })
+			{
+				on: {
+					closing: (fancybox, slide) => {
+						if (fancybox.items[0].src == "#video_modal") {
+							video = document.querySelector(".video_new");
+							video.pause();
+							video.currentTime = 0;
+						}
+					},
+				},
+			})
 	})
 
-	$('body').on('click', '.modal .close_btn', function (e) {
+	$('body').on('click', '.modal .close_bnt', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+	})
+
+	$('body').on('click', '.projects-modal_btn', function (e) {
 		e.preventDefault()
 
 		Fancybox.close()
 	})
 
 
-    $(document).ready(function() {
-        if($('.js-example-basic-single').length>0){
-            $('.js-example-basic-single').select2();
-        }
-    });
+	$(document).ready(function() {
+		if($('.js-example-basic-single').length>0){
+			$('.js-example-basic-single').select2();
+		}
+	});
+
+
+	// выбрать все checkbox`ы
+	$(".choose-link").click(function (e) {
+		e.preventDefault()
+		var t = $(this).parents('.form_item');
+		t.find('input[type=checkbox]').each(function() {
+		  this.checked = true; 
+		});
+	  }); 
+	  // отменить все checkbox`ы	
+	  $(".remove-link").click(function (e) {
+		e.preventDefault()
+		var t = $(this).parents('.form_item');
+		t.find('input[type=checkbox]').each(function() { 
+		  this.checked = false; 
+		}); 
+	  });
+
 
 	// Мини всплывающие окна
 	$('.mini_modal_btn').click(function (e) {
@@ -123,12 +137,13 @@ $(() => {
 		$('.mini_modal_btn').removeClass('active')
 	})
 
+	
 	// Моб. версия
-    fakeResize = false
-    fakeResize2 = true
+	fakeResize = false
+	fakeResize2 = true
 
-    if (document.body.clientWidth < 375) {
-        document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+	if (document.body.clientWidth < 375) {
+		document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
 	}
 })
 
@@ -173,3 +188,4 @@ const widthScroll = () => {
 
 	return scrollWidth
 }
+

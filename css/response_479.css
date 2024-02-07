@@ -1697,7 +1697,7 @@
         width: 100%;
     }
     .tasks-block_info-name {
-        padding-left: 0;
+       
     }
     .tasks .block_top {
         flex-direction: column;
@@ -1735,6 +1735,30 @@
         margin-bottom: 0px;
     }
 
+    .title_faq{
+        flex-direction: column;
+    }
 
+    .accordion_item .head{
+        gap:5px;
+    }
+
+    .update_faq{
+        margin-left: 30px;
+        padding-right: 0;
+    }
+
+    .task-page_form-btns{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .audio-note .form-project button:nth-child(1){
+        justify-content: center;
+    }
+
+    .audio-note .form-project button{
+        margin-right: 0 !important;
+    }
 
 }
