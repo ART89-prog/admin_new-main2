@@ -30695,6 +30695,20 @@ bottom: 20px;
     margin-bottom: 0;
     text-decoration: none;
 }
+.audio-notes_btn2 {
+    padding: 12px 20px;
+    border-radius: 40px;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 0;
+    text-decoration: none;
+    background: #ECEBFF;
+    color: #64698F;
+    margin-left: 12px;
+}
 .audio-notes_description {
     display: flex;
     align-items: center;
@@ -32138,14 +32152,28 @@ bottom: 20px;
     content: "";
     width: calc(100% + 36px);
     height: 1px;
-    bottom: 0;
+    bottom: -20px;
     left: -18px;
     background: #DFDFDF;
 }
-.setting-mode .audio-notes_btn {
-    background: #ECEBFF;
-    color: #64698F;
-    margin-left: 12px;
+.setting-mode .add_audio {
+    border: 1px solid #D7D7D7;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.setting-mode .audio-note_list {
+    padding: 0;
+    margin-top: 18px;
+}
+.setting-mode .audio-notes_info {
+    border: 1px solid #D7D7D7;
+}
+.setting-mode .audio-notes_info:last-child {
+    margin-bottom: 40px;
+}
+.audio-notes_text {
+    margin-bottom: 20px;
 }
 
 .learning-paths .training-plan_items {
