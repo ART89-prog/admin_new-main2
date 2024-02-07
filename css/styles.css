@@ -32129,3 +32129,7 @@ bottom: 20px;
     border-radius: 14px;
     margin-right: 10px;
 }
+
+.setting-mode .audio-notes {
+    margin-top: 20px;
+}

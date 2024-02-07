@@ -588,6 +588,20 @@
 		};
 	});
 
+	$('.setting-mode .audio-notes_btn').click(function(e) {
+		e.preventDefault();
+		if ($(this).text() == "Записать аудио-подсказку") {
+			$(this).text("Записать заметку");
+			$(".audio_wrapper2").slideToggle(300);
+			$("audio-notes_text").slideToggle(300);
+		} else {
+			$(this).text("Отменить запись");
+			$(".audio_wrapper2").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
+		};
+	});
+
+	
 	$(".task-page_btn button").click(function (e) {
 		e.preventDefault();
 		$('.solutions-tasks').addClass('active');
