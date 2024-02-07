@@ -32192,3 +32192,34 @@ bottom: 20px;
     color: #8d92b8;
     margin-left: 15px;
 }
+.learning-paths_top {
+    display: flex;
+}
+.learning-paths_top-icon {
+    width: 61px;
+    height: 61px;
+    margin-right: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #cccef7;
+    flex-shrink: 0;
+}
+.learning-paths_top .icon {
+    width: 36px;
+    height: 36px;
+}
+.learning-paths_top-title {
+    font-size: 18px;
+    line-height: 1.05;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+}
+.learning-paths_top-text {
+    color: #636363;
+    font-size: 14px;
+    line-height: 20px;
+}
