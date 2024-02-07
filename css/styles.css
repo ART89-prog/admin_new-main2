@@ -32132,4 +32132,19 @@ bottom: 20px;
 
 .setting-mode .audio-notes {
     margin-top: 20px;
+    position: relative;
+}
+.setting-mode .audio-notes:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    bottom: 0;
+    left: -18px;
+    background: #DFDFDF;
+}
+.setting-mode .audio-notes_btn {
+    background: #ECEBFF;
+    color: #64698F;
+    margin-left: 12px;
 }

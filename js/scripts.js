@@ -588,14 +588,14 @@
 		};
 	});
 
-	$('.setting-mode .audio-notes_btn').click(function(e) {
+	$('.audio-notes_btn2').click(function(e) {
 		e.preventDefault();
 		if ($(this).text() == "Записать аудио-подсказку") {
-			$(this).text("Записать заметку");
+			$(this).text("Отменить запись");
 			$(".audio_wrapper2").slideToggle(300);
 			$("audio-notes_text").slideToggle(300);
 		} else {
-			$(this).text("Отменить запись");
+			$(this).text("Записать аудио-подсказку");
 			$(".audio_wrapper2").slideToggle(300);
 			$(".audio-notes_text").slideToggle(300);
 		};
