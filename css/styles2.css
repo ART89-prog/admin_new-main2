@@ -145,6 +145,35 @@
     font-weight: 500;
 }
 
+.uploaded-files_items > * {
+    border: 1px solid #D2D2D2;
+}
+.block_upload label:before {
+    display: none;
+}
+.box__file {
+    display: none;
+}
+.box__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box.has-advanced-upload .box__icon {
+    width: auto;
+}
+.block_upload label {
+    padding-left: 10px;
+}
+.box.has-advanced-upload {
+    outline-offset: 0;
+    border: 1px dashed #bbb;
+    outline: none;
+}
+.box {
+    padding: 20px 30px;
+}
+
 
 
 
