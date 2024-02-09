@@ -36,3 +36,48 @@
     display: block;
     margin-left: auto;
 }
+.knowledgebase .icon-redact {
+    width: 24px;
+    height: 24px;
+}
+.knowledgebase_button {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 44px;
+}
+
+.knowledgebase_button span {
+    display: none;
+}
+.knowledgebase_button:hover span {
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: #FFFFFF;
+    padding: 5px 11px;
+    border-radius: 31px;
+    white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: -0.24px;
+    background: #373737;
+    box-shadow: 0px 5.715827465057373px 23.67985725402832px 0px #B2B0D363;
+}
+
+
+
+@media (max-width: 479px) {
+    .knowledgebase .accordion_item .head {
+        flex-wrap: nowrap;
+    }
+    .knowledgebase .accordion_item .head .title {
+        padding-right: 0;
+        width: calc(100% - 45px);       
+    }
+    .knowledgebase_title {
+        font-size: 20px;
+    }
+}

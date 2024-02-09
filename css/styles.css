@@ -16593,7 +16593,6 @@ background: #64C841;
 .training-course_items {
     display: flex;
     margin-left: -44px;
-    margin-bottom: -44px;
     flex-wrap: wrap;
     margin-top: 60px;
 }
