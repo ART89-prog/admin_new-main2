@@ -2775,8 +2775,8 @@
         width: 18px;
     }
 
-    .dialog .message:has(.feedback_ai) + .message{
-        margin-top: 30px;
+    .dialog .message:has(.feedback_ai.new) + .message{
+        margin-top: 50px;
     }
 
 
@@ -2864,6 +2864,18 @@
 
     .simulators-new .simulator_item-right {
         width: 100%;
+    }
+
+
+    .setting-mode .add_audio{
+        padding-top: 25px;
+    }
+
+    .audio-notes_btn2{
+        margin-left: 0;
+        margin-top: 5px;
+        margin-right: 10px;
+        min-width: 46%;
     }
 
 }

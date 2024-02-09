@@ -588,16 +588,31 @@
 		};
 	});
 
-	$('.audio-notes_btn2').click(function(e) {
+	$('.js-open-record').click(function(e) {
 		e.preventDefault();
-		if ($(this).text() == "Отменить запись") {
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
 			$(this).text("Записать аудио-подсказку");
-			$(".audio_wrapper2").slideToggle(300);
-			$("audio-notes_text").slideToggle(300);
+			$(".js-block_record").slideToggle(300);
+			$(".audio-notes_text").slideToggle(300);
 		} else {
 			$(this).text("Отменить запись");
+			$(".js-block_record").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
+		};
+	});
+
+	$('.js-upload-record').click(function(e) {
+		e.preventDefault();
+		$(this).toggleClass("active");
+		if (!$(this).hasClass("active")) {
+			$(this).text("Загрузить с диска");
+			$(".js-block_upload").slideToggle(300);
 			$(".audio-notes_text").slideToggle(300);
-			$(".audio_wrapper2").slideToggle(300);			
+		} else {
+			$(this).text("Отменить загрузку");
+			$(".js-block_upload").slideToggle(300);	
+			$(".audio-notes_text").slideToggle(300);					
 		};
 	});
 
