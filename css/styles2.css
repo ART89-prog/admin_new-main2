@@ -75,7 +75,7 @@
     width: 100%;
 }
 .knowledgebase_modal form button {
-    padding: 10px 23px;
+    padding: 11px;
     border-radius: 75px;
     background: var(--main_color);
     color: #fff;
@@ -100,6 +100,9 @@
 .knowledgebase_modal .line {
     margin-top: 15px;
 }
+.knowledgebase_modal .line .field {
+    position: relative;
+}
 .knowledgebase_modal .line input {
     border-radius: 9px;
     border: 1px solid #7874A3;
@@ -113,6 +116,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+.knowledgebase_modal-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
