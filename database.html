@@ -531,14 +531,16 @@
 
 		<section class="trainer_modal2" id="pass_add2">			
 			<div class="trainer_modal-title">Введите пароль</div>											
-			<form>
+			<form class="form">
 				<div class="line">
 					<div class="field">
 						<label for="password">Пароль</label>
-						<input type="password" id="password" placeholder="*********">
-						<svg class="pass_add-icon">
-							<use xlink:href="images/sprite.svg#eye"></use>
-						</svg>
+						<input type="password" id="password-input" placeholder="*********">
+						<a href="#" class="password-control">
+							<svg class="pass_add-icon">
+								<use xlink:href="images/sprite.svg#eye"></use>
+							</svg>	
+						</a>						
 					</div>
 					<button class="trainer_item-btn">
 						<span>Редактировать</span>

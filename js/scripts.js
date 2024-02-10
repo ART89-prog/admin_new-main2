@@ -666,6 +666,17 @@
 		$(this).toggleClass('active');
 	});
 
+	$('body').on('click', '.password-control', function(e){
+		e.preventDefault()
+		if ($('#password-input').attr('type') == 'password'){
+			$('#password-input').attr('type', 'text');
+		} else {
+			$('#password-input').attr('type', 'password');
+		}
+	});
+
+
+
 
     // Табы
 	var locationHash = window.location.hash
