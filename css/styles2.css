@@ -1,39 +1,7 @@
 
 
-.knowledgebase .input {
-    background: #FFFFFF url(../images/search.svg) no-repeat 20px center;
-    border: 1px solid #BCBCBC;
-    box-sizing: border-box;
-    border-radius: 54px;
-    display: block;
-    width: 100%;
-    height: 50px;
-    padding: 0 20px 0 50px;
-    margin-bottom: 30px;
-    font-family: 'Ubuntu';
-}
-.knowledgebase .page_title {
-    margin-bottom: 21px;
-}
-.knowledgebase_title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: 700;
-}
-.knowledgebase_link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 34px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    width: 146px;
-    height: 34px;
-    background: var(--main_color);
-    border-radius: 55px;
-    display: block;
+
+.add_faq {
     margin-left: auto;
 }
 .knowledgebase .icon-redact {
@@ -43,8 +11,8 @@
 .knowledgebase_button {
     display: block;
     position: relative;
-    margin-left: 10px;
-    margin-right: 44px;
+    margin-left: auto;
+    margin-right: 54px;
 }
 
 .knowledgebase_button span {
@@ -66,64 +34,16 @@
     background: #373737;
     box-shadow: 0px 5.715827465057373px 23.67985725402832px 0px #B2B0D363;
 }
-.knowledgebase_modal {
-    display: none;
-    padding: 20px 18px;
-    background: #FFFFFF;
-    border-radius: 15px;
-    max-width: 432px;
-    width: 100%;
-}
-.knowledgebase_modal form button {
-    padding: 11px;
-    border-radius: 75px;
-    background: var(--main_color);
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    margin-top: 17px;
-    margin-left: auto;
-    display: block;
-}
-.knowledgebase_modal .label {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: -0.3px;
-    color: #7874A3;
-    margin-bottom: 10px;
-    width: 100%;
-    display: block;
-}
-.knowledgebase_modal .line {
-    margin-top: 15px;
-}
-.knowledgebase_modal .line .field {
+
+.trainer_modal2 .line .field {
     position: relative;
 }
-.knowledgebase_modal .line input {
-    border-radius: 9px;
-    border: 1px solid #7874A3;
-    background: #FFF;
-    width: 100%;
-    height: 45px;
-    padding: 15px 14px;
-    color: #7874A3;
-    font-family: "Ubuntu";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-.knowledgebase_modal-icon {
+.pass_add-icon {
     width: 24px;
     height: 24px;
     position: absolute;
     right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 34px;
 }
 
 .task-page_form .line .field textarea {
@@ -177,6 +97,142 @@
 
 
 
+.almanac_items {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 17px;
+}
+.almanac_items:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 29px);
+    left: -16px;
+    bottom: 0;
+    background: #C5C5C5;
+    height: 1px;
+}
+.almanac_items > * {
+    border-radius: 87px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #565289;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; 
+    cursor: pointer;
+    flex-shrink: 0;
+    background: #BDBBD8;
+}
+.almanac_item.active {
+    background: #0AB511;
+    color: #fff; 
+    position: relative;
+}
+.almanac_item span {
+    display: none;
+}
+.almanac_item.active span {
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    font-size: 8px;
+    line-height: 14px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    border-radius: 50%;
+    top: -4px;
+    right: 0px;
+    z-index: 2;
+    background: #BDBBD8;
+    color: #565289;
+    border: 1px solid #fff;
+}
+.almanac_item.active:after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    top: -4px;
+    right: 0px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 1;
+}
+.almanac_item {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.almanac_item.disabled {
+    opacity: 0.6;
+}
+.almanac_item.inactive {
+    background: #CC3636;
+    color: #fff;
+}
+.almanac_item.inactive.active {
+    background: #0AB511;
+    color: #fff;    
+}
+.almanac_wrap {
+    padding: 11px 16px 18px 13px;
+    border-radius: 15px;
+    background: #fff;
+}
+.almanac_text {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.almanac .page_title {
+    margin-bottom: 23px;
+}
+.almanac {
+    margin-bottom: 30px;
+}
+.almanac_status {
+    display: flex;
+}
+.almanac_status-item {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    color: #7A7796;
+    display: flex;
+    align-items: center;
+}
+.almanac_status-item span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 7px;
+}
+.almanac_status-item span.red {
+    background: #CC3636;
+}
+.almanac_status-item span.green {
+    background: #0AB511;
+}
+.almanac_status-item + .almanac_status-item {
+    margin-left: 10px;
+}
+
+
+
+
 
 @media (max-width: 479px) {
     .knowledgebase .accordion_item .head {
@@ -186,7 +242,9 @@
         padding-right: 0;
         width: calc(100% - 45px);       
     }
-    .knowledgebase_title {
+    .title_faq,
+    .faq_fast_title {
         font-size: 20px;
     }
+
 }

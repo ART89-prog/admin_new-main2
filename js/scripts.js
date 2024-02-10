@@ -661,6 +661,12 @@
 		$(this).toggleClass('active');
 	});
 
+
+	$('.almanac_item').on('click', function(event){
+		$(this).toggleClass('active');
+	});
+
+
     // Табы
 	var locationHash = window.location.hash
 
