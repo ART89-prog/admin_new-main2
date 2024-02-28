@@ -24,6 +24,9 @@
 		});
 	}
 
+
+
+
 	$('body').on('click', '.text_block_show_more', function (e) {
 		e.preventDefault()
 		$(".text_block_hide").addClass("active");

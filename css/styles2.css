@@ -315,6 +315,273 @@
 }
 
 
+.simulator-questions {
+    margin-top: 30px;
+    padding: 20px 18px 27px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;   
+}
+.simulator-questions_title {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-bottom: 19px;
+}
+.simulator-questions_btns a {
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #64698F;
+    padding: 12px;
+    background: #ECEBFF;
+    border-radius: 7px;
+    text-decoration: none;
+    display: block;
+}
+.simulator-questions_list ul{
+    list-style: none;
+}
+.simulator-questions_list ul li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #3D3D3D;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 1px solid #CFCDEE;
+    border-radius: 18px;
+    padding: 18px 12px 12px 18px;
+}
+.simulator-questions_list-btns button {
+    border-radius: 48px;
+    border: 1px solid #CFCDEE;
+    background: #F6F5FF;
+    color: #64698F;
+    font-family: "Ubuntu";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 7px 12px;
+    margin-left: 8px;
+}
+.simulator-questions_list ul li + li{
+    margin-top: 17px;
+}
+.simulator-questions_label .icon12 {
+    width: 12px;
+    height: 11px;
+    flex-shrink: 0;
+    margin-right: 5px;
+}
+.simulator-questions_list ul li .icon{
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.simulator-questions_list ul li .icon13 {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    margin-right: 15px;
+}
+.simulator-questions_wrapper-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    line-height: 19px;
+    margin-bottom: 11px;
+}
+.simulator-questions_btns {
+    margin-left: 20px;
+}
+.simulator-questions_label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 5px;
+    gap: 3px;
+    height: 21px;
+    background: linear-gradient(67.84deg, #682D8C -1.82%, #EB1E79 106.59%);
+    border-radius: 27px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #fff;
+    margin-left: 7px;
+    flex-shrink: 0;
+}
+.simulator-questions_wrapper {
+    width: 95%;
+}
+.simulator-questions .handle_box {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 400px);
+    margin-bottom: 0px;
+}
+.simulator-questions_wrapper-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #636363;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.simulator-questions_list ul li {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.simulator-questions_list .audio_message {
+    display: flex;
+    margin-top: 0px;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    max-width: 216px;
+}
+.simulator-questions_list .audio_message .btn {
+    color: #fff;
+    display: flex;
+    width: 33px;
+    height: 33px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: var(--main_color);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.simulator-questions_list .audio_message .btn .icon {
+    color: #fff;
+    display: block;
+    width: 11px;
+    height: 15px;
+    margin-left: 2px;
+}
+.simulator-questions_link .audio_message .btn .icon {
+    color: var(--main_color);
+}
+.simulator-questions_link .audio_message .btn .icon + .icon,
+.simulator-questions_link .audio_message .btn.active .icon {
+    display: none;
+    margin-left: 0;
+}
+.simulator-questions_link .audio_message .btn.active .icon + .icon {
+    display: block;
+}
+.simulator-questions_link .audio_message .audio_wave {
+    overflow: hidden;
+    width: 250px;
+    max-width: 100%;
+    margin-top: -16px;
+    margin-bottom: -17px;
+}
+.simulator-questions_link .audio_message .duration {
+    color: #061058;
+    font-size: 14px;
+    line-height: 16px;
+    margin-left: 9px;
+    opacity: .75;
+}
+.simulator-questions_link .audio_message .btn {
+    color: var(--main_color);
+    background: #fff;
+}
+.simulator-questions_link .audio_message .duration {
+    color: #fff;
+}
+.simulator-questions_link .audio_media .media-text.media-current-time {
+    display: none;
+}
+.simulator-questions_link .audio_media .media-control.media-play {
+    margin-right: 0;
+}
+.simulator-questions_link .audio_media .media-toolbar {
+    border-radius: 54px;
+    background: #ECEBFF;
+    padding: 4px 9px;
+}
+.simulator-questions_link .audio_media .media-text {
+    color: #7270A7;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 4px;
+    font-weight: 700;
+}
+.simulator-questions_link .audio_media .media-symbol {
+    height: 10px;
+    width: 10px;
+    flex-shrink: 0;
+} 
+.simulator-questions_link .audio_media .media-control.media-play {
+    width: 23px;
+    height: 23px;
+}
+.simulator-questions_list-btns {
+    margin-left: 20px;
+}
+.simulator-questions_link .audio_media .media-slider {
+    height: 2em;
+    padding: 0.625em 0.5em;
+    margin: 0 5px;
+}
+.simulator-questions_list .video_message {
+    border-radius: 54px;
+    background: #ECEBFF;
+    padding: 7px 9px;
+    max-width: 216px;
+}
+.simulator-questions_list .video_message button {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: #7270A7;
+}
+
+.simulator-questions_list ul li .handle_box.dissabled {
+    opacity: 0.5;
+}
+.simulator-questions_list ul li button.dissabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+.simulator-questions_bottom-btns {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.simulator-questions_bottom-btns button {
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.simulator-questions_bottom-btns button:nth-child(1) {
+    color: #524F8E;
+    background: #CECCF7;
+    margin-right: 12px;
+}
+.simulator-questions_bottom-btns button:nth-child(2) {
+    color: #fff;
+    background: var(--main_color);
+}
+
+
 
 
 
