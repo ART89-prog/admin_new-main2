@@ -145,6 +145,7 @@
 		list.each(function(index) {
 			$(this).show();
 		});
+		$(".highlight").replaceWith(function() { return $(this).contents(); });
 	});
 
 	$('body').on("keyup", '.js-search', function(event) {
@@ -630,7 +631,7 @@
         };
     });
 
-	$('.js-open-record').click(function(e) {
+	/*$('.js-open-record').click(function(e) {
 		e.preventDefault();
 		$(this).toggleClass("active");
 		if (!$(this).hasClass("active")) {
@@ -656,7 +657,7 @@
 			$(".js-block_upload").slideToggle(300);
 			$(".audio-notes_text").slideToggle(300);
 		};
-	});
+	});*/
 
 
 	// $(".task-page_btn button").click(function (e) {
