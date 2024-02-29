@@ -40,7 +40,7 @@
 
 	$('.adding-question_btn').click(function(e){
 		e.preventDefault()
-		$('.adding-question_hide').parent.parent.slideToggle(300, function(){
+		$('.adding-question_hide').parent().parent().slideToggle(300, function(){
 			if ($(this).is(':hidden')) {
 				$('.adding-question_btn').html('Показать');
 			} else {
