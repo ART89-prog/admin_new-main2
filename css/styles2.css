@@ -728,6 +728,32 @@
     box-shadow: none;
     border-radius: 0px;
 }
+.adding-question_links {
+    display: flex;
+}
+.adding-question_btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7674A9;
+    margin-left: 12px;
+}
+.adding-question_btn .icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    margin-left: 7px;
+}
+.adding-question_hide {
+    display: none;
+}
+.adding-question_btn.active .icon {
+    display: block !important;
+    transform: rotate(90deg);
+}
+
 
 
 
