@@ -643,6 +643,36 @@
 }
 
 
+.setting-questions_labels {
+    margin-top: 30px;
+}
+.setting-questions_label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #fff;
+    padding: 9px;
+    border-radius: 8px;
+}
+.setting-questions_label + .setting-questions_label {
+    margin-top: 20px;
+}
+.setting-questions_label.green {
+    background: #5EBA33;
+}
+.setting-questions_label .icon {
+    width: 21px;
+    height: 21px;
+}
+.setting-questions_label.red {
+    background: #AF1A1A;
+}
+
+
 @media (max-width: 479px) {
     .knowledgebase .accordion_item .head {
         flex-wrap: nowrap;
