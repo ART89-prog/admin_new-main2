@@ -315,7 +315,8 @@
 }
 
 
-.simulator-questions {
+.simulator-questions,
+.adding-question {
     margin-top: 30px;
     padding: 20px 18px 27px;
     background: #FFFFFF;
@@ -671,6 +672,63 @@
 .setting-questions_label.red {
     background: #AF1A1A;
 }
+
+.adding-question_label {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;   
+}
+.adding-question .simulator-questions_title {
+    margin-bottom: 10px;
+}
+.adding-question .tabs_container {
+    padding: 0;
+    background: #FFFFFF;
+    border-radius: 0px;
+    margin-top: 7px;
+}
+.adding-question .tabs_container .tabs button {
+    padding: 7px 14px 7px 28px;
+    border-radius: 39px;
+    background: #E7E5FE;
+    color: #605CA9;
+    font-weight: 700;
+    font-size: 13px;
+    position: relative;
+    opacity: 1;
+    margin-right: 9px;
+}
+.adding-question .tabs_container .tabs button:before {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background: #fff;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.adding-question .tabs_container .tabs button.active:after {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background: var(--main_color);
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.adding-question .task-page_form {
+    padding: 0;
+    background: #FFFFFF;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
 
 
 @media (max-width: 479px) {

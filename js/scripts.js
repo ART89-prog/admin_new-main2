@@ -17,6 +17,9 @@
         });
 
 
+		
+
+
 	if($(".sortable").length)
 	{
 		sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
@@ -32,6 +35,20 @@
 		$(".text_block_hide").addClass("active");
 		$(this).hide();
 	});
+
+
+
+	$('.adding-question_btn').click(function(e){
+		e.preventDefault()
+		$('.adding-question_hide').parent.parent.slideToggle(300, function(){
+			if ($(this).is(':hidden')) {
+				$('.adding-question_btn').html('Показать');
+			} else {
+				$('.adding-question_btn').html('Свернуть');
+			}							
+		});
+	});	
+
 
 
 	$('body').on('click', '.change-history_link', function (e) {
