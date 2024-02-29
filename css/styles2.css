@@ -754,6 +754,44 @@
     transform: rotate(90deg);
 }
 
+.adding-question .audio-notes {
+    margin-top: 20px;
+    position: relative;
+}
+.adding-question .audio-notes:after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 36px);
+    height: 1px;
+    bottom: -20px;
+    left: -18px;
+    background: #DFDFDF;
+}
+.adding-question .add_audio {
+    border: 1px solid #D7D7D7;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.adding-question .audio-note_list {
+    padding: 0;
+    margin-top: 18px;
+}
+.adding-question .audio-notes_info {
+    border: 1px solid #D7D7D7;
+}
+.adding-question .audio-notes_info:last-child {
+    margin-bottom: 40px;
+}
+.audio-notes_text {
+    margin-bottom: 20px;
+}
+.adding-question .add_audio .start_btn .icon {
+    display: block;
+    width: 24px;
+    height: 36px;
+}
+
 
 
 
