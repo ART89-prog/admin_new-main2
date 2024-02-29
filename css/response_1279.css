@@ -2037,6 +2037,16 @@
         margin-top: 20px;
     }
 
+    .simulator-questions_items > * {
+        flex-direction: column;
+    }
+    .simulator-questions_item-info {
+        width: 100%;
+    }
+    .simulator-questions_item-link {
+        margin-top: 15px;
+    }
+
 
 
 }

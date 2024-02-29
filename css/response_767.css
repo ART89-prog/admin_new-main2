@@ -2907,5 +2907,18 @@
     }
 
 
+    .simulator-questions_items {
+        margin-left: 0px;
+        margin-bottom: 0;
+    }
+    .simulator-questions_items > * {
+        margin-left: 0px;
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+
+
 
 }
