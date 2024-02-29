@@ -371,86 +371,113 @@
 
 
 					<section class="content">
-						<section class="setting-questions">			
-							<section class="page_title">
-								<a href="/">
-									<svg class="icon">
-										<use xlink:href="images/sprite.svg#ic_arrow_left"></use>
-									</svg>
-								</a>
-								<span>Добавление вопроса</span>
-							</section>
-							
-							
-							<section class="adding-question">
-								<div class="simulator-questions_title">Вопрос</div>	
-								<div class="adding-question_label">Выберите тип</div>
-								<div class="tabs_container">
-									<div class="tabs">
-										<button class="active" data-content="#tab1" data-level="level1">Текстовый вопрос</button>
-										<button data-content="#tab2" data-level="level1">Аудио вопрос</button>
-										<button data-content="#tab3" data-level="level1">Видео вопрос</button>
-									</div>
+								
+						<section class="page_title">
+							<a href="/">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#ic_arrow_left"></use>
+								</svg>
+							</a>
+							<span>Добавление вопроса</span>
+						</section>
+						
+						
+						<section class="adding-question">
+							<div class="simulator-questions_title">Вопрос</div>	
+							<div class="adding-question_label">Выберите тип</div>
+							<div class="tabs_container">
+								<div class="tabs">
+									<button class="active" data-content="#tab1" data-level="level1">Текстовый вопрос</button>
+									<button data-content="#tab2" data-level="level1">Аудио вопрос</button>
+									<button data-content="#tab3" data-level="level1">Видео вопрос</button>
+								</div>
 
-									<section class="tab_content level1 active" id="tab1">										
-										<form class="task-page_form">
-											<div class="adding-question_top">
-												<div class="line">
-													<div class="task-page_label">Название вопроса<span>*</span></div>
-													<div class="field">
-														<input type="text" id="name" placeholder="Название вопроса">
-													</div>
+								<section class="tab_content level1 active" id="tab1">										
+									<form class="task-page_form">
+										<div class="adding-question_top">
+											<div class="line">
+												<div class="task-page_label">Название вопроса<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Название вопроса">
 												</div>
-												<div class="line">
-													<div class="task-page_label">Вопрос<span>*</span></div>
-													<div class="field">
-														<textarea id="desc" class="task-page_textarea" placeholder="Например..."></textarea>
-													</div>
+											</div>
+											<div class="line">
+												<div class="task-page_label">Вопрос<span>*</span></div>
+												<div class="field">
+													<textarea id="desc" class="task-page_textarea" placeholder="Например..."></textarea>
 												</div>
-												<div class="line">
-													<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
-													<div class="field">
-														<input type="text" id="name" placeholder="Совет...">
-													</div>
-												</div>	
-												<div class="line">										
-													<div class="field">
-														<input type="checkbox" id="group1_check1">
-														<label for="group1_check1">Требуется обратная связь от ИИ</label>
-													</div>													
-												</div>	
+											</div>
+											<div class="line">
+												<div class="task-page_label">Что нужно сказать ученику<span>*</span></div>
+												<div class="field">
+													<input type="text" id="name" placeholder="Совет...">
+												</div>
 											</div>	
-											
-											<div class="adding-question_bottom">
-												<div class="simulator-questions_title">									
-													Дополнительные опции
-													<a href="#" class="adding-question_btn">
-														 <span>Показать</span> 
-														<svg class="icon">
-															<use xlink:href="images/sprite.svg#arrow1111"></use>
-														</svg>
-													</a>													
+											<div class="line df">										
+												<div class="field">
+													<input type="checkbox" id="group1_check1">
+													<label for="group1_check1">Требуется обратная связь от ИИ</label>
+												</div>	
+												<div class="adding-question_top-text">* Поля обязательные для заполнения</div>												
+											</div>	
+										</div>	
+										
+										<div class="adding-question_bottom">
+											<div class="simulator-questions_title">									
+												Дополнительные опции
+												<a href="#" class="adding-question_btn">
+														<span>Показать</span> 
+													<svg class="icon">
+														<use xlink:href="images/sprite.svg#arrow1111"></use>
+													</svg>
+												</a>													
+											</div>
+
+											<div class="adding-question_hide">
+												<div class="line">
+													<div class="task-page_label">Подсказка</div>
+													<div class="field">
+														<input type="text" placeholder="Подсказка...">
+													</div>
+												</div>
+												<div class="adding-question_links">
+													<div class="adding-question_link">
+														<a href="#" class="audio-notes_btn2">
+															Загрузить аудио
+														</a>																
+													</div>
+																												
+													<a href="#" class="audio-notes_btn2">
+														Записать аудио
+													</a>
+
+													<a href="#" class="audio-notes_btn2">
+														Загрузить видео
+													</a>
 												</div>
 
-												<div class="adding-question_hide">
-													<div class="line">
-														<div class="task-page_label">Подсказка</div>
-														<div class="field">
-															<input type="text" placeholder="Подсказка...">
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
+													<div class="audio-notes_info">
+														<div class="audio_message">
+															<div class="audio_media">											
+																	<audio
+																	controls
+																	src="images/t-rex-roar.mp3">
+																		Your browser does not support the
+																		<code>audio</code> element.
+																</audio>
+															</div>
 														</div>
 													</div>
-													<div class="adding-question_links">
-														<a href="#" class="audio-notes_btn2">
-															Записать аудио-подсказку
-														</a>
-																
-														<a href="#" class="audio-notes_btn2">
-															Загрузить с диска
-														</a>
-														<a href="#" class="audio-notes_btn2">
-															Удалить
-														</a>
-													</div>
+													<a href="#" class="adding-question_content-btn mra">
+														Удалить аудио
+													</a>	
+												</div> 
+
+
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
 													<div class="add_audio audio-record">
 														<input type="checkbox" id="audio_record-icon" name="">
 														<label for="audio_record-icon" class="start_btn">
@@ -458,34 +485,62 @@
 														</label>
 														<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
 													</div>
-													<div class="line">
-														<div class="task-page_label">На что дополнительно обратить внимание ИИ</div>
-														<div class="field">
-															<input type="text" placeholder="Напишите">
-														</div>
-													</div>
+													<div href="#" class="adding-question_content-btn mla">
+														<a href="#">Отменить</a>															
+													</div>													
 												</div>
+
+
+												<div class="adding-question_content">
+													<div class="task-page_label">Подсказка</div>
+													<div class="video_item">
+														<a href="https://www.youtube.com/watch?v=L256daBIAtU" data-fancybox="" class="video_link">
+															<img src="images/video55.png" alt="">
+															<svg class="icon">
+																<use xlink:href="images/sprite.svg#play1000"></use>
+															</svg>
+														</a>
+													</div>
+													<a href="#" class="adding-question_content-btn mra">
+														Удалить видео
+													</a>	
+												</div> 
+
+												<div class="line">
+													<div class="task-page_label">На что дополнительно обратить внимание ИИ</div>
+													<div class="field">
+														<input type="text" placeholder="Напишите">
+													</div>
+												</div>	
+												<div class="simulator-questions_bottom-btns">
+													<button>Отменить и вернуться</button>
+													<button>Сохранить и вернуться</button>
+												</div>															
 											</div>
 
-
-										</form>
-																				
-
+											
+										</div>
 
 										
-									</section>
 
-									<section class="tab_content level1" id="tab2">
-										подпдпдплдоп2
-									</section>
-									<section class="tab_content level1" id="tab3">
-										подпдпдплдоп3
-									</section>
-								</div>								
-							</section>
+									</form>
+																			
+
+
+									
+								</section>
+
+								<section class="tab_content level1" id="tab2">
+									подпдпдплдоп2
+								</section>
+								<section class="tab_content level1" id="tab3">
+									подпдпдплдоп3
+								</section>
+							</div>								
+						</section>
 
 														
-						</section>
+						
 
 
 						
