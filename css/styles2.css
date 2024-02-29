@@ -409,9 +409,6 @@
     line-height: 19px;
     margin-bottom: 11px;
 }
-.simulator-questions_btns {
-    margin-left: 20px;
-}
 .simulator-questions_label {
     display: flex;
     flex-direction: row;
@@ -604,7 +601,7 @@
     margin-left: 12px;
     margin-bottom: 12px;
     width: calc(100%/2 - 12px);
-    padding: 30px 12px 12px 20px;
+    padding: 20px 12px 12px 20px;
     border-radius: 18px;
     border: 1px solid #CFCDEE;
     display: flex;
