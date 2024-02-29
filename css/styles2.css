@@ -990,6 +990,9 @@
     padding-top: 25px;
     position: relative;
 }
+.adding-question .task-page_form .line .field textarea:not(.select2-search__field) {
+    height: 89px;
+}
 
 
 @media (max-width: 479px) {
