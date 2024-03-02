@@ -999,6 +999,7 @@
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     border-radius: 15px;  
     position: relative;
+    z-index: 555;
 }
 .card_top {
     position: relative;
@@ -1043,7 +1044,6 @@
     width: 100%;
     margin: 62px auto 248px;
     position: relative;
-    z-index: 5;
     background: #fff;
 }
 .card_item:before {
@@ -1055,7 +1055,7 @@
     top: 13px;
     border: 1px solid #CFCDEE;
     border-radius: 11px;
-    z-index: -1999;
+    z-index: -1000;
 }
 .card_item-count {
     padding: 10px 12px;
@@ -1100,6 +1100,104 @@
     margin-left: 11px;
 }
 
+
+.hint_item {    
+    padding: 25px 26px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 590px;
+    width: 100%;
+    margin: 62px auto 248px;
+    position: relative;
+    background: #F3F3FC;
+} 
+.hint_item:before {
+    position: absolute;
+    content: "";
+    width: calc(100% - 32px);
+    height: 100%;
+    left: 16px;
+    top: 13px;
+    border: 1px solid #CFCDEE;
+    border-radius: 11px;
+    z-index: -1000;
+}
+.hint_item-count {
+    padding: 10px 12px;
+    border-radius: 51px;
+    background: #ECEBF5;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.3px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 23px;
+}
+.hint_item .icon {
+    width: 15px;
+    height: 15px;
+}
+.hint_item-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.5px;    
+    text-align: center;
+}
+.hint_item-btns {
+    margin-top: 24px;
+    display: flex;
+}
+.hint_item-btn {
+    padding: 14px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 55px;
+    background: var(--main_color);
+    display: block;
+    min-width: 109px;
+    text-align: center;
+}
+.hint_item-btn + .hint_item-btn {
+    margin-left: 11px;
+}
+.hint_item-btn.red {
+    background: #D22116; 
+}
+.hint_item-btn.blau {
+    background: var(--main_color); 
+}
+.hint_item-btn.green {
+    background: #3CA72B; 
+}
+.hint_item .btn-next {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+.hint_item .btn-next .icon-next {
+    width: 35px;
+    height: 35px;
+}
+.hint_item-img {
+    margin: 0 auto 20px;
+    width: 206px;
+    height: 147px;
+}
+.hint_item-img img {
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
 
 
 
