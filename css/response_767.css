@@ -2968,9 +2968,6 @@
     .game_title {
         font-size: 18px;
     }
-    .game_top {
-        margin-top: 15px;
-    }
     .game_wrap {
         flex-direction: column;
         justify-content: flex-start;

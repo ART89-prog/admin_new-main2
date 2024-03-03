@@ -1308,6 +1308,7 @@
     width: 100%;
     padding: 29px 17px 33px 23px;
     border-radius: 15px;
+    display: none;
 }
 .game_modal-title {
     margin-bottom: 26px;
