@@ -1280,7 +1280,24 @@
     text-decoration: none;
     white-space: nowrap;
 }
-
+.game_items {
+    display: flex;    
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.game_items > * {
+    width: calc(33.333% - 16px);
+    border-radius: 15px;
+    background: #fff;
+    padding: 33px 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #101010;
+}
 
 
 
