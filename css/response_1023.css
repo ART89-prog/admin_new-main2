@@ -507,6 +507,17 @@
     }
 
 
+    .shop_items > * {
+        width: calc(100% / 2 - 8px);
+        gap: 10px;
+    }
+    .accrual_item {
+        width: 100%;
+    }
+    .shop_item-title {
+        max-width: 100%;
+    }
+
 
 
 

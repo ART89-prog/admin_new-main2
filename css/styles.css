@@ -34244,6 +34244,9 @@ bottom: 20px;
     align-items: center;
     justify-content: space-between;
 }
+.shop_head .page_title {
+    margin-bottom: 0;
+}
 .shop_head .nice-select {
     padding: 0 27px 0 12px;
     border: 1px solid #7874A3;
@@ -34335,7 +34338,7 @@ bottom: 20px;
 
 .shop_items {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -34385,6 +34388,7 @@ bottom: 20px;
     display: flex;
     align-items: center;
     gap: 3px;
+    margin-right: 6px;
 }
 .shop_item-link {
     border-radius: 71px;
@@ -34568,6 +34572,7 @@ bottom: 20px;
     flex-direction: row;
     align-items: center;
     gap: 19px;
+    display: none;
 }
 .modal_shop-img {
     width: 183px;
@@ -34604,7 +34609,7 @@ bottom: 20px;
     gap: 12px;
 }
 .modal_shop-price span {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 19px;
     font-style: normal;
     font-weight: 700;
@@ -34633,6 +34638,7 @@ bottom: 20px;
     padding: 47px 35px 34px;
     border-radius: 15px;
     background: #fff;
+    display: none;
 }
 .shop_modal-icon {
     width: 95px;
@@ -34641,6 +34647,34 @@ bottom: 20px;
     margin: 0 auto 30px;
 }
 .shop_modal-title {
+    font-size: 20px;
+    line-height: 23px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+    opacity: 0.8;
+    text-align: center;
 }
 .shop_modal-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #514F78;  
+    text-align: center;  
+}
+.shop_modal-link {
+    border-radius: 71px;
+    background: var(--main_color);
+    text-decoration: none;
+    color: #fff;
+    padding: 9px 20px;
+    font-weight: 500;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 134px;    
+    margin: 0 auto;
 }
