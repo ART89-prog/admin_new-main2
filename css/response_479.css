@@ -1886,6 +1886,7 @@
     }
     .modal_shop {
         flex-direction: column;
+        padding: 32px 12px 12px;
     }
     .modal_shop-info {
         width: 100%;
@@ -1897,6 +1898,7 @@
     .modal_shop-img img {
         border-radius: 25px;
     }
+    
 
 
 
