@@ -34348,7 +34348,7 @@ bottom: 20px;
     border-radius: 15px;
     background: #fff;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 17px;
 }
 .shop_item-img {
@@ -34500,12 +34500,13 @@ bottom: 20px;
     border-radius: 15px;
     background: #fff;
 }
+.accrual_item + .accrual_item {
+    margin-top: 8px;
+}
 .accrual_items {
     display: flex;
     flex-direction: column;
-}
-.accrual_item + .accrual_item {
-    margin-top: 8px;
+    align-items: flex-start;    
 }
 .accrual_item {
     display: inline-flex;
@@ -34514,7 +34515,6 @@ bottom: 20px;
     padding: 9px 12px;
     border-radius: 6px;
     gap: 5px;
-    width: max-content;
 }
 .accrual_item-title {
     font-size: 13px;
@@ -34556,6 +34556,7 @@ bottom: 20px;
 .accrual_item-img {
     width: 18px;
     height: 18px;
+    flex-shrink: 0;
 }
 .accrual_item-img img {
     width: 100%;

@@ -1891,7 +1891,11 @@
         width: 100%;
     }
     .modal_shop-img {
-        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+    .modal_shop-img img {
+        border-radius: 25px;
     }
 
 
