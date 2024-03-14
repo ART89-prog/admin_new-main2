@@ -1886,7 +1886,7 @@
     }
     .modal_shop {
         flex-direction: column;
-        padding: 32px 14px 14px;
+        padding: 14px;
     }
     .modal_shop-info {
         width: 100%;
