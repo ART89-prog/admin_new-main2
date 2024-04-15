@@ -329,17 +329,18 @@
 									</div>
 									<form class="intellect_form" style="display: none;">								
 										<div class="line">
-											<div class="task-page_label">Название</div>
+											<div class="intellect_form-label">Название</div>
 											<div class="field">
 												<input type="text" id="name" placeholder="Введите название">
 											</div>
 										</div>
 										<div class="line">
-											<div class="task-page_label">Описание</div>
+											<div class="intellect_form-label">Описание</div>
 											<div class="field">
-												<textarea id="desc" class="task-page_textarea" placeholder="Введите название"></textarea>
+												<textarea id="desc" class="intellect_form-textarea" placeholder="Введите название"></textarea>
 											</div>
-										</div>									
+										</div>
+										<button type="submit" class="modal_btn" data-content="modal-intellect">Отправить</button>									
 									</form>
 								</section>
 								
@@ -573,6 +574,15 @@
 			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
 			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default="">
 			</video>
+		</section>
+
+		<section class="modal-intellect" id="modal-intellect">
+			<svg class="icon">
+				<use xlink:href="images/sprite.svg#ok888"></use>
+			</svg>
+			<div class="modal-intellect_title">Заявка принята</div>
+			<div class="modal-intellect_text">Ваша заявка принята и будет рассмотрена. Спасибо!</div>
+			<a href="#" class="modal-intellect_link">Вернуться к ассиистенту</a>
 		</section>
 
 		<div class="supports_error">

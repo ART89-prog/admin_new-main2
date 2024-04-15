@@ -63,9 +63,9 @@ $(() => {
 	$('.intellect-top_btn').click(function () {
 		$('.intellect_form').slideToggle(300, function () {
 			if ($(this).is(':hidden')) {
-				$('.intellect-top_btn').html('Показать текст');
+				$('.intellect-top_btn').html('Предложить');
 			} else {
-				$('.intellect-top_btn').html('Скрыть текст');
+				$('.intellect-top_btn').html('Отменить');
 			}
 		});
 	});
