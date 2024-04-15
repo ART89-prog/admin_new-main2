@@ -1898,9 +1898,33 @@
     .modal_shop-img img {
         border-radius: 25px;
     }
-    
+        
+    .almanac_status{
+        flex-direction: column;
+        gap:10px;
+    }
 
+    .almanac_status-item + .almanac_status-item{
+        margin-left: 0;
+    }
+    .button_repeat{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .simulator-questions_wrapper-title{
+        flex-direction: column;
+        gap: 10px;
+            align-items: flex-start;
+    }
 
+    .simulator-questions_label{
+        margin-left: 0;
+    }
+
+    .simulator-questions_wrapper-text{
+        text-overflow:unset;
+        white-space:unset;
+    }
 
 
 
