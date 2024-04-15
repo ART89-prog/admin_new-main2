@@ -35216,6 +35216,7 @@ bottom: 20px;
     resize: none;
 }
 .modal-intellect {
+    display: none;
     width: 360px;
     max-width: 100%;
     padding: 48px 33px 38px;
