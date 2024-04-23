@@ -35282,12 +35282,13 @@ bottom: 20px;
     padding: 18px;
     background: #fff;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 .step-simulator_head_right {
     display: flex;
 }
 .step-simulator_head_link {
-    padding: 11px 18px;
+    padding: 8px 18px;
     border-radius: 17px;
     background: var(--main_color);
     font-weight: 500;
@@ -35321,8 +35322,26 @@ bottom: 20px;
     align-items: center;
 }
 .steps-instructions_head-number {
-    padding: 0px 4.5px;
-    border-radius: 18px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--main_color);
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.174181px;
+    color: var(--main_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.steps-instruction_item:nth-child(2) .steps-instructions_head-number,
+.steps-instruction_item:nth-child(3) .steps-instructions_head-number {
+    width: 32px;
+    height: 23px;
+    border-radius: 62px;
     border: 2px solid var(--main_color);
     font-family: 'Inter';
     font-weight: 900;
@@ -35347,7 +35366,7 @@ bottom: 20px;
 .steps-instructions_head-settings .icon {
     width: 24px;
     height: 24px;
-    margin-top: 4px;
+    margin-top: 5px;
 }
 .steps-instructions_head-right {
     display: flex;
@@ -35397,6 +35416,7 @@ bottom: 20px;
     counter-increment: item-counter;
     position: relative;
     display: flex;    
+    border-radius: 15px;
 }
 .steps-instructions_item:before {
     content: counter(item-counter) ""; 
@@ -35407,7 +35427,7 @@ bottom: 20px;
     font-family: 'Inter';
     font-weight: 900;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 18px;
     text-align: center;
     letter-spacing: -0.174181px;
     color: #fff;
@@ -35433,7 +35453,7 @@ bottom: 20px;
     font-size: 13px;
     line-height: 15px;
     color: #000000;
-    margin-bottom: 13px;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35472,6 +35492,10 @@ bottom: 20px;
     line-height: 15px;
     color: #000000;
     margin: 20px auto 0;
+    padding: 12px;
+    background: #F3F3FF;
+    width: 100%;
+    border-radius: 6px;
 }
 .steps-instructions_item-desc .icon {
     width: 20px;
