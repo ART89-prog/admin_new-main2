@@ -94,6 +94,61 @@ $(() => {
 		});
 	});
 
+	
+
+	$('.simulator-quiz .next_btn').click(function (e) {
+		e.preventDefault()
+
+		currentStep++
+
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + currentStep).fadeIn(500)
+
+		$('.simulator-quiz .progress .count .current').text(currentStep)
+		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
+
+		currentStep > 1
+			? $('.simulator-quiz .prev_btn').removeClass('disabled')
+			: $('.simulator-quiz .prev_btn').addClass('disabled')
+
+		if(currentStep == totalSteps) {
+			$('.simulator-quiz .head').hide()
+			$('.simulator-quiz .next_btn').addClass('disabled')
+		} else {
+			$('.simulator-quiz .head').show()
+			$('.simulator-quiz .next_btn').removeClass('disabled')
+		}
+
+		if((currentStep == 2 && $(".wpcf7 input[name='radio-2']:checked" ).length<=0) || (currentStep == 3 && $(".wpcf7 input[name='radio-3']:checked" ).length<=0) || (currentStep == 4 && $(".wpcf7 input[name='radio-4']:checked" ).length<=0)|| (currentStep == 5 && $(".wpcf7 input[name='radio-5']:checked" ).length<=0)|| (currentStep == 6 && $(".wpcf7 input[name='radio-6']:checked" ).length<=0)) {
+			$('.simulator-quiz .next_btn').addClass('disabled')
+		}
+	})
+
+
+	$('.quiz .prev_btn').click(function (e) {
+		e.preventDefault()
+
+		currentStep = currentStep - 1
+
+		$('.simulator-quiz .step').hide()
+		$('.simulator-quiz .step' + currentStep).fadeIn(500)
+
+		$('.simulator-quiz .progress .count .current').text(currentStep)
+		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
+
+		currentStep > 1
+			? $('.simulator-quiz .prev_btn').removeClass('disabled')
+			: $('.simulator-quiz .prev_btn').addClass('disabled')
+
+		if(currentStep == totalSteps) {
+			$('.simulator-quiz .head').hide()
+			$('.simulator-quiz .next_btn').addClass('disabled')
+		} else {
+			$('.simulator-quiz .head').show()
+			$('.simulator-quiz .next_btn').removeClass('disabled')
+		}
+	})
+
 
 
 	$('body').on('click', '.change-history_link', function (e) {
