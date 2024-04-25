@@ -2074,6 +2074,18 @@
     }
 
 
+    .simulator-quiz_box {
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .simulator-quiz_img img {
+        width: 100%;
+    }
+    .simulator-quiz_wrap {
+        width: 100%;
+        border-right: none;
+    }
+    
 
 
 }
