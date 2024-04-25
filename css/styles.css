@@ -35864,3 +35864,9 @@ bottom: 20px;
     width: 100%;
     border-right: none;
 }
+.simulator-quiz .step {
+    display: none;
+}
+.simulator-quiz .step1 {
+    display: block;
+}

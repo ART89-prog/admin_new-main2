@@ -94,7 +94,14 @@ $(() => {
 		});
 	});
 
-	
+
+		var currentStep = 1,
+			totalSteps = 3
+
+		$('.simulator-quiz .head .count .total').text(totalSteps)
+
+
+
 
 	$('.simulator-quiz .next_btn').click(function (e) {
 		e.preventDefault()
@@ -111,7 +118,7 @@ $(() => {
 			? $('.simulator-quiz .prev_btn').removeClass('disabled')
 			: $('.simulator-quiz .prev_btn').addClass('disabled')
 
-		if(currentStep == totalSteps) {
+		if (currentStep == totalSteps) {
 			$('.simulator-quiz .head').hide()
 			$('.simulator-quiz .next_btn').addClass('disabled')
 		} else {
@@ -119,9 +126,6 @@ $(() => {
 			$('.simulator-quiz .next_btn').removeClass('disabled')
 		}
 
-		if((currentStep == 2 && $(".wpcf7 input[name='radio-2']:checked" ).length<=0) || (currentStep == 3 && $(".wpcf7 input[name='radio-3']:checked" ).length<=0) || (currentStep == 4 && $(".wpcf7 input[name='radio-4']:checked" ).length<=0)|| (currentStep == 5 && $(".wpcf7 input[name='radio-5']:checked" ).length<=0)|| (currentStep == 6 && $(".wpcf7 input[name='radio-6']:checked" ).length<=0)) {
-			$('.simulator-quiz .next_btn').addClass('disabled')
-		}
 	})
 
 
@@ -140,7 +144,7 @@ $(() => {
 			? $('.simulator-quiz .prev_btn').removeClass('disabled')
 			: $('.simulator-quiz .prev_btn').addClass('disabled')
 
-		if(currentStep == totalSteps) {
+		if (currentStep == totalSteps) {
 			$('.simulator-quiz .head').hide()
 			$('.simulator-quiz .next_btn').addClass('disabled')
 		} else {
