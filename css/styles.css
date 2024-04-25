@@ -35530,6 +35530,7 @@ bottom: 20px;
 .simulator-quiz_head .icon {
     width: 39px;
     height: 29px;
+
 }
 .simulator-quiz_info-title {
     font-family: 'Ubuntu';
@@ -35556,6 +35557,7 @@ bottom: 20px;
     border-right: 1px solid #C1C1C1;
     width: calc(100% - 560px);
     flex-shrink: 0;
+    padding-bottom: 126px;
 }
 .simulator-quiz_wrap-head {
     display: flex;
@@ -35581,7 +35583,7 @@ bottom: 20px;
     font-family: 'Ubuntu';
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 34px;
     letter-spacing: -0.290185px;
     color: #121213;
 }
@@ -35612,14 +35614,17 @@ bottom: 20px;
 .simulator-quiz_item:nth-child(1) .icon {
     width: 33px;
     height: 33px;
+    flex-shrink: 0;
 }
 .simulator-quiz_item:nth-child(2) .icon {
     width: 31px;
     height: 30px;
+    flex-shrink: 0;
 }
 .simulator-quiz_item:nth-child(3) .icon {
     width: 29px;
     height: 29px;
+    flex-shrink: 0;
 }
 .simulator-quiz_item + .simulator-quiz_item {
     margin-top: 16px;
@@ -35638,6 +35643,7 @@ bottom: 20px;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 23px 18px 19px;
+    margin-top: -126px;
 }
 .simulator-quiz .btns > * + * {
     margin-left: 8px;
@@ -35860,7 +35866,7 @@ bottom: 20px;
     display: block;
 }
 
-.step3 .simulator-quiz_wrap {
+.step.w100 .simulator-quiz_wrap {
     width: 100%;
     border-right: none;
 }
