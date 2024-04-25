@@ -111,7 +111,7 @@ $(() => {
 		$('.simulator-quiz .step').hide()
 		$('.simulator-quiz .step' + currentStep).fadeIn(500)
 
-		$('.simulator-quiz .progress .count .current').text(currentStep)
+		$('.simulator-quiz .progress .count .current').text(currentStep / totalSteps * 100 + '%')
 		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
 
 		currentStep > 1
@@ -129,7 +129,7 @@ $(() => {
 	})
 
 
-	$('.quiz .prev_btn').click(function (e) {
+	$('.simulator-quiz .prev_btn').click(function (e) {
 		e.preventDefault()
 
 		currentStep = currentStep - 1
@@ -137,7 +137,7 @@ $(() => {
 		$('.simulator-quiz .step').hide()
 		$('.simulator-quiz .step' + currentStep).fadeIn(500)
 
-		$('.simulator-quiz .progress .count .current').text(currentStep)
+		$('.simulator-quiz .progress .count .current').text(currentStep / totalSteps * 100 + '%')
 		$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
 
 		currentStep > 1
