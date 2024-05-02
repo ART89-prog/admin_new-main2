@@ -27520,8 +27520,6 @@ form .form_btns input[type=file] + label,
     margin-top: 25px;
 }
 
-.auth-new .login {
-}
 
 
 .comments_wrap{
@@ -36477,4 +36475,124 @@ bottom: 20px;
 
 .filter_cats_modal_close::after {
     transform: rotate(-45deg);
+}
+
+
+
+.simulator-answer {
+    padding: 17px 22px;
+    background: #fff;
+    border-radius: 15px;
+}
+.simulator-answer_title {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+.simulator-answer_item + .simulator-answer_item {
+    margin-top: 15px;
+}
+.simulator-answer_item {
+    padding: 18px;
+    background: #F3F3FF;
+    border-radius: 14px;
+}
+.simulator-answer_item-top {
+    position: relative;
+    padding-bottom: 13px;
+    margin-bottom: 18px;
+}
+.simulator-answer_item-top:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 36px);
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background: #C1C1C1;
+}
+.simulator-answer_item-label {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background: var(--main_color);
+    display: inline-block;
+    margin-bottom: 12px;
+}
+.simulator-answer_item-desc {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7077AD;
+}
+.simulator-answer_item-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    color: #2D2B2B;
+}
+.simulator-answer_item-bottom {
+    display: flex;
+    gap: 13px;
+}
+.simulator-answer_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+    color: #000000; 
+}
+.simulator-answer_item .pie.yellow {
+    color: #E7B025;
+}
+.simulator-answer_item .pie.red {
+    color: #C31818;
+}
+.simulator-answer_item .audio_message {
+    width: 249px;
+    background: #FFFFFF;
+    border-radius: 54px;
+    padding: 4px;
+    margin-bottom: 12px;
+}
+.simulator-answer_item .audio_media .media-control.media-play {
+    width: 23px;
+    height: 23px;
+}
+.simulator-answer_item .audio_media .media-control {
+    font-size: 53%;
+    line-height: 1;
+    padding: 0.97em;
+    text-decoration: none;
+}
+.simulator-answer_item-video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+.simulator-answer_item-video .simulator-answer_item-video-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.simulator-answer_item-video .simulator-answer_item-video-wrap .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 26px;
+    height: 26px;
 }
