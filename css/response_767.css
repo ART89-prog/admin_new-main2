@@ -2793,12 +2793,14 @@
     }
 
     .task2_item-top {
-        flex-direction: column-reverse;
+        flex-wrap:wrap;
         align-items: flex-start;
     }
     .task2_item-top-text {
         margin-right: 0;
         margin-top: 5px;
+        width: 100%;
+        order:2;
     }
 
     .tasks-block_info-label {
@@ -3115,9 +3117,49 @@
     }
 
 
+    .simulator-quiz_box {
+        flex-direction: column-reverse;
+        gap: 5px;
+    }
+    .simulator-quiz_img {
+        margin: 20px 18px 10px;
+        position: relative;
+        display: block;
+        max-width: calc(100% - 36px);
+    }
+    .simulator-quiz_img img {
+        width: 100%;
+    }
+    .simulator-quiz_wrap {
+        width: 100%;
+        border-right: none;
+    }
+    .simulator-quiz_head {
+        padding: 22px 18px 19px;
+        gap: 10px;
+    }
 
 
+    .almanac_items div > *{
+        width: 35px;
+        height: 35px;
+    }
 
+    .almanac_item span{
+        font-size: 11px;
+        width: 17px;
+        height: 17px;
+        line-height: 13px;
+    }
+
+    .simulator-quiz_video .simulator-quiz_video-wrap{
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+
+    .task2_item-top-label{
+        margin-top: 7px;
+    }
 
 
 
