@@ -36783,3 +36783,206 @@ bottom: 20px;
     margin: 0 auto;
     text-decoration: none;
 }
+
+.shop_head-links {
+    display: flex;
+}
+.shop_head-links a {
+    text-decoration: none;
+    padding: 10px 12px;
+    background: var(--main_color);
+    border-radius: 60px;
+    margin-left: 13px;
+    display: block;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.shop-new_zakaz {
+    padding: 19px 15px;
+    border-radius: 15px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop-new_zakaz-left {
+    display: flex;
+    align-items: center;
+}
+.shop-new_zakaz-left .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
+    display: block;
+}
+.shop-new_zakaz-text {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    margin-right: 12px;
+}
+.shop-new_zakaz-product {
+    background: #F3F3FF;
+    border-radius: 34px;
+    padding: 5px 14px;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    color: #1C1C1C;
+    display: flex;
+    align-items: center;
+}
+.shop-new_zakaz button {
+    text-decoration: none;
+    padding: 5px 12px;
+    background: #D72727;
+    border-radius: 60px;
+    margin-left: 13px;
+    display: block;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+.shop-new_zakaz-product span {
+    font-size: 14px;
+    line-height: 16px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 6px;
+}
+.shop_card-title {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop_card-title span {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+    color: #101010;  
+}
+.shop_card-title .nice-select {
+    padding: 0 27px 0 12px;
+    border-radius: 50px;
+    height: 34px;
+    line-height: 34px;
+    color: #625BA1;
+    font-size: 12px;
+    font-weight: 500;
+    background: #E4E1F8;
+}
+.shop_card-title .nice-select .list {
+    color: #7874A3;
+    font-size: 12px;
+    font-weight: 500;  
+    padding: 5px 0;
+    top: calc(100% + 3px);
+    width: calc(100% + 30px);
+    right: 0px;
+    left: auto;
+}
+.shop_card-title .nice-select .option {
+    line-height: 30px;
+    list-style: none;
+    min-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.shop_card-title .nice-select:after {
+    border-bottom: 1px solid #625BA1;
+    border-right: 1px solid #625BA1;
+    height: 6px;
+    width: 6px;
+    margin-top: -4px;
+}
+
+.shop-new_history-items {
+    padding: 16px 14px;
+    background: #fff;
+    border-radius: 15px;
+}
+.shop-new_history-item {
+    padding: 12px;
+    background: #F3F3FF;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.shop-new_history-item + .shop-new_history-item {
+    margin-top: 14px;
+}
+.shop-new_history-item-img {
+    width: 65px;
+    height: 65px;
+}
+.shop-new_history-item-img img {
+    border-radius: 7px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.shop-new_history-item-title {
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: #1C1C1C;
+}
+.shop-new_history-item-price {
+    margin-left: 5px;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.5px;
+    color: #1C1C1C;
+}
+.shop-new_history-item-price span {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.shop-new_history-item-author {
+    display: flex;
+    align-items: center;
+    gap: 7px; 
+}
+.shop-new_history-item-photo {
+    width: 24px;
+    height: 24px;
+}
+.shop-new_history-item-photo img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.shop-new_history-item-name {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    color: #7F7AB0;
+}
