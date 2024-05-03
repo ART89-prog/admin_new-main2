@@ -98,7 +98,7 @@ $(() => {
 
 
 	var currentStep = 1,
-		totalSteps = $(".simulator-quiz_block .step").length-1;
+		totalSteps = $(".simulator-quiz_block .step").length - 1;
 
 	$(".js-select_step").click(function (e) {
 		$('.simulator-quiz .step').hide()
@@ -123,8 +123,8 @@ $(() => {
 	$('.simulator-quiz .progress .progress_bar div').width(currentStep / totalSteps * 100 + '%')
 
 
-	document.addEventListener('keydown', function(event) {
-		if(event.code === 'ArrowRight' && currentStep<totalSteps) {
+	document.addEventListener('keydown', function (event) {
+		if (event.code === 'ArrowRight' && currentStep < totalSteps) {
 			currentStep++
 
 			$('.simulator-quiz .step').hide()
@@ -145,9 +145,8 @@ $(() => {
 				$('.simulator-quiz .next_btn').removeClass('disabled')
 			}
 		}
-		if(event.code === 'ArrowLeft' && currentStep>1) {
-			if(currentStep>1)
-			{
+		if (event.code === 'ArrowLeft' && currentStep > 1) {
+			if (currentStep > 1) {
 				currentStep = currentStep - 1
 
 				$('.simulator-quiz .step').hide()
@@ -200,8 +199,7 @@ $(() => {
 	$('.simulator-quiz .prev_btn').click(function (e) {
 		e.preventDefault()
 
-		if(currentStep>1)
-		{
+		if (currentStep > 1) {
 			currentStep = currentStep - 1
 
 			$('.simulator-quiz .step').hide()
@@ -387,6 +385,30 @@ $(() => {
 			this.style.width = this.nextElementSibling.clientWidth + 'px'
 		}
 	}
+
+
+	var swiper = new Swiper('.shop-new_leader .swiper', {
+		slidesPerView: 3,
+		spaceBetween: 13,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			480: {
+				slidesPerView: 2,
+				spaceBetween: 13
+			},
+			767: {
+				slidesPerView: 3,
+				spaceBetween: 13
+			}
+		}
+	})
 
 
 	// Тест - Пары
