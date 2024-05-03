@@ -1953,6 +1953,17 @@
         width: 100%;
     }
 
+    .simulator-quiz_wrap-text {
+        order: 1;
+        margin-top: 15px;
+        margin-left: -55px;
+    }
+    .simulator-quiz_wrap-labels {
+        margin-top: 7px;
+    }
+    .simulator-quiz_wrap-labels span {
+        display: none;
+    }
 
 
 

@@ -36716,3 +36716,24 @@ bottom: 20px;
     color: #FFFFFF;
     display: block;
 }
+
+.simulator-quiz_wrap-labels {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;
+}
+.simulator-quiz_wrap-labels .icon {
+    width: 24px;
+    height: 24px;
+}
+.simulator-quiz_wrap-info {
+    display: flex;
+    flex-direction: column;
+}
