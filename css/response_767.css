@@ -3200,6 +3200,15 @@
     .shop_award-head {
         flex-direction: column;
         align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .shop_top-wrap {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_top-box {
+        align-items: flex-start;
     }
 
 

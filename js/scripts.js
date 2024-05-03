@@ -81,6 +81,13 @@ $(() => {
 	});
 
 
+	$('body').on('click', '.shop-news_btn', function (e) {
+		e.preventDefault()
+		$(".accrual_item.hide").addClass("active");
+		$(this).hide();
+	});
+
+
 	$('.adding-question_btn').click(function (e) {
 		e.preventDefault()
 		$('.adding-question_hide').slideToggle(300, function () {
