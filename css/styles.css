@@ -36737,3 +36737,49 @@ bottom: 20px;
     display: flex;
     flex-direction: column;
 }
+
+.modal_next {
+    max-width: 360px;
+    width: 100%;
+    padding: 44px 48px 32px;
+    border-radius: 15px;
+    background: #fff;
+}
+.modal_next .icon {
+    width: 93px;
+    height: 93px;
+    margin: 0 auto 26px;
+}
+.modal_next-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    margin-bottom: 9px;
+    max-width: 257px;
+}
+.modal_next-text {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #514F78;
+    opacity: 0.8;
+    margin-bottom: 17px;
+}
+.modal_next-btn {
+    width: 85px;
+    padding: 5px 17px;
+    border-radius: 54px;
+    background: var(--main_color);
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-decoration: none;
+}
