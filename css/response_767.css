@@ -3189,6 +3189,19 @@
         margin-top: 10px;
     }
 
+    .shop_accrual-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_purchase-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .shop_award-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
 
 
 
