@@ -1989,6 +1989,9 @@
     .shop_card-title .nice-select {
         margin-top: 15px;
     }
+    .comment_bottom:before {
+        width: calc(100% + 24px);
+    }
 
 
 
