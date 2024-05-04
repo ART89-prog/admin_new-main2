@@ -37240,13 +37240,16 @@ bottom: 20px;
 .shop_award-item-left {
     margin-right: 18px;
 }
-
+.shop-news {
+    background: #fff;
+    padding: 16px;
+}
 .shop_top-wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 16px;
+    padding-bottom: 14px;
     border-radius: 15px;
     background: #fff;
     position: relative;
@@ -37255,7 +37258,7 @@ bottom: 20px;
 .shop_top-wrap:before {
     position: absolute;
     content: "";
-    width: 100%;
+    width: calc(100% + 32px);
     height: 1px;
     bottom: 0;
     left: 50%;
@@ -37324,6 +37327,108 @@ bottom: 20px;
     height: 37px;
     z-index: 100;
 }
+
+.knowledge-base {
+}
+.knowledge-base .page_title {
+    margin-bottom: 30px;
+}
+.knowledge-base_box {
+}
+.knowledge-base_box_title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    color: #1A1A1A;
+    margin-bottom: 20px;
+}
+.knowledge-base_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.knowledge-base_items > * {
+    text-decoration: none;
+    width: calc(100%/3 - 15px);
+    padding: 12px;
+    border-radius: 14px;
+    background: #fff;
+}
+.knowledge-base_item-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding-bottom: 12px;
+    position: relative;
+}
+.knowledge-base_item-top:before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 24px);
+    height: 1px;
+    background: #D6D6D6;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.knowledge-base_item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    background: #CDCCF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.knowledge-base_item-img .icon {
+    width: 36px;
+    height: 36px;
+}
+.knowledge-base_item-title {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 5px;
+    color: #000;
+}
+.knowledge-base_item-text {
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7077AD;    
+}
+.knowledge-base_item-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+.knowledge-base_item-label {
+    padding: 3px 8px;
+    background: var(--main_color);
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    border-radius: 39px;
+}
+.knowledge-base_item-date {
+    padding: 3px 8px;
+    background: #EBE9FC;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #524F8E;
+    border-radius: 39px;
+}
+
 
 
 

@@ -3211,6 +3211,12 @@
         align-items: flex-start;
     }
 
+    .knowledge-base_items > * {
+        width: 100%;
+    }
+    .knowledge-base_items {
+        gap: 10px;
+    }
 
 
 
