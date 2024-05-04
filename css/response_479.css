@@ -1953,11 +1953,11 @@
         width: 100%;
     }
 
-    .simulator-quiz_wrap-text {
+    /* .simulator-quiz_wrap-text {
         order: 1;
         margin-top: 15px;
         margin-left: -55px;
-    }
+    } */
     .simulator-quiz_wrap-labels {
         margin-top: 7px;
     }
@@ -1993,7 +1993,9 @@
         width: calc(100% + 24px);
     }
 
-
+    .simulator-quiz_step_select_head .simulator-quiz_wrap-labels span {
+        display: block;
+    }
 
 
 

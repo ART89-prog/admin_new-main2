@@ -36754,7 +36754,10 @@ bottom: 20px;
     width: 100%;
     padding: 44px 48px 32px;
     border-radius: 15px;
-    background: #fff;
+    background: #fff;    
+    display: flex;
+    flex-direction: column;
+    display: none;
 }
 .modal_next .icon {
     width: 93px;
@@ -37429,7 +37432,14 @@ bottom: 20px;
     border-radius: 39px;
 }
 
-
+.simulator-quiz_step_select_head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.simulator-quiz_step_select_head .simulator-quiz_wrap-labels {
+    margin-top: 0;
+}
 
 
 
