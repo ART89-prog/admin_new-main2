@@ -37379,7 +37379,7 @@ bottom: 20px;
     width: 60px;
     height: 60px;
     border-radius: 6px;
-    background: #CDCCF1;
+    background-color: color-mix(in srgb, var(--main_color) 20%, #fff);
     display: flex;
     align-items: center;
     justify-content: center;
