@@ -7530,7 +7530,7 @@ aside .menu .sub_menu a.active
 
 .dialog .head .person
 {
-    color: #7f85ad;
+    color: #8381A9;
     font-size: 18px;
     font-weight: 500;
     line-height: 21px;
@@ -29575,7 +29575,6 @@ bottom: 20px;
 }
 
 .trainer_new{
-    max-width: 720px;
     margin: 20px auto;
     text-align: center;
     padding: 24px;
@@ -29595,7 +29594,6 @@ bottom: 20px;
 
 .trainer_new_desc{
     border-radius: 20px;
-    border: 1px solid #C4BFE5;
     background: #F2F0FF;
     padding: 32px;
 }
@@ -29606,6 +29604,7 @@ bottom: 20px;
     font-weight: 700;
     letter-spacing: -1px;
     margin-bottom: 24px;
+    text-align: start;
 }
 
 .trainer_new_text{
@@ -29621,6 +29620,7 @@ bottom: 20px;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 24px;
+    text-align: start;
 }
 
 .trainer_step_button{
@@ -29677,8 +29677,7 @@ bottom: 20px;
 }
 
 .trainer_step_video{
-    max-width: 300px;
-    margin: auto;
+    max-width: 207px;
 }
 
 .trainer_step_video img{
