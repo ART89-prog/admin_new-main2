@@ -29631,6 +29631,8 @@ bottom: 20px;
     margin-top: 32px;
     padding: 15px 20px;
     border-radius: 40px;
+    margin-right: auto;
+    display: block;
 }
 
 .trainer_step_video{
@@ -29646,6 +29648,7 @@ bottom: 20px;
 
 .trainer_step_video a img{
 	display: block;
+    height: 137px;
 }
 
 .trainer_step_video a:after{
@@ -29661,19 +29664,72 @@ bottom: 20px;
 
 .trainer_step_video svg{
     position: absolute;
-    top:calc(50% - 25px);
-    left:calc(50%  - 25px);
-    width: 50px;
-    height: 50px;
+    top:calc(50% - 21px);
+    left:calc(50%  - 21px);
+    width: 42px;
+    height: 42px;
     z-index: 100;
 }
+.trainer_steps {
+    position: relative;
+    padding-bottom: 23px;
+    margin-bottom: 22px;
+}
+.trainer_steps:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #B6B6B6;
+    width: calc(100% + 64px);
+    height: 1px;
+}
+.trainer_new .accordion_item .head:before {
+    display: none;
+}
+.trainer_new .accordion_item {
+    background: #DFDCF6;
+}
+.dialog .trainer_new .data {
+    border-radius: 15px;
+    background: none;
+}
+.trainer_new .accordion_item .title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.68px;
+    letter-spacing: -1px;
+    color: #000;
+}
+.trainer_new .accordion_item .title span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: var(--main_color);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20.68px;
+    letter-spacing: -1px;
+    color: #fff;
+}
+.trainer_new .accordion_dialog .accordion_item.active .head {
+    min-height: 55px;
+    border-bottom: 1px solid #A5A0CC;
+}
+
 
 .trainer_step_audio {
-    max-width: 350px;
+    max-width: 368px;
     background: #fff;
     padding: 10px;
     border-radius: 50px;
-    margin: 0 auto;
 }
 
 .trainer_step_video{
