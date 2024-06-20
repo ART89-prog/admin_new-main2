@@ -8,6 +8,17 @@ $(() => {
         $(this).toggleClass("active");*/
 
 
+    const textarea = document.querySelector('#autoresize');
+
+    textarea.addEventListener( 'input', autosize );
+                 
+    function autosize(){
+        this.style.height = 'auto';
+        let applyNow = this.style.offsetHeight;
+        this.style.height = this.scrollHeight + 0 + 'px';
+    }
+
+
     $(".select_cats_all").on("click", function(){
     	$(".filter_cats_item").addClass("active");    	
     	$(".select_cats_filter").removeClass("error");
@@ -70,13 +81,13 @@ $(() => {
     	}
     });
 
-    $(".search_ai_history_show").on("click", function(){
+    $(".search_ai_history_show:not(.red)").on("click", function(){
     	console.log($(this).text())
     	if($(this).text()=="Посмотреть ответ"){
-    		$(this).text("Скрыть ответ").parent().parent().find(".search_ai_history_desc").show();
+    		$(this).text("Скрыть ответ").parent().parent().parent().find(".search_ai_history_desc").show();
     	}
     	else{
-			$(this).text("Посмотреть ответ").parent().parent().find(".search_ai_history_desc").hide();
+			$(this).text("Посмотреть ответ").parent().parent().parent().find(".search_ai_history_desc").hide();
     	}
     });
 

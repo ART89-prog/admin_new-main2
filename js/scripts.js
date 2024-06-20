@@ -3,6 +3,46 @@ WH = window.innerHeight || document.clientHeight || document.getElementsByTagNam
 $(() => {
 	// tippy('[data-tippy-content]');
 
+	function handleFileSelect(evt) {
+	    var files = evt.target.files; // FileList object
+	    // Loop through the FileList and render image files as thumbnails.
+	    for (var i = 0, f; f = files[i]; i++) {
+	        // Only process image files.
+	        if (!f.type.match('image.*')) {
+	            alert("Image only please....");
+	        }
+	        var reader = new FileReader();
+	        // Closure to capture the file information.
+	        reader.onload = (function (theFile) {
+	            return function (e) {
+	                // Render thumbnail.
+	                var span = document.createElement('span');
+	                span.innerHTML = ['<img class="thumb" title="', escape(theFile.name), '" src="', e.target.result, '" />'].join('');
+	                $("#outputMulti").append(span);
+	                $(".img_file").show();
+	                $(".clear_input").show();
+	            };
+	        })(f);
+	        // Read in the image file as a data URL.
+	        reader.readAsDataURL(f);
+	    }
+	}
+	if(document.getElementById('imgInp'))
+	{
+		document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
+	}
+	
+		
+
+
+	$('.clear_input').click(function (e) {
+		$(".clear_input").hide();
+		$(".img_file").hide();
+		$("#outputMulti").html("");
+		document.getElementById("imgInp").value = "";
+	});
+	
+
 	$(".create-report_wrap_hide").each(function (index) {
 		if ($(this).outerHeight() > 46) {
 			$(this).css("height", "46px");
@@ -131,7 +171,8 @@ $(() => {
 
 
 	document.addEventListener('keydown', function (event) {
-		if (event.code === 'ArrowRight' && currentStep < totalSteps) {
+	
+		if ((event.code === 'ArrowRight' || event.code === 'PageDown') && currentStep < totalSteps) {
 			currentStep++
 
 			$('.simulator-quiz .step').hide()
@@ -152,7 +193,7 @@ $(() => {
 				$('.simulator-quiz .next_btn').removeClass('disabled')
 			}
 		}
-		if (event.code === 'ArrowLeft' && currentStep > 1) {
+		if ((event.code === 'ArrowLeft' || event.code === 'PageUp') && currentStep > 1) {
 			if (currentStep > 1) {
 				currentStep = currentStep - 1
 
@@ -346,7 +387,7 @@ $(() => {
 		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 	});
 
-	$('body').on("keyup", '.js-search', function (event) {
+	/*$('body').on("keyup", '.js-search', function (event) {
 		//$(".highlight").replaceWith(function () { return $(this).contents(); });
 		let value = $(this).val();
 		if (value == "") {
@@ -374,7 +415,7 @@ $(() => {
 		});
 
 		addAI();
-	});
+	});*/
 
 
 	// Тест - Поля ввода в тексте
@@ -393,29 +434,30 @@ $(() => {
 		}
 	}
 
-
-	var swiper = new Swiper('.shop-new_leader .swiper', {
-		slidesPerView: 3,
-		spaceBetween: 13,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
-				spaceBetween: 0
+	if($(".shop-new_leader .swiper").length>0){
+		var swiper = new Swiper('.shop-new_leader .swiper', {
+			slidesPerView: 3,
+			spaceBetween: 13,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
 			},
-			480: {
-				slidesPerView: 2,
-				spaceBetween: 13
-			},
-			767: {
-				slidesPerView: 3,
-				spaceBetween: 13
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 0
+				},
+				480: {
+					slidesPerView: 2,
+					spaceBetween: 13
+				},
+				767: {
+					slidesPerView: 3,
+					spaceBetween: 13
+				}
 			}
-		}
-	})
+		})
+	}
 
 
 	// Тест - Пары

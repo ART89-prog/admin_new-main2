@@ -39,6 +39,95 @@
 	<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
 	<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
 	<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+
+	<style>
+		.content_flex_full_action .simulator-quiz_wrap-time{
+			display: flex;
+	        gap: 10px;
+	        align-items: center;
+	        margin-left: auto;
+	        font-size: 20px;
+	        font-weight: bold;
+	        color: #000;
+		}
+
+		.content_flex_full_action .simulator-quiz_wrap-time .icon{
+			width: 30px;
+			height: 30px;
+		}
+
+		.content_flex_full_action .simulator-quiz_wrap-text{			
+			display: flex;
+			gap:15px;
+		}
+		@media print, (min-width: 1024px)
+		{
+			.content_flex_full_action .simulator-quiz_info-title{
+				font-size: 21px;
+			}
+
+			.content_flex_full_action .simulator-quiz_info-text{
+				font-size: 30px;
+			}
+
+			.content_flex_full_action .simulator-quiz_wrap-text{
+				font-size: 30px;
+				display: flex;
+				gap:15px;
+			}
+
+
+			.content_flex_full_action .simulator-quiz_wrap-time{
+				display: flex;
+		        gap: 10px;
+		        align-items: center;
+		        margin-left: auto;
+		        font-size: 20px;
+		        font-weight: bold;
+		        color: #000;
+			}
+
+			.content_flex_full_action .simulator-quiz_wrap-labels{
+				    font-size: 24px;
+			}
+
+			.content_flex_full_action .simulator-quiz_item-title{
+				font-size: 29px;
+			}
+
+			.content_flex_full_action .simulator-quiz_item-text{
+				font-size: 20px;
+    			line-height: 1;
+			}
+
+			.content_flex_full_action .simulator-quiz .progress .count{
+				font-size: 20.84px;
+			}
+
+			.content_flex_full_action .simulator-quiz-select-step{
+				font-size: 20px;
+			}
+			.content_flex_full_action .simulator-quiz_wrap-label{
+				font-size:20px;
+			}
+
+			.content_flex_full_action ..simulator-quiz_description-item-text{
+				font-size:23px;
+				line-height: 1;
+			}
+
+			.content_flex_full_action .simulator-quiz_description-item-title{
+				font-size:30px;
+				line-height: 1;
+			}
+
+			.content_flex_full_action .simulator-quiz_info-title{
+
+			}
+
+
+		}
+	</style>
 </head>
 
 <body>
@@ -79,7 +168,15 @@
 												<div class="simulator-quiz_wrap-head">
 													<div class="simulator-quiz_wrap-number">1.1</div>
 													<div class="simulator-quiz_wrap-info">
-														<div class="simulator-quiz_wrap-text">Зачистка заусенцев на основаниях ШЖ0 805.206 ТК</div>
+														<div class="simulator-quiz_wrap-text">
+															<span>Зачистка заусенцев на основаниях ШЖ0 805.206 ТК</span>
+															<div class="simulator-quiz_wrap-time">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#full_time"></use>
+																</svg>
+																05:43
+															</div>
+														</div>
 														<div class="simulator-quiz_wrap-labels">
 															<svg class="icon">
 																<use xlink:href="images/sprite.svg#completed"></use>
@@ -157,7 +254,16 @@
 												<div class="simulator-quiz_description">
 													<div class="simulator-quiz_description-label">Рабочее действие</div>
 													<div class="simulator-quiz_description-item">
-														<div class="simulator-quiz_description-item-number">1.1</div>
+														<div class="simulator-quiz_description-item_flex">
+															<div class="simulator-quiz_description-item-number">1.1</div>
+															<div class="simulator-quiz_wrap-time">
+																<svg class="icon">
+																	<use xlink:href="images/sprite.svg#full_time"></use>
+																</svg>
+																05:43
+															</div>
+														</div>
+
 														<div class="simulator-quiz_description-item-title">Скомплектовать рабочее место (шлифовальной шкуркой, шабером) в соответствии с выполняемыми работами</div>
 														<div class="simulator-quiz_description-item-text">Силу удара молотка необходимо соизмерять с величиной выпуклости, а также с толщиной выплавляемого металла основания. Примечание: а) Силу удара при правке – наносить от края, постепенно приближаясь к середине.</div>
 													</div>
@@ -213,6 +319,13 @@
 																	</svg>
 																	<span>26</span>
 																</div>
+																<div class="simulator-quiz_wrap-time">
+																	<svg class="icon">
+																		<use xlink:href="images/sprite.svg#full_time"></use>
+																	</svg>
+																	05:43
+																</div>
+
 															</div>															
 															<div class="simulator-quiz_item_step_title">Проверка рабочего места и оборудования</div>
 														</a>

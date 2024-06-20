@@ -467,12 +467,13 @@
         height: 44px;
 
         border-radius: 8px;
+        display: none;
     }
 
 
     .comments .comment .data
     {
-        width: calc(100% - 60px);
+        width: calc(100% - 0px);
     }
 
 
@@ -1997,13 +1998,70 @@
         display: block;
     }
 
+    .select_cats{
+        margin-left: auto;
+        width: 100%;
+    }
 
 
+    .dialog .message{
+        flex-direction: column;
+        gap: 10px;
+        align-content: flex-start;
+    }
+
+    .dialog .message .photo + .info{
+        margin-left: 0;
+    }
+
+    .dialog .message .info{
+        max-width: 100%;
+    }
+
+    .correction-btn{
+        margin-left: 0;
+    }
+
+    .dialog .message .photo{
+        align-self: auto;
+        display: none;
+    }
+
+    .dialog .message .prompt, .gtp_message{
+        margin-left: 0;
+    }
 
 
+    .dialog .message.answer{
+        align-items: end;
+        flex-direction: column-reverse;
+    }
 
 
+    .dialog .message.answer .photo{
+        margin-right: 12px;
+    }
 
+    .message_form{
+        margin-left: 0;
+    }
+
+    .step_stage_time_new{
+        margin-left: 38px;
+        margin-top: 10px;
+    }
+
+    .accordion_dialog .accordion_item{
+        width: calc(100% + 44px);
+        margin-right: -22px;
+        margin-left: -22px;
+    }
+
+    .accordion_dialog .accordion_item .data {
+        padding: 20px;
+        width: 100%;
+        margin: 0;
+    }
 
 
 }

@@ -2633,6 +2633,7 @@
     }
     .idea-head_left {
         margin-bottom: 15px !important;
+        width: 100% !important;
     }
     .idea-head .select-right {
         margin-left: 0;
@@ -2851,6 +2852,9 @@
         margin-top: 15px;
         display: flex;
         align-items: center;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:10px;
     }
 
     .simulators-new .simulator_item-right {
@@ -3218,10 +3222,34 @@
         gap: 10px;
     }
 
+    .search_ai_history_head{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .search_ai_cats{
+        flex-direction: column;
+    }
+
+    .search_ai_cat{
+        padding: 5px 10px;
+    }
+
+    .message_continue{
+    	flex-direction: column;
+    }
+
+    #outputMulti, .comments .comment .images{
+        flex-direction: column;
+    }
 
 
+    .comments_wrap_new{
+        flex-direction: column;
+    }
 
-
-
+    .comments_wrap_new .comments{
+        width: 100%;
+    }
 
 }

@@ -7667,6 +7667,7 @@ aside .menu .sub_menu a.active
     border-radius: 50%;
     background: #ddd;
         align-self: self-end;
+        
 }
 
 
@@ -7897,12 +7898,12 @@ aside .menu .sub_menu a.active
     height: 45px;
     margin: auto;
 }
-
+/*
 .dialog .message:has(.feedback_ai) .prompt
 {
      margin-top: 30px;
 }
-
+*/
 
 .dialog .message .prompt
 {
@@ -10499,6 +10500,11 @@ aside .menu .sub_menu a.active
     width: calc(100% - 65px);
 }
 
+.comments .add_comment .block_upload{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 
 .comments .add_comment textarea
 {
@@ -10689,6 +10695,18 @@ aside .menu .sub_menu a.active
 
 
 .comments .comment .del_btn
+{
+    color: #d11a1a;
+    font-size: 12px;
+    line-height: 14px;
+
+    margin-top: 10px;
+    margin-left: 10px;
+
+    border-bottom: 1px dashed;
+}
+
+.comments .comment .edit_btn
 {
     color: #d11a1a;
     font-size: 12px;
@@ -12068,7 +12086,7 @@ section.total {
 .total_file_desc .links > * {
     margin-bottom: 10px;
     margin-left: 10px;
-    width: 130px;
+    /*width: 130px;*/
 }
 
 .total_file_desc .links a {
@@ -12250,10 +12268,11 @@ section.total {
     border-radius: 54px;
     display: block;
     width: 100%;
-    height: 50px;
-    padding: 0 20px 0 50px;
+    min-height: 50px;
+    padding: 17px 120px 17px 50px;
     margin-bottom: 30px;
     font-family: 'Ubuntu';
+    overflow: hidden;
 }
 
 .title_faq{
@@ -12265,6 +12284,7 @@ section.total {
     display: flex;
     justify-content: flex-start;
     gap:20px;
+    align-items: flex-start;
 }
 .accordion_item{
     background: #FFFFFF;
@@ -15436,6 +15456,7 @@ background: #64C841;
     border-radius: 55px;
     background: var(--main_color);
     top: 4px;
+    top: calc(50% - 36px);
 }
 
 
@@ -16582,7 +16603,7 @@ background: #64C841;
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    color: #808093;
+    color: #000;
 }
 
 #correction_modal4 .correction_modal-btns {
@@ -17986,11 +18007,15 @@ background: #64C841;
     margin-left: 68px;
 }
 
+.accordion_item .head button.copy{
+    margin-left: 10px;
+    margin-top: 3px;
+}
 
 button.copy{
-    margin-left: 10px;
+   /* margin-left: 10px;*/
     display: inline-flex;
-    margin-top: 3px;
+    margin-top: 10px;
 }
 
 button.copy svg{
@@ -27078,7 +27103,7 @@ form .form_btns input[type=file] + label,
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    height: 96px;
+    height: 300px;
 }
 .solutions-tasks_modal-form button {
     background: var(--main_color);
@@ -28423,7 +28448,7 @@ form .form_btns input[type=file] + label,
     background: #212aff;
 }
 .idea-block_item-text {
-    color: #7C81A1;
+    color: #000;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -30586,7 +30611,7 @@ bottom: 20px;
 }
 .tasks .step_stage_time {
     color: #8683C0;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -30698,7 +30723,7 @@ bottom: 20px;
     background: #79C54B;
 }
 .projects-top_item-label.blau {
-    background: #0F7DFF;
+    background: var(--main_color);
 }
 
 .projects-top_item-label.orange {
@@ -30739,7 +30764,7 @@ bottom: 20px;
     }
 }
 
-.faq .total_file_desc .links > *{
+.faq .total_file_desc .links > *, .idea-block_item .total_file_desc .links > *{
     width: auto;
 }
 
@@ -31154,6 +31179,7 @@ bottom: 20px;
 .task-editing_text {
     display: flex;
     align-items: flex-start;
+    gap:10px;
 }
 .task-editing_text .icon {
     width: 10px;
@@ -31419,7 +31445,6 @@ bottom: 20px;
 .task2_item-top-label.orange {
     background: #FF9D2A;
     color: #fff;
-    padding: 3px 8px;
 }
 .task2_labels.m2{
     margin-top: 10px;
@@ -31453,7 +31478,7 @@ bottom: 20px;
 }
 .task2_item-bottom-name {
     color: var(--main_color);
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -31462,7 +31487,7 @@ bottom: 20px;
 }
 .task2_item-bottom-date {
     color: #8683C0;
-    font-size: 11px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -31470,7 +31495,7 @@ bottom: 20px;
 }
 .task2_item-comment {
     color: #605D97;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 158.333%;
@@ -31478,7 +31503,7 @@ bottom: 20px;
 }
 .task2_item-comment span {
     color: #505050;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 19px;
@@ -31971,6 +31996,8 @@ bottom: 20px;
     align-items: center;
     margin-top: 40px;
     justify-content: center;
+    gap:10px;
+    margin-bottom: 40px;
 }
 
 .message_continue button{
@@ -32198,7 +32225,7 @@ bottom: 20px;
 }
 
 .title_faq_update{
-    border-radius: 59px;
+    border-radius: 15px;
     background: rgba(28, 189, 44, 0.20);
     color: #1CBD2C;
     font-family: Ubuntu;
@@ -32206,6 +32233,7 @@ bottom: 20px;
     font-weight: 500;
     line-height: 33px;
     padding: 0 10px;
+    white-space: nowrap;
 }
 
 .update_faq{
@@ -32221,16 +32249,17 @@ bottom: 20px;
     display: flex;    
     gap:20px;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .image_faq{
-    width: 120px;
-    height: 120px;
-    position: relative;
+   
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
+    gap:10px;
+    max-width: 120px;
 }
 
 .image_faq img{
@@ -32239,8 +32268,19 @@ bottom: 20px;
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    cursor: pointer;
 }
-.image_faq:after{
+.image_faq .images_faq_wrap{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image_faq .images_faq_wrap:after{
     content: "";
     display: block;
     width: 100%;
@@ -32249,9 +32289,10 @@ bottom: 20px;
     background: rgba(0, 0, 0, 0.5);
     top: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-.image_faq:before{
+.image_faq .images_faq_wrap:before{
     display: block;
     content: "";
     background: url(../images/zoom_faq.svg);
@@ -32259,6 +32300,11 @@ bottom: 20px;
     height: 42px;
     position: absolute;
     z-index: 1;
+    cursor: pointer;
+}
+
+.image_faq.video:before{
+    background: url(../images/video_play.svg);
 }
 
 .solutions-tasks_text{
@@ -35083,6 +35129,11 @@ bottom: 20px;
     margin-bottom: 6px;
     width: 100%;
 }
+
+.best-answer .comment .dialog_item-info + .text{
+    margin-top: 10px;
+}
+
 .best-answer .comment .comment_info {
     color: #7874A3;
     font-size: 13px;
@@ -35480,6 +35531,7 @@ bottom: 20px;
     padding: 8px;
     background: #F3F3FF;
     text-decoration: none;
+    padding-top: 14px;
 }
 .steps-instructions_item-info {
     margin-left: 7px;
@@ -35505,6 +35557,7 @@ bottom: 20px;
     line-height: 15px;
     color: #000000;
     text-decoration: none;
+    display: flex;
 }
 .steps-instructions_item-title span {
     width: calc(100% - 50px);
@@ -35603,7 +35656,7 @@ bottom: 20px;
 .simulator-quiz_wrap {
     padding: 26px 18px 19px;
     border-right: 1px solid #C1C1C1;
-    width: calc(100% - 560px);
+    width: calc(50%);
     flex-shrink: 0;
     padding-bottom: 126px;
 }
@@ -35855,7 +35908,7 @@ bottom: 20px;
     font-size: 16px;
     padding: 0 7px;
     display: inline-block;
-    margin-bottom: 16px;
+    
 }
 .simulator-quiz_description-item-title {
     font-family: 'Ubuntu';
@@ -36072,7 +36125,6 @@ bottom: 20px;
     align-items: center;
     padding: 0 6px;
     gap:6px;
-    margin-left: 15px;
 }
 
 .select_search input{
@@ -36217,6 +36269,7 @@ bottom: 20px;
     font-weight: 500;
     font-size: 14px;
     height: 40px;
+    margin-bottom: 40px;
 }
 
 .search_ai.active{
@@ -36260,6 +36313,7 @@ bottom: 20px;
     font-size: 16px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .search_ai_loading .dot-flashing {
@@ -36342,6 +36396,7 @@ bottom: 20px;
 
     box-shadow: 2px 4px 60px 0px rgba(41, 44, 124, 0.10);
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .search_ai_head{
@@ -36397,6 +36452,7 @@ bottom: 20px;
     display: flex;
     gap:15px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .search_ai_history_head_title{
@@ -36411,6 +36467,11 @@ bottom: 20px;
     margin-top: 5px;
 }
 
+.search_ai_history_btn{
+    display: flex;
+    gap: 10px;
+}
+
 .search_ai_history_show{
     color: #0085FF;
     font-size: 12px;
@@ -36419,6 +36480,10 @@ bottom: 20px;
     cursor: pointer;
     margin-left: auto;
     text-wrap: nowrap;
+}
+
+.search_ai_history_show.red{
+    color:red;
 }
 
 .search_ai_history_desc{
@@ -37010,8 +37075,8 @@ bottom: 20px;
     color: #7F7AB0;
 }
 
-.swiper-button-next, 
-.swiper-button-prev {
+.shop-new_leader-buttons .swiper-button-next, 
+.shop-new_leader-buttons .swiper-button-prev {
     background: var(--main_color);
     width: 23px;
     height: 23px;
@@ -37021,8 +37086,8 @@ bottom: 20px;
     justify-content: center;
     position: relative;    
 }
-.swiper-button-next .icon,
-.swiper-button-prev .icon {
+.shop-new_leader-buttons .swiper-button-next .icon,
+.shop-new_leader-buttons .swiper-button-prev .icon {
     width: 12px;
     height: 10px;
     display: block;
@@ -37055,11 +37120,11 @@ bottom: 20px;
     align-items: center;
     justify-content: space-between;
 }
-.swiper-button-prev {
+.shop-new_leader-buttons .swiper-button-prev {
     left: auto;
     margin-top: -22px;
 }
-.swiper-button-next {
+.shop-new_leader-buttons .swiper-button-next {
     right: auto;
     margin-top: -22px;
 }
@@ -37379,7 +37444,7 @@ bottom: 20px;
     width: 60px;
     height: 60px;
     border-radius: 6px;
-    background-color: color-mix(in srgb, var(--main_color) 20%, #fff);
+    background: #CDCCF1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37441,6 +37506,252 @@ bottom: 20px;
     margin-top: 0;
 }
 
+.draft_db{
+	background: #D9D6F0;
+    border-radius: 15px;
+    padding: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #515781;
+    display: inline-block;
+    margin-left: 10px;
+}
 
 
+.page_title_bd_link{
+    display: flex;
+    align-items: center;
+    color:#353352 !important;
+}
 
+.correction_modal-form input[name="deadline_at"]{
+	width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #7874A3;
+    border-radius: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px;
+}
+
+.correction_modal .nice-select{
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #7874A3;
+    border-radius: 9px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 14px;
+    height: 46px;
+}
+
+.correction_modal .nice-select .current {
+    line-height: 18px;
+}
+
+.correction_modal .nice-select.open .list {
+    top: calc(100% + 10px);
+    visibility: visible;
+    opacity: 1;
+    padding: 10px 0;
+}
+.correction_modal .nice-select .list {
+    position: absolute;
+    z-index: 9;
+    top: calc(100% + 30px);
+    left: 0;
+    visibility: hidden;
+    overflow: hidden;
+    min-width: 100%;
+    transition: .2s linear;
+    opacity: 0;
+    border: 1px solid #7874A3;
+    border-radius: 11px;
+    background: #fff;
+}
+
+.correction_modal. nice-select .list .scrollbar {
+    overflow: auto;
+    max-height: 240px;
+    padding: 10px 0;
+}
+
+.correction_modal .nice-select .list .list_item:hover, .correction_modal .nice-select .list .list_item.selected {
+    background: #eeeffc;
+    color:#000;
+}
+.correction_modal .nice-select .list .list_item {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 10px 14px;
+    cursor: pointer;
+    transition: background .2s linear;
+}
+
+.correction_modal .label{
+    margin-bottom: 5px;
+}
+
+#imgInp{
+    display: none;
+    margin-top: 10px;
+}
+
+#steam{
+    display: none;
+}
+
+.img_file{
+    position: relative; 
+    display: none;
+    margin-top: 10px;
+}
+
+#outputMulti span{
+   width: 150px;
+    height: 150px;
+}
+
+
+.img_file img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.img_file_close{
+    width: 19px;
+    height: 19px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.label_img_file{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.label_img_file img{
+    width: 15px;
+}
+
+.comments .comment .images{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    gap:10px;
+}
+
+.comments .comment .images img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#outputMulti{
+    display: flex;
+    gap: 10px;
+}
+
+.clear_input{
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.correction_modal-form .line input[type='number']{
+    padding: 0 14px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    border: 1px solid #808093;
+    resize: none;
+    height: 41px;
+    width: 100%;
+    font-family: var(--font_family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #808093;
+}
+
+.step_stage_time_new .icon{
+    width: 27px;
+    height: 27px;
+}
+
+.step_stage_time_new{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.steps-instructions_item-title .simulator-quiz_wrap-time{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.steps-instructions_item-title .simulator-quiz_wrap-time .icon{
+    width: 27px;
+    height: 27px;
+}
+
+.steps-instructions_item-title a{
+    align-items: center;
+    position: relative;
+    top:-5px;
+}
+
+.simulator-quiz_description-item_flex{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.comments_wrap_new{
+    display: flex;
+    gap: 20px;
+}
+
+.comments_wrap_new .comments{
+    width: calc(50% - 10px);
+}
+
+.accordion_dialog{
+	margin-top:30px;
+}
+
+.accordion_dialog .accordion_item .head{
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	border:none;
+	align-items: center;
+}
+
+.accordion_dialog .accordion_item .head .title{
+	padding: 0;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.accordion_dialog .accordion_item .data{
+	padding: 20px;
+}
