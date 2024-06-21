@@ -29579,7 +29579,57 @@ bottom: 20px;
     text-align: center;
     padding: 24px;
 }
-
+.trainer_new .accordion_dialog .accordion_item .head {
+    justify-content: space-between;
+}
+.accordion_item .faq_btn:last-child .faq_btn-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    background: #F93E3E;
+}
+.accordion_item .faq_btn:first-child .faq_btn-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    background: var(--main_color);
+}
+.faq_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+    gap: 7px; 
+}
+.accordion_item .faq_btn:last-child span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.09px;
+    color: #F93E3E;
+}
+.accordion_item .faq_btn:first-child span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.09px;
+    color: var(--main_color);
+}
+.accordion_item .faq_btn:last-child {
+    display: none;
+}
+.accordion_item.active .faq_btn:last-child {
+    display: flex;
+}
+.accordion_item.active .faq_btn:first-child {
+    display: none;
+}
 .trainer_new_subtitle{
     border-radius: 69.865px;
     background: #F2F0FF;
@@ -29619,7 +29669,7 @@ bottom: 20px;
 .trainer_step_title{
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     text-align: start;
 }
 
@@ -29672,10 +29722,15 @@ bottom: 20px;
 }
 .trainer_steps {
     position: relative;
-    padding-bottom: 23px;
-    margin-bottom: 22px;
 }
-.trainer_steps:after {
+.trainer_step {
+    position: relative;
+    padding-bottom: 24px;
+}
+.trainer_step:last-child {
+    padding-bottom: 0;
+}
+.trainer_step:after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -29684,6 +29739,13 @@ bottom: 20px;
     background: #B6B6B6;
     width: calc(100% + 64px);
     height: 1px;
+}
+.trainer_step:last-child::after {
+    display: none;
+}
+.trainer_step .trainer_step_audio {
+    padding: 3px 10px;
+    margin-bottom: 18px;
 }
 .trainer_new .accordion_item .head:before {
     display: none;
@@ -29718,6 +29780,7 @@ bottom: 20px;
     line-height: 20.68px;
     letter-spacing: -1px;
     color: #fff;
+    flex-shrink: 0;
 }
 .trainer_new .accordion_dialog .accordion_item.active .head {
     min-height: 55px;
@@ -29742,6 +29805,7 @@ bottom: 20px;
 
 .trainer_step_video{
     max-width: 207px;
+    margin-bottom: 23px;
 }
 
 .trainer_step_video img{
@@ -37813,6 +37877,7 @@ bottom: 20px;
 	padding: 0;
     font-size: 16px;
     line-height: 1;
+    text-align: left;
 }
 
 .accordion_dialog .accordion_item .data{
