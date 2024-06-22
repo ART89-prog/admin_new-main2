@@ -730,6 +730,8 @@
       <path d="M10.7143 10.1846C10.7143 8.96261 11.9906 8.18561 13.0386 8.76965L21.679 13.5852C22.7736 14.1952 22.7736 15.8049 21.679 16.415L13.0386 21.2305C11.9906 21.8145 10.7143 21.0375 10.7143 19.8155V10.1846Z" fill="white"/>
     </symbol>
 
+ 
+
     <symbol viewBox="0 0 30 30" id="play6" xmlns="http://www.w3.org/2000/svg">
       <circle cx="15" cy="15" r="15" fill="#fff"/>
       <path d="M10.7143 10.1846C10.7143 8.96261 11.9906 8.18561 13.0386 8.76965L21.679 13.5852C22.7736 14.1952 22.7736 15.8049 21.679 16.415L13.0386 21.2305C11.9906 21.8145 10.7143 21.0375 10.7143 19.8155V10.1846Z" fill="var(--main_color)"/>
@@ -1939,6 +1941,40 @@
     </symbol>
 
 
+    <symbol width="304" height="98" viewBox="0 0 304 98" xmlns="http://www.w3.org/2000/svg" id="titik6">
+      <rect y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="32.8662" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="32.8662" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="32.8662" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="65.7305" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="65.7305" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="65.7305" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="98.5947" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="98.5947" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="98.5947" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="131.459" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="131.459" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="131.459" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="164.325" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="164.325" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="164.325" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="197.189" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="197.189" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="197.189" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="230.056" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="230.056" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="230.056" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="262.918" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="262.918" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="262.918" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="295.784" y="18.2266" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="295.784" y="53.1562" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+      <rect x="295.784" y="88.085" width="8.21622" height="9.05406" rx="2.7289" fill="var(--bg3)"/>
+    </symbol>
+
+
     <symbol  viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg" id="common_mistakes">
       <path d="M20 11C20 16.523 15.523 21 10 21C4.4772 21 0 16.523 0 11C0 5.4772 4.4772 1 10 1C15.523 1 20 5.4772 20 11Z" fill="#C0392B"/>
       <path d="M20 10C20 15.523 15.523 20 10 20C4.4772 20 0 15.523 0 10C0 4.4772 4.4772 0 10 0C15.523 0 20 4.4772 20 10Z" fill="#E74C3C"/>
@@ -2057,6 +2093,8 @@
       </linearGradient>
       </defs>
     </symbol>
+
+
 
     
     <symbol viewBox="0 0 37 37" xmlns="http://www.w3.org/2000/svg" id="bitcoin2">
