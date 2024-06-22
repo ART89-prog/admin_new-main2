@@ -38041,4 +38041,14 @@ bottom: 20px;
     top: -85px;
     left: 78px;
     z-index: 1;
+    color: red;
+}
+
+.presentation-two .button-arrow .icon {
+    stroke: red;
+    width: 27px;
+    height: 27px;
+}
+.presentation-two .button-arrow .icon path {
+    stroke: red;
 }
