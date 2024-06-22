@@ -38034,11 +38034,11 @@ bottom: 20px;
 .presentation39 .presentation_left {
     position: relative;
 }
-.presentation39 .presentation_icon {
+.presentation39 .presentation_icon .icon {
     position: absolute;
     width: 304px;
     height: 98px;
-    top: 0;
-    left: 0;    
+    top: -85px;
+    left: 78px;
     z-index: 1;
 }
