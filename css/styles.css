@@ -38045,10 +38045,7 @@ bottom: 20px;
 }
 
 .presentation-two .button-arrow .icon {
-    stroke: red;
+    color: red;
     width: 27px;
     height: 27px;
-}
-.presentation-two .button-arrow .icon path {
-    stroke: red;
 }

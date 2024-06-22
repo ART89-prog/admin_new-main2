@@ -2326,14 +2326,10 @@
     </symbol>
 
     <symbol width="27" height="27" viewBox="0 0 27 27" id="arrow888" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22.7051 14.1611L13.581 23.2852L4.45695 14.1611" stroke="red" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13.5811 23.2853L13.5811 3.87451" stroke="red" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M22.7051 14.1611L13.581 23.2852L4.45695 14.1611" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M13.5811 23.2853L13.5811 3.87451" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
 
-    <symbol  id="arrow889" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M22.7051 14.1611L13.581 23.2852L4.45695 14.1611" stroke="white" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
-															<path d="M13.5811 23.2853L13.5811 3.87451" stroke="white" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
-															</symbol>
 
     <symbol viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon99">
       <path d="M0.223863 10.3501L4.46342 14.7681C4.76017 15.0773 5.24059 15.0773 5.53658 14.7681L9.77614 10.3501C10.2543 9.8518 9.91579 9 9.23955 9H0.760448C0.0842145 9 -0.254282 9.8518 0.223863 10.3501Z" fill="#0583DF"/>
