@@ -38034,18 +38034,291 @@ bottom: 20px;
 .presentation39 .presentation_left {
     position: relative;
 }
-.presentation39 .presentation_icon .icon {
+.presentation39.presentation:nth-child(2n) .presentation_icon .icon {
     position: absolute;
     width: 304px;
     height: 98px;
     top: -85px;
     left: 78px;
     z-index: 1;
-    color: red;
+    color: #fff;
 }
-
+.presentation39.presentation:nth-child(2n + 1) .presentation_icon .icon {
+    position: absolute;
+    width: 304px;
+    height: 98px;
+    top: -85px;
+    left: 78px;
+    z-index: 1;
+    color: #08527F;
+}
 .presentation-two .button-arrow .icon {
     color: #fff;
     width: 27px;
     height: 27px;
+}
+
+.presentation40 .presentation_right {
+    padding: 76px 92px 70px 105px;
+    background: var(--bg3);
+    position: relative;
+}
+.presentation40 .presentation_icon1 {
+    position: absolute;
+    bottom: -70px;
+    left: -64px;
+}
+.presentation40 .presentation_icon2 {
+    position: absolute;
+    top: -61px;
+    right: -92px;
+}
+.presentation40 .presentation_icon1 .icon {
+    color: #fff;
+    width: 264px;
+    height: 149px;
+}
+.presentation40 .presentation_icon2 .icon {
+    color: #fff;
+    width: 194px;
+    height: 149px;
+}
+.presentation41 .presentation_right {
+    padding: 70px 93px 64px 0;
+    position: relative;
+}
+.presentation41 .presentation_img img {
+    aspect-ratio: 526 / 466;
+}
+.presentation41 .presentation_icon1 {
+    position: absolute;
+    bottom: 120px;
+    right: 0;
+}
+.presentation41 .presentation_icon2 {
+    position: absolute;
+    top: -65px;
+    left: 69px;
+}
+.presentation41 .presentation_icon3 {
+    position: absolute;
+    bottom: -76x;
+    left: 69px;
+}
+.presentation41 .presentation_icon1 .icon {
+    color: #fff;
+    width: 300px;
+    height: 328px;
+}
+.presentation41 .presentation_icon2 .icon {
+    color: #fff;
+    width: 208px;
+    height: 89px;
+}
+.presentation41 .presentation_icon3 .icon {
+    color: #fff;
+    width: 208px;
+    height: 99px;
+}
+
+
+.presentation42 .presentation_title {
+    position: relative;
+}
+.presentation42 .presentation_title:before {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 10px solid #08527F;
+    top: -77px;
+    left: 0;
+}
+.presentation42 .presentation_title:after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 10px solid #08527F;
+    top: -64px;
+    left: 64px;
+}
+.presentation42 .presentation_wrap {
+    justify-content: space-between;
+}
+.presentation42 .presentation_img {
+    width: 721px;
+    height: 721px;    
+    margin-top: -450px;
+    margin-right: -300px;
+}
+.presentation42 .presentation_img img {
+    border-radius: 50%;
+    height: auto;
+}
+.text_block .presentation42 .presentation_img img {
+    width: auto;
+}
+.presentation42 .presentation_left {
+    max-width: 560px;
+}
+.presentation42 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 950px;
+    height: 950px;
+    border-radius: 100%;
+    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: 49%;
+    top: -458px;
+    z-index: 0;
+}
+.presentation42 .presentation_left {
+    margin-top: 100px;
+}
+
+
+.presentation43 .presentation_title {
+    position: relative;
+}
+.presentation43 .presentation_title:before {
+    position: absolute;
+    content: "";
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 10px solid #08527F;
+    top: -77px;
+    left: 0;
+}
+.presentation43 .presentation_title:after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 10px solid #08527F;
+    top: -104px;
+    left: 64px;
+}
+.presentation43.presentation-two .presentation_left {
+    padding: 270px 78px 88px 69px;
+}
+.presentation43 .presentation_wrap {
+    position: relative;
+}
+.presentation43 .presentation_wrap:after {
+    position: absolute;
+    content: "";
+    width: 1051px;
+    height: 1051px;
+    border-radius: 100%;
+    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: 49%;
+    top: -458px;
+    z-index: 0;
+}
+.presentation43 .presentation_wrap:before {
+    position: absolute;
+    content: "";
+    width: 615px;
+    height: 615px;
+    border-radius: 100%;
+    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+    right: -285px;
+    top: -285px;
+    z-index: 0;
+}
+
+
+.presentation45 .presentation_list .icon {
+    color: #08527F;
+    flex-shrink: 0;
+    width: 37px;
+    height: 37px;
+}
+.presentation45 .presentation_list-desc p {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 15px;      
+}
+.presentation45 .presentation_list-desc span {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.25px;      
+}
+
+
+.presentation46 .presentation_img img {
+    aspect-ratio: 351 / 436;
+    border-radius: 39px;
+}
+.presentation46 .presentation_img {
+    position: relative;
+}
+.presentation46 .presentation_img:before {
+    width: calc(100% + 58px);
+    height: calc(100% + 72px);
+    left: -29px;
+    top: -36px;
+    background: #08527F;
+    border-radius: 69px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+.presentation_right {
+    padding: 82px 0 82px 71px;
+}
+.presentation46 .presentation_list .icon {
+    color: #08527F;
+    flex-shrink: 0;
+    width: 37px;
+    height: 37px;
+}
+
+
+.presentation47 .presentation_img img {
+    aspect-ratio: 487 / 487;
+    border-radius: 50%;
+}
+.presentation47 .presentation_img {
+    position: relative;
+    z-index: 5;
+    margin-left: -200px;
+}
+.presentation47 .presentation_img:before {
+    width: 634px;
+    height: 634px;
+    right: -52px;
+    top: -52px;
+    border: 52px solid #08527F;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    z-index: 0;
+    opacity: 0.1;
+}
+.presentation47 .presentation_img:after {
+    width: 732px;
+    height: 732px;
+    right: -104px;
+    top: -104px;
+    border: 60px solid #08527F;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    z-index: 0;
+}
+.presentation47 .presentation_list .icon {
+    color: #08527F;
+    flex-shrink: 0;
+    width: 37px;
+    height: 37px;
+}
+.presentation47 .presentation_left {
+    padding: 69px 57px 69px 69px;
 }
