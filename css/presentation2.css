@@ -2170,8 +2170,13 @@
 }
 .presentation-two .button-arrow .icon {
     color: #fff;
-    width: 27px;
-    height: 27px;
+    width: 22px;
+    height: 23px;
+}
+.presentation38.presentation-two:nth-child(2n) .button-arrow .icon {
+    color: var(--bg3);
+    width: 22px;
+    height: 23px;
 }
 .presentation39.presentation-two.presentation .presentation_left,
 .presentation41.presentation-two.presentation .presentation_left {
@@ -2551,6 +2556,8 @@
     border-radius: 50%;
     z-index: 55;
     position: relative;
+    border: 52px solid rgb(8, 82, 127, 0.75);
+    outline: 60px solid #08527F;
 }
 .presentation47.presentation-two .presentation_right {
     padding: 82px 82px 82px 0px;
@@ -2559,29 +2566,6 @@
     position: relative;
     z-index: 5;
     margin-left: -200px;
-}
-.presentation47 .presentation_img:before {
-    width: 634px;
-    height: 634px;
-    right: -46px;
-    top: -52px;
-    border: 52px solid #08527F;
-    border-radius: 50%;
-    position: absolute;
-    content: "";
-    z-index: 0;
-    opacity: 0.75;
-}
-.presentation47 .presentation_img:after {
-    width: 766px;
-    height: 735px;
-    right: -104px;
-    top: -93px;
-    border: 60px solid #08527F;
-    border-radius: 50%;
-    position: absolute;
-    content: "";
-    z-index: -1;
 }
 .presentation47 .presentation_list .icon {
     color: #08527F;
@@ -2592,12 +2576,11 @@
 .presentation47 .presentation_left {
     padding: 69px 57px 69px 69px;
 }
-.presentation47.presentation-two:nth-child(2n) .presentation_img:after {
-    border: 60px solid #fff;
+.presentation47.presentation-two:nth-child(2n) .presentation_img img {
+    border: 52px solid rgb(255, 255, 255, 0.29);
+    outline: 60px solid #fff;
 }
-.presentation47.presentation-two:nth-child(2n) .presentation_img:before {
-    opacity: 0.29;
-}
+
 
 
 .presentation48 .presentation_img img {
@@ -3313,7 +3296,7 @@
         padding: 30px;
     }
     .presentation41.presentation-two .presentation_right {
-        padding: 30px 71px 30px 30px;
+        padding: 30px;
     }
 
 

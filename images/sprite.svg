@@ -2619,12 +2619,11 @@
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" id="ok999">
       <path d="M11.5003 1.91675C6.21608 1.91675 1.91699 6.21583 1.91699 11.5001C1.91699 16.7843 6.21608 21.0834 11.5003 21.0834C16.7846 21.0834 21.0837 16.7843 21.0837 11.5001C21.0837 6.21583 16.7846 1.91675 11.5003 1.91675ZM15.6025 9.85223L10.8108 14.6439C10.6704 14.7843 10.4864 14.8542 10.3024 14.8542C10.1184 14.8542 9.93441 14.7843 9.79401 14.6439L7.39818 12.2481C7.11739 11.9673 7.11739 11.5125 7.39818 11.2317C7.67897 10.951 8.1337 10.951 8.41449 11.2317L10.3019 13.1192L14.5852 8.83592C14.866 8.55512 15.3207 8.55512 15.6015 8.83592C15.8823 9.11671 15.8828 9.57144 15.6025 9.85223Z" fill="#1CBD2C"/>
     </symbol>
-
-    <symbol width="27" height="27" viewBox="0 0 27 27" id="arrow888" xmlns="http://www.w3.org/2000/svg">
-      <path d="M22.7051 14.1611L13.581 23.2852L4.45695 14.1611" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13.5811 23.2853L13.5811 3.87451" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <symbol viewBox="0 0 22 23" id="arrow888" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.7051 12.1611L10.581 21.2852L1.45695 12.1611" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M10.5811 21.2853L10.5811 1.87451" stroke="currentColor" stroke-width="2.6351" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
-
 
     <symbol viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="icon99">
       <path d="M0.223863 10.3501L4.46342 14.7681C4.76017 15.0773 5.24059 15.0773 5.53658 14.7681L9.77614 10.3501C10.2543 9.8518 9.91579 9 9.23955 9H0.760448C0.0842145 9 -0.254282 9.8518 0.223863 10.3501Z" fill="#0583DF"/>
