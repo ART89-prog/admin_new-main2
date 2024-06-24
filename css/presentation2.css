@@ -2154,7 +2154,7 @@
     position: absolute;
     width: 304px;
     height: 98px;
-    top: -85px;
+    top: -40px;
     left: 78px;
     z-index: 1;
     color: #fff;
@@ -2163,7 +2163,7 @@
     position: absolute;
     width: 304px;
     height: 98px;
-    top: -85px;
+    top: -40px;
     left: 78px;
     z-index: 1;
     color: #08527F;
@@ -2172,6 +2172,10 @@
     color: #fff;
     width: 27px;
     height: 27px;
+}
+.presentation39.presentation-two.presentation .presentation_left,
+.presentation41.presentation-two.presentation .presentation_left {
+    padding: 69px 69px 69px 0;
 }
 
 .presentation40.presentation-two .presentation_right {
@@ -3172,6 +3176,10 @@
     .presentation32 .presentation_img {
         margin-right: 0;
     }
+    .presentation-two .presentation_left {
+        padding: 30px;
+    }
+
 
 }
 @container presentations (max-width: 600px) {
