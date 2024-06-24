@@ -2014,7 +2014,8 @@
 .presentation36 .presentation_img img {
     aspect-ratio: 668 / 600;
     object-fit: cover;
-    height: 100%;    
+    height: 100%;   
+    clip-path: polygon(34% 100%, 13% 71%, 8% 63%, 3% 53%, 1% 48%, 2% 42%, 8% 32%, 22% 13%, 35% 0, 45% 0, 60% 0, 76% 0, 92% 0%, 100% 0%, 100% 99%); 
 }
 .presentation_logo img {
     width: auto;
@@ -2022,7 +2023,7 @@
 .presentation37 .presentation_img img {
     aspect-ratio: 554 / 600;
     object-fit: cover;
-    height: 100%;    
+    height: 100%;        
 }
 .presentation-two.presentation37 .presentation_right {
     padding: 0;
@@ -2328,15 +2329,13 @@
 .presentation42 .presentation_img {
     width: 721px;
     height: 721px;    
-    margin-top: -407px;
-    margin-right: -295px;
+    margin-top: -462px;
+    margin-right: -224px;
 }
 .presentation42 .presentation_img img {
     border-radius: 50%;
-    height: auto;
-}
-.text_block .presentation42 .presentation_img img {
-    width: auto;
+    height: 100%;
+    width: 100%;
 }
 .presentation42 .presentation_left {
     max-width: 560px;
@@ -2347,9 +2346,9 @@
     width: 950px;
     height: 950px;
     border-radius: 100%;
-    border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
-    left: 51%;
-    top: -416px;
+    border: 94px solid color-mix(in oklab, var(--bg3), white 14%);
+    left: 45%;
+    top: -398px;
     z-index: 0;
 }
 .presentation42 .presentation_left {
@@ -2549,6 +2548,9 @@
     width: 37px;
     height: 37px;
 }
+.presentation46.presentation-two .presentation_right {
+    padding: 65px 0 65px 71px;
+}
 
 
 .presentation47 .presentation_img img {
@@ -2739,87 +2741,7 @@
 }
 
 
-@container presentations (max-width: 1300px) {
-    .presentation-two .presentation_left {
-        padding: 30px 0 30px 30px;
-    }
-    .presentation39.presentation-two .presentation_right {
-        padding: 30px 30px 30px 30px;
-    }
-    .presentation40.presentation-two .presentation_left {
-        padding: 30px;
-    }
-    .presentation40.presentation-two .presentation_right {
-        padding: 40px;
-    }
-    .presentation41.presentation-two .presentation_right {
-        padding: 30px 71px 30px 0px;
-    }
-    .presentation41.presentation-two.presentation .presentation_left {
-        padding: 69px 20px 69px 0;
-    }
-    .presentation41 .presentation_icon2 {
-        top: -29px;
-    }
-    .presentation42 .presentation_left {
-        margin-top: 75px;
-    }
-    .presentation42 .presentation_img {
-        margin-top: -311px;
-    }
-    .presentation-two .presentation_right {
-        padding: 0px 0 30px 71px;
-    }
-    .presentation42 .presentation_wrap:before {
-        border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
-        left: 34%;
-        top: -440px;
-    }
-    .presentation43.presentation-two .presentation_left {
-        padding: 120px 30px 30px 30px;
-    }
-    .presentation43 .presentation_wrap:after{
-        left: 26%;
-    }
-    .presentation44.presentation-two .presentation_left {
-        padding: 30px;
-    }
-    .presentation44.presentation-two .presentation_right {
-        padding: 30px 90px 70px 30px;
-    }
-    .presentation48 .presentation_img {
-        padding: 30px 30px 30px 0;
-    }
-    .presentation48.presentation-two:nth-child(2n + 1 ) .presentation_right {
-        padding-left: 30px;
-    }
-    .presentation49.presentation-two .presentation_right {
-        padding: 0px 0 30px 30px;
-    }
-    .presentation50.presentation-two .presentation_right {
-        padding: 0px 30px 30px 30px;
-    }
-    .presentation51 .presentation_wrap {
-        padding: 30px;
-    }
-    .presentation51 .presentation_wrap:before {
-        right: -68%;
-    }
-    .presentation47.presentation-two .presentation_left {
-        padding: 30px 30px 30px 30px;
-    }
-    .presentation47 .presentation_img:before {
-        width: 590px;
-        height: 590px;
-    }
-    .presentation47 .presentation_img:after {
-        width: 682px;
-        height: 682px;
-    }
 
-
-
-}
 
 @container presentations (max-width: 1100px) {
     .presentation_wrap {
@@ -2971,6 +2893,91 @@
     .presentation32 .presentation_right:before {
         width: 60%;
     }
+
+    .presentation-two .presentation_left {
+        padding: 30px 0 30px 30px;
+    }
+    .presentation39.presentation-two .presentation_right {
+        padding: 30px 30px 30px 30px;
+    }
+    .presentation40.presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation40.presentation-two .presentation_right {
+        padding: 40px;
+    }
+    .presentation41.presentation-two .presentation_right {
+        padding: 30px 71px 30px 0px;
+    }
+    .presentation41.presentation-two.presentation .presentation_left {
+        padding: 69px 20px 69px 0;
+    }
+    .presentation41 .presentation_icon2 {
+        top: -29px;
+    }
+    .presentation42 .presentation_left {
+        margin-top: 75px;
+    }
+    .presentation-two .presentation_right {
+        padding: 0px 0 30px 71px;
+    }
+    .presentation42 .presentation_wrap:before {
+        border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+        left: 34%;
+        top: -371px;
+    }
+    .presentation43.presentation-two .presentation_left {
+        padding: 120px 30px 30px 30px;
+    }
+    .presentation43 .presentation_wrap:after{
+        left: 26%;
+    }
+    .presentation44.presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation44.presentation-two .presentation_right {
+        padding: 30px 90px 70px 30px;
+    }
+    .presentation48 .presentation_img {
+        padding: 30px 30px 30px 0;
+    }
+    .presentation48.presentation-two:nth-child(2n + 1 ) .presentation_right {
+        padding-left: 30px;
+    }
+    .presentation49.presentation-two .presentation_right {
+        padding: 0px 0 30px 30px;
+    }
+    .presentation50.presentation-two .presentation_right {
+        padding: 0px 30px 30px 30px;
+    }
+    .presentation51 .presentation_wrap {
+        padding: 30px;
+    }
+    .presentation51 .presentation_wrap:before {
+        right: -68%;
+    }
+    .presentation47.presentation-two .presentation_left {
+        padding: 30px 30px 30px 30px;
+    }
+    .presentation47 .presentation_img:before {
+        width: 590px;
+        height: 590px;
+    }
+    .presentation47 .presentation_img:after {
+        width: 682px;
+        height: 682px;
+    }
+    .presentation42 .presentation_wrap:before {
+        border: 99px solid color-mix(in oklab, var(--bg3), white 14%);
+        left: 41%;
+        top: -420px;
+    }
+
+
+
+
+
+
 }
 @container presentations (max-width: 900px) {
     .presentation4 .presentation_right:before {
@@ -3298,6 +3305,9 @@
     .presentation41.presentation-two .presentation_right {
         padding: 30px;
     }
+    .presentation42.presentation-two .presentation_right {
+        padding: 30px;
+    }
 
 
 }
@@ -3466,10 +3476,22 @@
         height: 623px;
         right: -73px;
     }
+    .presentation51 .presentation_list .icon {
+        width: 32px;
+        height: 32px;
+    }
+    .presentation ol li:before {
+        width: 32px;
+        height: 32px;
+    }
+    .presentation-two .presentation_list .icon {
+        width: 32px;
+        height: 32px;
+    }
+    .presentation ol li {
+        padding-left: 50px;
+    }
 
 
 }
-
-
-
 
