@@ -2252,7 +2252,7 @@
 }
 .presentation41 .presentation_icon3 {
     position: absolute;
-    bottom: -76x;
+    bottom: -76px;
     left: 69px;
 }
 .presentation41 .presentation_icon1 .icon {
@@ -2802,7 +2802,7 @@
         padding: 30px;
     }
     .presentation44.presentation-two .presentation_right {
-        padding: 30px 90px 30px 30px;
+        padding: 30px 90px 70px 30px;
     }
     .presentation48 .presentation_img {
         padding: 30px 30px 30px 0;
@@ -3264,6 +3264,49 @@
     .presentation-two .presentation_left {
         padding: 30px;
     }
+    .presentation38.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation39.presentation-two.presentation 
+    .presentation_left, .presentation41.presentation-two.presentation .presentation_left {
+        padding: 69px 30px 15px 30px;
+    }
+    .presentation40 .presentation_wrap {
+        align-items: flex-start;
+    }
+    .presentation42 .presentation_img {
+        margin-top: -143px;
+    }
+    .text_block .presentation42 .presentation_img img {
+        width: 100%;
+    }
+    .presentation-two .presentation_wrap {
+        gap: 10px;
+    }
+    .presentation46.presentation-two .presentation_right {
+        padding: 30px 50px 50px;
+    }
+    .presentation48 .presentation_img {
+        padding: 0px;
+    }
+    .presentation48.presentation-two .presentation_right {
+        padding: 0 30px;
+    }
+    .presentation49.presentation-two .presentation_right {
+        padding: 0 30px 20px;
+    }
+    .presentation49.presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation50.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation45.presentation-two .presentation_right {
+        padding: 30px;
+    }
+    .presentation41.presentation-two .presentation_right {
+        padding: 30px 71px 30px 30px;
+    }
 
 
 }
@@ -3415,6 +3458,21 @@
     }
     .presentation31 .presentation_img {
         margin-right: 30px;
+    }
+
+    .presentation41 .presentation_icon3 {
+        display: none;
+    }
+    .presentation41 .presentation_icon1 {
+        display: none;
+    }
+    .presentation47 .presentation_img:before {
+        width: 543px;
+        height: 543px;
+    }
+    .presentation47 .presentation_img:after {
+        width: 580px;
+        height: 580px;
     }
 
 }
