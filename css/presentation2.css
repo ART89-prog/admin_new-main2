@@ -2756,7 +2756,79 @@
 }
 
 
+@container presentations (max-width: 1300px) {
+    .presentation-two .presentation_left {
+        padding: 30px 0 30px 30px;
+    }
+    .presentation39.presentation-two .presentation_right {
+        padding: 30px 30px 30px 30px;
+    }
+    .presentation40.presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation40.presentation-two .presentation_right {
+        padding: 40px;
+    }
+    .presentation41.presentation-two .presentation_right {
+        padding: 30px 71px 30px 0px;
+    }
+    .presentation41.presentation-two.presentation .presentation_left {
+        padding: 69px 20px 69px 0;
+    }
+    .presentation41 .presentation_icon2 {
+        top: -29px;
+    }
+    .presentation42 .presentation_left {
+        margin-top: 75px;
+    }
+    .presentation42 .presentation_img {
+        margin-top: -311px;
+    }
+    .presentation-two .presentation_right {
+        padding: 0px 0 30px 71px;
+    }
+    .presentation42 .presentation_wrap:before {
+        border: 159px solid color-mix(in oklab, var(--bg3), white 14%);
+        left: 34%;
+        top: -440px;
+    }
+    .presentation43.presentation-two .presentation_left {
+        padding: 120px 30px 30px 30px;
+    }
+    .presentation43 .presentation_wrap:after{
+        left: 26%;
+    }
+    .presentation44.presentation-two .presentation_left {
+        padding: 30px;
+    }
+    .presentation44.presentation-two .presentation_right {
+        padding: 30px 90px 30px 30px;
+    }
+    .presentation48 .presentation_img {
+        padding: 30px 30px 30px 0;
+    }
+    .presentation48.presentation-two:nth-child(2n + 1 ) .presentation_right {
+        padding-left: 30px;
+    }
+    .presentation49.presentation-two .presentation_right {
+        padding: 0px 0 30px 30px;
+    }
+    .presentation50.presentation-two .presentation_right {
+        padding: 0px 30px 30px 30px;
+    }
+    .presentation51 .presentation_wrap {
+        padding: 30px;
+    }
+    .presentation51 .presentation_wrap:before {
+        right: -68%;
+    }
+    .presentation47.presentation-two .presentation_left {
+        padding: 30px 30px 30px 30px;
+    }
 
+
+
+}
 
 @container presentations (max-width: 1100px) {
     .presentation_wrap {
@@ -3070,6 +3142,19 @@
         aspect-ratio: 547/259;
         object-fit: cover;
         height: 100%;
+    }
+
+    .presentation51 .presentation_wrap:before {
+        right: -100%;
+    }
+    .presentation-two .presentation_list-desc p {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+    .presentation-two .presentation_list-desc span {
+        font-size: 18px;
+        line-height: 24px;
     }
 
 
