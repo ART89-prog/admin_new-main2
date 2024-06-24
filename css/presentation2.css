@@ -2825,6 +2825,14 @@
     .presentation47.presentation-two .presentation_left {
         padding: 30px 30px 30px 30px;
     }
+    .presentation47 .presentation_img:before {
+        width: 590px;
+        height: 590px;
+    }
+    .presentation47 .presentation_img:after {
+        width: 682px;
+        height: 682px;
+    }
 
 
 
@@ -3471,9 +3479,11 @@
         height: 543px;
     }
     .presentation47 .presentation_img:after {
-        width: 580px;
-        height: 580px;
+        width: 623px;
+        height: 623px;
+        right: -73px;
     }
+
 
 }
 
