@@ -2144,6 +2144,7 @@
 }
 .presentation39 .presentation_img img {
     aspect-ratio: 520 / 468;
+    object-fit: cover;
 }
 .presentation39 {
     background: #fff;
@@ -2188,6 +2189,10 @@
     padding: 76px 92px 70px 105px;
     position: relative;
     background: var(--bg3);
+}
+.presentation40 .presentation_img img {
+    aspect-ratio: 513 / 454;
+    object-fit: cover;
 }
 .presentation40.presentation-two .presentation_left {
     padding: 69px 62px 69px 69px;
@@ -2245,6 +2250,7 @@
 }
 .presentation41 .presentation_img img {
     aspect-ratio: 526 / 466;
+    object-fit: cover;
 }
 .presentation41 .presentation_icon1 {
     position: absolute;
@@ -2334,8 +2340,8 @@
 }
 .presentation42 .presentation_img img {
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 722/722;
 }
 .presentation42 .presentation_left {
     max-width: 560px;
@@ -2516,11 +2522,19 @@
 .text_block .presentation-two:nth-child(2n) ul li p {
     color: #fff;
 }
+.presentation45 .presentation_img img {
+    aspect-ratio: 442/600;
+    object-fit: cover;
+}
+.presentation45.presentation-two .presentation_right {
+    padding: 0 0 0 30px;
+}
 
 
 .presentation46 .presentation_img img {
     aspect-ratio: 351 / 436;
     border-radius: 39px;
+    object-fit: cover;
 }
 .presentation46 .presentation_img {
     position: relative;
@@ -2560,6 +2574,7 @@
     position: relative;
     border: 52px solid rgb(8, 82, 127, 0.75);
     outline: 60px solid #08527F;
+    object-fit: cover;
 }
 .presentation47.presentation-two .presentation_right {
     padding: 82px 82px 82px 0px;
@@ -2588,6 +2603,7 @@
 .presentation48 .presentation_img img {
     aspect-ratio: 544 / 544;
     border-radius: 50%;
+    object-fit: cover;
 }
 .presentation48 .presentation_img {
     padding: 28px 116px 28px 0;
