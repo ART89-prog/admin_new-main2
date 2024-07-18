@@ -29463,7 +29463,7 @@ bottom: 20px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
 }
-.training-plan_item ul li a {
+.training-plan_item ul li  a {
     color: #0583DF;
     font-size: 12px;
     font-style: normal;
@@ -32534,9 +32534,7 @@ bottom: 20px;
 .learning-paths .training-plan_items {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -35px;
-    margin-top: 0px;
-    margin-bottom: 0;
+    gap: 33px;
     padding: 28px;
 }
 .learning-paths .training-plan_item-title span {
@@ -32609,6 +32607,101 @@ bottom: 20px;
     color: #636363;
     font-size: 14px;
     line-height: 20px ;
+}
+
+
+
+.learning-paths .block_top .block_title {
+    margin-bottom: 20px;
+}
+.content_flex .content .learning-paths_items {
+    margin-top: 20px;
+}
+.learning-paths_items {
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
+}
+.learning-paths_items > * {
+    padding: 14px 12px 26px;
+    border-radius: 15px;
+    background: #fff;
+    width: calc(100%/3 - 19px);
+}
+.learning-paths_item-label {
+    padding: 3px 6px;
+    border-radius: 6px;
+    background: var(--main_color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #fff;
+    display: inline-block;
+}
+.learning-paths_item-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 18px;
+    position: relative;
+    margin-top: 13px;
+}
+.learning-paths_item-author:before {
+    position: absolute;
+    content: "";
+    left: -12px;
+    bottom: 0;
+    width: calc(100% + 24px);
+    height: 1px;
+    background: rgba(0, 0, 0, .15);
+}
+.learning-paths_item-photo {
+    width: 51px;
+    height: 51px;
+}
+.learning-paths_item-photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.learning-paths_item-name {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, .8);
+}
+.learning-paths_item-post {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #273179;
+}
+.learning-paths_item-contact {
+    margin-top: 11px;
+}
+.learning-paths_item-contact-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 11px;
+}
+.learning-paths_item-contact-phone {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.15;
+    text-decoration: none;
+    color: #62699D;
+    margin-bottom: 14px;
+    display: block;
+}
+.learning-paths_item-contact-adress {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #62699D;
 }
 
 .simulator_item-title {
@@ -38033,4 +38126,81 @@ bottom: 20px;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+}
+
+
+
+.learning-paths .training-plan {
+    padding: 17px;
+    border-radius: 15px;
+    background: #FFF;
+}
+.learning-paths .training-plan_top {
+    display: flex;
+    align-items: flex-start;
+}
+.learning-paths .training-plan_top .rating-top_title {
+    margin-left: 22px;
+}
+.learning-paths .training-plan_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding: 28px 29px 31px;
+    margin-bottom: 0px;
+}
+.learning-paths .training-plan_items > * {
+    width: calc(100%/3 - 22px);
+    margin-bottom: 0;
+    border-radius: 10px;
+    z-index: 5;
+    margin-left: 0;
+}
+.learning-paths .training-plan_item-title {
+    padding: 14px 16px;
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: var(--main_color);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.learning-paths .training-plan_item ul {
+    padding-left: 34px;
+    background: #F3F3FF;
+    padding: 18px 18px 18px 34px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.learning-paths .training-plan_item ul li {
+    
+}
+.learning-paths .training-plan_item ul li .training-plan_item-info a {
+    color: #0583DF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: underline dashed #0583DF;
+}
+.learning-paths .learning-paths .training-plan_item ul li + li {
+    margin-top: 11px;
+}
+.training-plan_item ul li::marker {
+    color: #0583DF;
+}
+/*.learning-paths  .training-plan_item ul li.active a {
+    color: #414950;
+    text-decoration: none;
+} */
+.learning-paths .training-plan_item ul li.active::marker {
+    color: #414950;
+}
+
+.learning-paths .training-plan_item:before {
+    display: none;
 }
