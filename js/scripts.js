@@ -2,7 +2,6 @@ WW = window.innerWidth || document.clientWidth || document.getElementsByTagName(
 WH = window.innerHeight || document.clientHeight || document.getElementsByTagName('body')[0].clientHeight
 $(() => {
 	// tippy('[data-tippy-content]');
-
 	function handleFileSelect(evt) {
 	    var files = evt.target.files; // FileList object
 	    // Loop through the FileList and render image files as thumbnails.
@@ -31,8 +30,8 @@ $(() => {
 	{
 		document.getElementById('imgInp').addEventListener('change', handleFileSelect, false);
 	}
-	
-		
+
+
 
 
 	$('.clear_input').click(function (e) {
@@ -41,7 +40,7 @@ $(() => {
 		$("#outputMulti").html("");
 		document.getElementById("imgInp").value = "";
 	});
-	
+
 
 	$(".create-report_wrap_hide").each(function (index) {
 		if ($(this).outerHeight() > 46) {
@@ -171,7 +170,7 @@ $(() => {
 
 
 	document.addEventListener('keydown', function (event) {
-	
+
 		if ((event.code === 'ArrowRight' || event.code === 'PageDown') && currentStep < totalSteps) {
 			currentStep++
 
@@ -374,8 +373,8 @@ $(() => {
 
 			$item.addClass('active').find('.data').slideDown(300)
 		}
-		
-   
+
+
 	})
 
 	$(".title_faq_result button").on("click", function () {

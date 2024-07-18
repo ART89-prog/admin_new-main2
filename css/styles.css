@@ -820,8 +820,8 @@ header .wallet .icon
 
     display: block;
 
-    width: 20px;
-    height: 21px;
+    width: 29px;
+    height: 29px;
     margin-right: 7px;
 }
 
@@ -10678,6 +10678,10 @@ aside .menu .sub_menu a.active
     opacity: .8;
 
     overflow-wrap: break-word;
+}
+
+.comments .comment .text > * + * {
+    margin-top: 15px;
 }
 
 
@@ -28269,16 +28273,17 @@ form .form_btns input[type=file] + label,
     margin-top: 30px;
 }
 .current-issues_top {
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
     position: relative;
 }
-.current-issues_top:before {
+.current-issues_items:before {
+
     position: absolute;
     content: "";
     width: calc(100% + 36px);
     height: 1px;
     left: -18px;
-    bottom: 0;
+    top: 0;
     background: #DFDFDF;
 }
 .current-issues_title {
@@ -28295,6 +28300,8 @@ form .form_btns input[type=file] + label,
 }
 .current-issues_items {
     margin-top: 8px;
+    position: relative;
+    padding-top: 15px;
 }
 .current-issues_item {
     padding: 7px 9px;
@@ -37856,6 +37863,9 @@ bottom: 20px;
 .comments_wrap_new{
     display: flex;
     gap: 20px;
+    padding: 0;
+    background: none;
+    margin-top: 0 !important;
 }
 
 .comments_wrap_new .comments{
@@ -37884,5 +37894,143 @@ bottom: 20px;
 	padding: 20px;
 }
 
+.comments_wrap_new .block_title{
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.comments_wrap_new .block_title .tabs{
+    padding: 4px;
+    border-radius: 39px;
+    background: #E8E6F4;
+    margin: 0 !important;
+    margin-left: 20px !important;
+    text-wrap:nowrap;
+}
+
+.comments_wrap_new .block_title .tabs .icon{
+    width: 17px;
+    height: 17px;
+}
+.comments_wrap_new .block_title .tabs button
+{
+    text-decoration: none;
+    color: #625BA1;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 55px;
+    transition: all .4s;
+    display: inline-block;
+    line-height: normal;
+    opacity: 1;
+    margin-right: 0;
+    letter-spacing: inherit;
+    display: inline-flex;
+    align-items: center;
+}
 
 
+.comments_wrap_new .block_title .tabs button.active{
+    background: var(--main_color);
+    color: #fff;
+}
+
+.comments_wrap_new .block_title .tabs button:hover {
+    background: var(--main_color);
+    color: #fff;
+}
+
+.add_comment .dialog{
+    background: #F3F2FC;
+    border-radius: 10px;
+}
+
+.add_comment .dialog .add_audio{
+    padding: 20px;
+    text-align: center;
+}
+
+.add_comment .dialog .add_audio .start_btn{
+    background: #fff;
+}
+
+.play_text{
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.play_text .icon{
+    width: 14px;
+    height: 14px;
+    color:#524F8E;
+}
+
+.play_text .inner{
+    padding: 4px 10px;
+    border-radius: 39px;
+    background: #E8E6F4;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
+}
+.play_text .load{
+    color: #FF7A00;
+    font-weight: 700;
+    display: none;
+    align-items: center;
+}
+
+.play_text .load.active{
+    display: flex;
+}
+
+.play_text .player{
+    display: none;
+}
+
+.play_text .player.active{
+    display: block;
+}
+
+
+
+.pay{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-weight: bold;
+}
+
+.pay .icon{
+    height: 25px;
+    width: 25px;
+ }
+
+ .simulator_item_pay{
+    margin-top: -5px;
+    margin-bottom: 5px;
+    font-size:12px;
+ }
+
+ .comments_wrap_new:not(:has(.comments:nth-child(2))) .comments{
+    width: 100%;
+}
+
+.comments_wrap_new .audio_media .media-toolbar{
+    max-width: 400px;
+}
+
+.comment_button{
+    padding: 8px 14px;
+    background: var(--main_color);
+    border-radius: 55px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
