@@ -3285,5 +3285,19 @@
 
 
 
+    .learning-paths_items > * {
+        width: 100%;
+    }
+    .learning-paths_items {
+        gap: 15px;
+    }
+
+    .learning-paths .training-plan_items > * {
+        width: 100%;
+    }
+    .learning-paths .training-plan_items {
+        padding: 20px;
+    }
+
 
 }

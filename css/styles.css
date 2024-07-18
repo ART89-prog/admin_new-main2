@@ -31674,9 +31674,7 @@ bottom: 20px;
     display: block;
 }
 
-.task-page_wrap {
 
-}
 
 .audio-note_list {
     border-radius: 9px;
@@ -32658,6 +32656,7 @@ bottom: 20px;
 .learning-paths_item-photo {
     width: 51px;
     height: 51px;
+    flex-shrink: 0;
 }
 .learning-paths_item-photo img {
     width: 100%;
