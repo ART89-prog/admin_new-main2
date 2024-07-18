@@ -38241,7 +38241,10 @@ bottom: 20px;
     background: var(--main_color);
     color: #fff;
 }
-.training-plan_item ul li.active a {
+.learning-paths .training-plan_item ul li.active .training-plan_item-link {
+    color: #0583DF;
+}
+.learning-paths .training-plan_item ul li.active .training-plan_item-btn {
     color: #fff;
 }
 .learning-paths .training-plan_item ul li::after {
@@ -38258,4 +38261,46 @@ bottom: 20px;
 }
 .learning-paths .training-plan_item ul li:last-child {
     padding-bottom: 0;
+}
+
+.learning-paths-modal .shop_modal-link {
+    width: 160px;
+}
+
+.learning-paths-modal2 {
+    max-width: 473px;
+    padding: 47px 28px 34px;
+}
+.learning-paths-modal2 .shop_modal-title {
+    text-align: left;
+    margin-bottom: 11px;
+}
+.learning-paths-modal2 .shop_modal-text {
+    text-align: left;
+}
+.learning-paths-modal2 .shop_modal-link {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.shop_modal-links {
+    display: flex;
+    gap: 11px;
+    margin-top: 25px;
+}
+.shop_modal-link:first-child {
+    background: var(--main_color);
+}
+.shop_modal-link:last-child {
+    background: #FF4062;
+}
+.learning-paths-modal3 {
+    padding: 47px 28px 34px;
+}
+.learning-paths-modal3 .shop_modal-link {
+    width: auto;
+}
+.learning-paths-modal3 .shop_modal-title {
+    max-width: 255px;
+    margin: 0 auto 0;
 }
